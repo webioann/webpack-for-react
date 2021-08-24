@@ -15,7 +15,7 @@ module.exports = {
         // contentBase: path.resolve(__dirname, 'index.js'),
         // open: true,
         // compress: true,
-        // hot: true,
+        hot: true,
         port: 3000
     },
     plugins: [
@@ -37,11 +37,15 @@ module.exports = {
                 test: /\.s[ac]ss$/,
                 use:[MiniCssExtractPlugin.loader,'css-loader','sass-loader']
             },
-            // {
-            //     test: /\.(js|jsx)$/,
-            //     exclude: /node_modules/,
-            //     use: {loader: "babel-loader"}
-            // },    
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {loader: "babel-loader",
+                    options: {
+                        presets:["@babel/preset-env","@babel/preset-react"]
+                    }
+            }
+            },    
             {
                 test: /\.(svg|png|jpg|gif|jpeg|ico)$/,
                 use: ['file-loader']
