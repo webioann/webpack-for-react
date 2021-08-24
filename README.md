@@ -6,7 +6,7 @@
         $ npm install -D babel-loader @babel/core
         $ npm install -D @babel/preset-env 
         $ npm install -D @babel/preset-react
-        $ npm install -D react react-dom
+        $ npm install react react-dom
 
 2. create directory **src /../../** <br>
 
