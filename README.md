@@ -1,4 +1,4 @@
-## Let start
+## Let's start
         $ npm install -D webpack webpack-cli
         $ npm install -D mini-css-extract-plugin css-loader sass-loader file-loader
         $ npm install -D html-webpack-plugin clean-webpack-plugin 
@@ -8,7 +8,7 @@
         $ npm install -D @babel/preset-react
         $ npm install react react-dom
 
-2. create directory **src /../../** <br>
+2. create directory <span style="color:yellow">npm</span> **src /../../** <br>
 
 
 
