@@ -3,6 +3,11 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+// let mode = "development"
+// if(process.env.NODE_ENV === "production") {
+//     mode = "production";
+// }
+
 module.exports = {
     mode: "development",
     entry: "./src/index.js",
@@ -10,13 +15,14 @@ module.exports = {
         filename: "[name].[hash].js", 
         path: path.resolve(__dirname,"dist")
     },
+    // devtool: "source-map",
     devServer: {
         // historyApiFallback: true,
         // contentBase: path.resolve(__dirname, 'index.js'),
-        // open: true,
+        open: true,
         // compress: true,
         hot: true,
-        port: 3000
+        port: 7700
     },
     plugins: [
         new HTMLWebpackPlugin({
@@ -48,11 +54,13 @@ module.exports = {
             },    
             {
                 test: /\.(svg|png|jpg|gif|jpeg|ico)$/,
-                use: ['file-loader']
+                // use: ['file-loader'],
+                type: 'asset/resource',
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: ['file-loader']
+                type: 'asset/resource',
+                // use: ['file-loader']
             }
         ]
     }
