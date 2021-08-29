@@ -3,6 +3,8 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
+
 // let mode = "development"
 // if(process.env.NODE_ENV === "production") {
 //     mode = "production";
@@ -15,6 +17,10 @@ module.exports = {
         filename: "[name].[hash:6].js", 
         path: path.resolve(__dirname,"dist")
     },
+    optimization: {
+        minimize: false,
+        minimizer: [new TerserPlugin({ test: /\.(js|jsx)$/})],
+      },
     // devtool: "source-map",
     devServer: {
         // historyApiFallback: true,
@@ -60,13 +66,13 @@ module.exports = {
             },    
             {
                 test: /\.(svg|png|jpg|gif|jpeg|ico)$/,
-                // use: ['file-loader'],
-                type: 'asset/resource',
+                use: ['file-loader'],
+                // type: 'asset/resource',
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                type: 'asset/resource',
-                // use: ['file-loader']
+                // type: 'asset/resource',
+                use: ['file-loader']
             }
         ]
     }
