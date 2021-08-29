@@ -12,7 +12,7 @@ module.exports = {
     mode: "development",
     entry: "./src/index.js",
     output: {
-        filename: "[name].[hash].js", 
+        filename: "[name].[hash:6].js", 
         path: path.resolve(__dirname,"dist")
     },
     // devtool: "source-map",
@@ -30,7 +30,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: '[name].[hash].css', 
+            filename: '[name].[hash:6].css', 
         })
     ],
     module: {
