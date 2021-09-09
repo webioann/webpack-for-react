@@ -1,11 +1,12 @@
 import React from 'react'
 import './app.scss'
+import bg from './assets/webpack.png'
 
 
 function App() {
     return (
-        <div>
-            <h1>React with Webpack</h1>
+        <div className="container root" style={{backgroundImage: bg }}>
+            <h1>Webpack</h1>
         </div>
     )
 }
