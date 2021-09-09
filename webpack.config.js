@@ -11,39 +11,37 @@ const TerserPlugin = require("terser-webpack-plugin");
 // }
 
 module.exports = {
-    mode: "development",
+    mode: "development", 
     entry: "./src/index.js",
     output: {
-        filename: "[name].[hash:6].js", 
-        path: path.resolve(__dirname,"dist")
+        filename: "[name].[hash:4].js", 
+        path: path.resolve( __dirname,"dist" ),
+        // publicPath: "/dist"
     },
     optimization: {
         minimize: false,
-        minimizer: [new TerserPlugin({ test: /\.(js|jsx)$/})],
-      },
+        minimizer: [new TerserPlugin({ test: /\.(js|jsx)$/ })],
+    },
     // devtool: "source-map",
     devServer: {
         // historyApiFallback: true,
         // contentBase: path.resolve(__dirname, 'index.js'),
-        open: true,
+        // open: true,
+        // overlay: true,
         // compress: true,
-        hot: true,
-        port: 8877
+        // hot: true,
+        port: 7777
     },
     plugins: [
-        new HTMLWebpackPlugin({
-            template: './src/index.html'
-        }),
+        new HTMLWebpackPlugin({ template: "./src/index.html" }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].[hash:6].css', 
         }),
-        new CopyPlugin({
-            patterns: [
-              { from: path.resolve(__dirname, "src/assets/"),
-               to: path.resolve(__dirname, "dist/dist-assets") },
-            ],
-          }),
+        new CopyPlugin({patterns: [
+            { from: "./src/assets", to: "./dist/assets" },
+        ]
+        } ),
     ],
     module: {
         rules: [
@@ -65,15 +63,22 @@ module.exports = {
             }
             },    
             {
-                test: /\.(svg|png|jpg|gif|jpeg|ico)$/,
-                use: ['file-loader'],
-                // type: 'asset/resource',
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                // type: 'asset/resource',
-                use: ['file-loader']
+                type: 'asset/resource',
             }
         ]
     }
 }
+// }
+
+
+
+
+
+
+
+
