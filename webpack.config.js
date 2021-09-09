@@ -4,6 +4,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const autoprefixer = require('autoprefixer')
 
 // let mode = "development"
 // if(process.env.NODE_ENV === "production") {
@@ -47,11 +48,11 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use:[MiniCssExtractPlugin.loader,'css-loader']
+                use:[MiniCssExtractPlugin.loader,"css-loader","postcss-loader" ]
             },
             {
                 test: /\.s[ac]ss$/,
-                use:[MiniCssExtractPlugin.loader,'css-loader','sass-loader']
+                use:[MiniCssExtractPlugin.loader,'css-loader',"postcss-loader",'sass-loader' ]
             },
             {
                 test: /\.(js|jsx)$/,
