@@ -4,15 +4,17 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-// const autoprefixer = require('autoprefixer')
 
-// let mode = "development"
-// if(process.env.NODE_ENV === "production") {
-//     mode = "production";
-// }
+let mode = "development";
+let target = "web";
+if(process.env.NODE_ENV === "production") {
+    mode = "production";
+    target = "browserlist"
+}
 
 module.exports = {
-    mode: "development", 
+    mode: mode, 
+    target: target,
     entry: "./src/index.js",
     output: {
         filename: "[name].[hash:4].js", 
@@ -26,11 +28,11 @@ module.exports = {
     // devtool: "source-map",
     devServer: {
         // historyApiFallback: true,
-        // contentBase: path.resolve(__dirname, 'index.js'),
+        contentBase: "./dist",
         // open: true,
         // overlay: true,
         // compress: true,
-        // hot: true,
+        hot: true,
         port: 7777
     },
     plugins: [
@@ -40,7 +42,7 @@ module.exports = {
             filename: '[name].[hash:4].css', 
         }),
         new CopyPlugin({patterns: [
-            { from: "./src/assets", to: "static" },
+            { from: "./src/assets", to: "assets" },
         ]
         } ),
     ],
