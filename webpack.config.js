@@ -4,7 +4,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const autoprefixer = require('autoprefixer')
+// const autoprefixer = require('autoprefixer')
 
 // let mode = "development"
 // if(process.env.NODE_ENV === "production") {
@@ -37,10 +37,10 @@ module.exports = {
         new HTMLWebpackPlugin({ template: "./src/index.html" }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: '[name].[hash:6].css', 
+            filename: '[name].[hash:4].css', 
         }),
         new CopyPlugin({patterns: [
-            { from: "./src/assets", to: "./dist/assets" },
+            { from: "./src/assets", to: "static" },
         ]
         } ),
     ],
@@ -48,11 +48,11 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use:[MiniCssExtractPlugin.loader,"css-loader","postcss-loader" ]
+                use:[MiniCssExtractPlugin.loader,"css-loader",'postcss-loader' ]
             },
             {
                 test: /\.s[ac]ss$/,
-                use:[MiniCssExtractPlugin.loader,'css-loader',"postcss-loader",'sass-loader' ]
+                use:[MiniCssExtractPlugin.loader,'css-loader','sass-loader','postcss-loader', ]
             },
             {
                 test: /\.(js|jsx)$/,
