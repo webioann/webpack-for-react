@@ -25,10 +25,10 @@ module.exports = {
         minimize: false,
         minimizer: [new TerserPlugin({ test: /\.(js|jsx)$/ })],
     },
-    // devtool: "source-map",
+    devtool: "source-map",
     devServer: {
         // historyApiFallback: true,
-        contentBase: "./dist",
+        // contentBase: "./dist",
         // open: true,
         // overlay: true,
         // compress: true,
