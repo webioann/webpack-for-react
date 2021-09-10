@@ -2,19 +2,11 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
+// const CopyPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
-let mode = "development";
-let target = "web";
-if(process.env.NODE_ENV === "production") {
-    mode = "production";
-    target = "browserlist"
-}
-
 module.exports = {
-    mode: mode, 
-    target: target,
+    mode: "development", 
     entry: "./src/index.js",
     output: {
         filename: "[name].[hash:4].js", 
@@ -41,23 +33,19 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].[hash:4].css', 
         }),
-        new CopyPlugin({patterns: [
-            { from: "./src/assets", to: "assets" },
-        ]
-        } ),
     ],
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.css$/i,
                 use:[MiniCssExtractPlugin.loader,"css-loader",'postcss-loader' ]
             },
             {
-                test: /\.s[ac]ss$/,
+                test: /\.s[ac]ss$/i,
                 use:[MiniCssExtractPlugin.loader,'css-loader','sass-loader','postcss-loader', ]
             },
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx)$/i,
                 exclude: /node_modules/,
                 use: {loader: "babel-loader",
                     options: {
@@ -70,7 +58,7 @@ module.exports = {
                 type: 'asset/resource',
             },
             {
-                test: /\.(ttf|woff|woff2|eot)$/,
+                test: /\.(ttf|woff|woff2|eot)$/i,
                 type: 'asset/resource',
             }
         ]

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack server --open --mode development",
-    "build": "NODE_ENV === productio webpack",
+    "build": "webpack --mode production",
     "watch": "webpack --watch"
   },
   "author": "Webioann",
