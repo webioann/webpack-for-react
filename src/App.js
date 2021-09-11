@@ -1,8 +1,9 @@
-import {useState} from 'react'
+import React,{useState} from 'react'
 import './app.scss'
 
 function App() {
     const [statez,setStatez] = useState("HELLO")
+    console.log("HELP");
 
     return (
         <div className="cont">

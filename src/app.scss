@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-body,*{
+body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +12,7 @@ body,*{
   min-height: 100vh;
   margin: 0 auto;
   background-color: #bbb;
-  background: url('./assets/webpack.png');
+  background: url('./assets/blue.jpg');
   padding-top: 50px;
   h1 {
     padding: 1.5rem;
