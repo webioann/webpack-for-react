@@ -1,0 +1,146 @@
+@import "../Globe.scss";
+
+.app {
+  background-color: #2d2e32;
+  color: #000;
+  margin-bottom: $gut-5;
+  border: 1px solid red;
+  position: relative;
+  scroll-behavior: smooth;
+  position: relative;
+  section{
+    padding-top: $gut-3;
+    padding-bottom: $gut-3;
+    .subtitle{
+      margin-bottom: 1rem;
+    }
+    .subtitle::after{
+      content: '';
+      width: 50%;
+      height: 3px;
+      background-color: #2d2e32;
+    }
+  }
+
+  .navbar {
+    color: #fff;
+      .btn {
+        cursor: pointer;
+        text-align: center;
+        transition: all 200ms linear;
+        &:hover {
+          background-color: #6ef3a5;
+          border-radius: 3px;
+          color: $color-1;
+        }
+    }
+    @media (max-width: 575.98px) {
+      .cross{
+        display: inline;
+      }
+    }
+  }
+
+
+  
+  .summary {
+    background-color: #ccc;
+    .title{
+      text-align: center;
+    }
+  
+    .info{
+      .aboutme {
+        border-radius: $gut-1;
+      }
+      .skills {
+        color: #000;
+        .tech-skills{
+          .tool{
+            overflow: hidden;
+            text-align: center;
+            padding: $gut-1;
+            p{
+              background-color: #bbb;
+              border-radius: 5px;
+              font-weight: 600;
+              padding: $gut-1 0;
+            }
+          }
+          .on-start{
+            transform: translateY(20px);
+            visibility: hidden;
+            opacity: 0;
+            animation-name: onStart;
+            animation-duration: 1000ms;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+          }
+          @keyframes onStart {
+            0%{
+              transform: translateY(20px);
+              visibility: hidden;
+              opacity: 0;
+            }
+            85%{
+              transform: translateY(-7px);}
+            100%{
+              transform: translateY(0px);
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+
+        }
+      }
+  
+    }
+  }
+
+
+  .projects{
+    background-color: #fff;
+    .title{
+      text-align: center;
+    }
+    .user{
+      padding-bottom: $gut-3;
+      .user-screenshot{
+        background-image: url('../assets/Screenshot1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 600px;
+        border-radius: $gut-1;
+        margin: 1rem 0;
+      }
+    }
+    .weather{
+      padding-bottom: $gut-3;
+      .weather-screenshot{
+        min-height: 300px;
+        background-color: #ccc;
+        border-radius: $gut-1;
+      }
+    }
+  }
+
+
+  .contacts{
+    color: #fff;
+  }
+  .contacts>*{
+    text-align: center;
+  }
+
+
+  .footer{
+    color: #fff;
+    text-align: center;
+  }
+}
+
+

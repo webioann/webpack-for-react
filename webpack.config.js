@@ -3,7 +3,6 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     mode: "development", 
@@ -11,41 +10,30 @@ module.exports = {
     output: {
         filename: "[name].[hash:4].js", 
         path: path.resolve( __dirname,"dist" ),
-        // publicPath: "/dist"
     },
-    optimization: {
-        minimize: false,
-        minimizer: [new TerserPlugin({ test: /\.(js|jsx)$/ })],
-    },
-    devtool: "source-map",
     devServer: {
-        hot: true,
-        port: 8899,
+        port: 3001,
     },
     plugins: [
-        new HTMLWebpackPlugin({ template: "./src/index.html" }),
+        new HTMLWebpackPlugin({ template : 'src/index.html' }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].[hash:4].css', 
         }),
         new CopyPlugin({
             patterns: [
-            { from: "./src/assets", to: "./dist" },
+            { from: "./src/assets", to: "./static" },
             ],
         }),
     ],
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                use:[MiniCssExtractPlugin.loader,"css-loader",'postcss-loader' ]
+                test: /\.(s[ac]|c)ss$/i,
+                use:[MiniCssExtractPlugin.loader,'css-loader','postcss-loader','sass-loader' ]
             },
             {
-                test: /\.s[ac]ss$/i,
-                use:[MiniCssExtractPlugin.loader,'css-loader','sass-loader','postcss-loader', ]
-            },
-            {
-                test: /\.(js|jsx)$/i,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {loader: "babel-loader",
                     options: {
@@ -58,10 +46,18 @@ module.exports = {
                 type: 'asset/resource',
             },
             {
-                test: /\.(ttf|woff|woff2|eot)$/i,
+                test: /\.(ttf|woff|woff2|eot)$/,
                 type: 'asset/resource',
             }
         ]
     }
 }
+// optimization: {
+//     minimize: false,
+//     minimizer: [new TerserPlugin({ test: /\.(js|jsx)$/ })],
+// },
 
+// {
+//     test: /\.css$/,
+//     use:[MiniCssExtractPlugin.loader,"css-loader",'postcss-loader' ]
+// },
