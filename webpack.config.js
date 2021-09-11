@@ -2,7 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const CopyPlugin = require("copy-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
@@ -19,19 +19,19 @@ module.exports = {
     },
     devtool: "source-map",
     devServer: {
-        // historyApiFallback: true,
-        // contentBase: "./dist",
-        // open: true,
-        // overlay: true,
-        // compress: true,
         hot: true,
-        port: 7777
+        port: 8899,
     },
     plugins: [
         new HTMLWebpackPlugin({ template: "./src/index.html" }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].[hash:4].css', 
+        }),
+        new CopyPlugin({
+            patterns: [
+            { from: "./src/assets", to: "./dist" },
+            ],
         }),
     ],
     module: {
@@ -64,12 +64,4 @@ module.exports = {
         ]
     }
 }
-// }
-
-
-
-
-
-
-
 
