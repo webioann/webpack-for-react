@@ -1,4 +1,4 @@
-@import "../Globe.scss";
+@import "../reactor.scss";
 
 .app {
   background-color: #2d2e32;
@@ -16,10 +16,23 @@
     }
     .subtitle::after{
       content: '';
-      width: 50%;
+      width: 0%;
       height: 3px;
       background-color: #2d2e32;
+      animation-name: growLine;
+      animation-duration: 4300ms;
+      animation-delay: 400ms;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
     }
+    @keyframes growLine {
+      0%{ width: 0%; }
+      85%{ width: 53%; }
+      100%{ width: 50%; }
+    }
+
   }
 
   .navbar {

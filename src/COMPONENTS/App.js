@@ -16,7 +16,9 @@ function App() {
         <Projects/>
         <Contacts/>
         <section className="footer">
-          &copy; 2021. Create by Webioann. &reg;
+          &copy;
+          2021. Create by Webioann.
+          &reg;
         </section>
       </div>
     </div>

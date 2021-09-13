@@ -1,4 +1,5 @@
 import React from 'react'
+import { textContent } from './textContent';
 import './app.scss'
 
 function Projects(props) {
@@ -15,9 +16,9 @@ function Projects(props) {
                     <div className="subtitle row">
                         <h3>User database</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa dolorem odit!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa dolorem odit!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa dolorem odit!</p>
+                    <p> {textContent.userDataBaseText} </p>
+                    <p> {textContent.userDataBaseText} </p>
+                    <p> {textContent.userDataBaseText} </p>
                 </div>
                 <div className="user-screenshot col-12">
                 </div>
@@ -28,9 +29,9 @@ function Projects(props) {
                     <div className="subtitle row">
                         <h3>Sky Watcher</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa dolorem odit!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa dolorem odit!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa dolorem odit!</p>
+                    <p> {textContent.skyWatcherText} </p>
+                    <p> {textContent.skyWatcherText} </p>
+                    <p> {textContent.skyWatcherText} </p>
                 </div>
                 <div className="weather-screenshot col-md-6 col-lg-4"></div>
             </div>
