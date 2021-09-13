@@ -141,9 +141,38 @@
     }
   }
 
+  // ====  Contacts  =================
 
   .contacts{
     color: #fff;
+    .viber-icon{
+      width: 32px;
+      height: 32px;
+      background-image: url('../assets/viber.png');
+      background-size: cover;
+    }
+
+    .linkedin-icon{
+      width: 32px;
+      height: 32px;
+      background-image: url('../assets/linkedin-48.png');
+      background-size: cover;
+    }
+
+    .gmail-icon{
+      width: 32px;
+      height: 32px;
+      background-image: url('../assets/gmail-332.png');
+      background-size: cover;
+      color: #fff;
+    }
+
+    .git-hub-icon{
+      width: 32px;
+      height: 32px;
+      background-image: url('../assets/GitHub-32px.png');
+      background-size: cover;
+    }
   }
   .contacts>*{
     text-align: center;
