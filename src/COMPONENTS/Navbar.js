@@ -10,15 +10,22 @@ function Navbar(props) {
     const langMode = useSelector(state => state.langMode.lang)
     const dispatch = useDispatch()
     let lang = langMode;
-    
+    const[engButton,setEngButton] = useState("active lang col-6")
+    const[rusButton,setRusButton] = useState("lang col-6")
+
+
     const switchLangRus = () => {
         if( langMode === content.eng ) {
             dispatch(langRus())
+            setEngButton("lang col-6")
+            setRusButton("active lang col-6")
         }
     }
     const switchLangEng = () => {
         if( langMode === content.rus ) {
             dispatch(langEng())
+            setRusButton("lang col-6")
+            setEngButton("active lang col-6")
         }
     }
     return (
@@ -38,8 +45,8 @@ function Navbar(props) {
                 </a>
                 <div className="col-2">
                     <div className="lang-button row">
-                        <div className="lang col-6" onClick={switchLangEng}>ENG</div>
-                        <div className="lang col-6" onClick={switchLangRus}>RUS</div>
+                        <div className={engButton} onClick={switchLangEng}>ENG</div>
+                        <div className={rusButton} onClick={switchLangRus}>RUS</div>
                     </div>
                 </div>
             </div>

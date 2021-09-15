@@ -2,7 +2,6 @@
 
 .app {
   color: $color-main;
-  margin-bottom: $gut-5;
   scroll-behavior: smooth;
   position: relative;
   border: 1px solid red;
@@ -32,7 +31,6 @@
     }
 
   }
-  // =====  LangButton ====
 
   // =========== Navbar =======
 
@@ -49,6 +47,10 @@
         max-width: 150px;
         background-color: #fff;
         border-radius: 5px;
+        overflow: hidden;
+        .active{
+          background-color: red;
+        }
         .lang{
           font-weight: 800;
           cursor: pointer;
@@ -182,6 +184,7 @@
 
   .contacts{
     color: #fff;
+    background-color: #bbb;
     .col-10{
       font-size: 16px;
       text-overflow: clip;
@@ -227,6 +230,7 @@
 
   .footer{
     color: #fff;
+    background-color: #bbb;
     text-align: center;
   }
 }

@@ -3,7 +3,7 @@ import './app.scss'
 
 function Contacts() {
     return (
-        <section className="contacts row">
+        <div className="contacts row">
             <a name="contacts" href="#"></a>
 
             <div className="viber col-sm-6 col-lg-3">
@@ -33,7 +33,7 @@ function Contacts() {
                     <div className="col-10">github.com/webioann</div>
                 </a>
             </div>
-        </section>
+        </div>
     )
 }
 
