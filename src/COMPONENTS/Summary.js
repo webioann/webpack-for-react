@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import { dataSkills } from './data-skills.js'
-import { text } from './text.js'
-import { content } from './textContent.js'
+import { useSelector } from 'react-redux'
 import './app.scss'
 
 function Summary() {
     const [classes,setClases] = useState('tool col-4 col-md-6 col-lg-4 on-start')
-    // const [delay,setDelay] = useState('')
-
-    const lang = content.eng;
+    const langMode = useSelector(state => state.langMode.lang)
+    let lang = langMode;
 
     return (
         <section className="summary row">

@@ -1,11 +1,12 @@
 import React from 'react'
-import { text } from './text'
-import { content } from './textContent.js'
+import { useSelector } from 'react-redux'
+
 import './app.scss'
 
-function Projects(props) {
+function Projects() {
 
-    const lang = content.eng;
+    const langMode = useSelector(state => state.langMode.lang)
+    let lang = langMode;
 
 
     return (

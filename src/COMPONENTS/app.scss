@@ -1,12 +1,11 @@
 @import "../reactor.scss";
 
 .app {
-  background-color: #2d2e32;
   color: $color-main;
   margin-bottom: $gut-5;
-  position: relative;
   scroll-behavior: smooth;
   position: relative;
+  border: 1px solid red;
   section{
     padding-top: $gut-3;
     padding-bottom: $gut-3;
@@ -35,33 +34,40 @@
   }
   // =====  LangButton ====
 
-  .lang-button{
-    position: absolute;
-    right: 0;
-    top: 0;
-    max-width: 150px;
-    background-color: #fff;
-    border-radius: 5px;
-    .lang{
-      font-weight: 800;
-      cursor: pointer;
-    }
-    .lang:hover{
-      color: $color-1;
-    }
-  }
+  // =========== Navbar =======
 
   .navbar {
+    position: sticky;
+    top: 0;
     color: #fff;
-      .btn {
-        cursor: pointer;
-        text-align: center;
-        transition: all 200ms linear;
-        &:hover {
-          background-color: #6ef3a5;
-          border-radius: 3px;
+    background-color: #2d2e32;
+    z-index: 1;
+    .box{
+      margin: 0 1rem;
+      .lang-button{
+        color: $color-main;
+        max-width: 150px;
+        background-color: #fff;
+        border-radius: 5px;
+        .lang{
+          font-weight: 800;
+          cursor: pointer;
+        }
+        .lang:hover{
           color: $color-1;
         }
+      }
+    
+    }
+    .btn {
+      cursor: pointer;
+      text-align: center;
+      transition: all 200ms linear;
+      &:hover {
+        background-color: #6ef3a5;
+        border-radius: 3px;
+        color: $color-1;
+      }
     }
     @media (max-width: 575.98px) {
       .cross{
@@ -70,7 +76,7 @@
     }
   }
 
-
+  // ====== Summary ======
   
   .summary {
     background-color: #ccc;
