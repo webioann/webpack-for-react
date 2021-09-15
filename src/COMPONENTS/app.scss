@@ -2,9 +2,8 @@
 
 .app {
   background-color: #2d2e32;
-  color: #000;
+  color: $color-main;
   margin-bottom: $gut-5;
-  border: 1px solid red;
   position: relative;
   scroll-behavior: smooth;
   position: relative;
@@ -33,6 +32,23 @@
       100%{ width: 50%; }
     }
 
+  }
+  // =====  LangButton ====
+
+  .lang-button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 150px;
+    background-color: #fff;
+    border-radius: 5px;
+    .lang{
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .lang:hover{
+      color: $color-1;
+    }
   }
 
   .navbar {
@@ -112,12 +128,27 @@
     }
   }
 
-
+//  ======== Projects ======
   .projects{
     background-color: #fff;
     .title{
       text-align: center;
     }
+    span{
+      color: $color-1;
+      font-weight: 800;
+    }
+    .link-box{
+      justify-content: space-between;
+      .link{
+        background-color: #bbb;
+        border-radius: 5px;
+        font-weight: 600;
+        padding: $gut-1 $gut-2;
+        margin-bottom: $gut-2;
+      }
+    }
+    
     .user{
       padding-bottom: $gut-3;
       .user-screenshot{
@@ -145,37 +176,46 @@
 
   .contacts{
     color: #fff;
+    .col-10{
+      font-size: 16px;
+      text-overflow: clip;
+    }
+    a{
+      color: inherit;
+    }
     .viber-icon{
-      width: 32px;
-      height: 32px;
-      background-image: url('../assets/viber.png');
+      width: 20px;
+      height: 20px;
+      color: #fff;
+      background-image: url('../assets/viber_icon.png');
       background-size: cover;
     }
 
     .linkedin-icon{
-      width: 32px;
-      height: 32px;
-      background-image: url('../assets/linkedin-48.png');
+      width: 20px;
+      height: 20px;
+      background-image: url('../assets/withe.jpg');
       background-size: cover;
+      border-left: 1px solid red;
     }
 
     .gmail-icon{
-      width: 32px;
-      height: 32px;
-      background-image: url('../assets/gmail-332.png');
+      width: 20px;
+      height: 20px;
+      background-image: url('../assets/withe.jpg');
       background-size: cover;
+      border-left: 1px solid red;
       color: #fff;
     }
 
     .git-hub-icon{
-      width: 32px;
-      height: 32px;
-      background-image: url('../assets/GitHub-32px.png');
+      width: 20px;
+      height: 20px;
+      background-image: url('../assets/withe.jpg');
       background-size: cover;
+      border-left: 1px solid red;
     }
-  }
-  .contacts>*{
-    text-align: center;
+  
   }
 
 

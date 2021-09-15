@@ -13,5 +13,6 @@ export const dataSkills = [
     {title: 'yarn', id: 12, delay: "3700ms"},
     {title: 'markdown', id: 13, delay: "4000ms"},
     {title: 'JSdoc', id: 14, delay: "4300ms"},
+    {title: 'mobilFirst', id: 15, delay: "4600ms"},
 ];
     

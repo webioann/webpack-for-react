@@ -1,24 +1,40 @@
 import React from 'react'
-import { textContent } from './textContent';
+import { text } from './text'
+import { content } from './textContent.js'
 import './app.scss'
 
 function Projects(props) {
+
+    const lang = content.eng;
 
 
     return (
         <section className="projects row">
             <div className="title row">
-                <h2>Projects</h2>
+                <h2> { lang.projects.title } </h2>
             </div>
             {/* ============== USER DATABASE =============== */}
             <div className="user row">
                 <div className="discr col-12">
                     <div className="subtitle row">
-                        <h3>User database</h3>
+                        <h3> { lang.projects.user.subtitle } </h3>
                     </div>
-                    <p> {textContent.userDataBaseText} </p>
-                    <p> {textContent.userDataBaseText} </p>
-                    <p> {textContent.userDataBaseText} </p>
+                    <div className="link-box row mb-2">
+                        <a href="#" target="_blank" className="link col-md-5"> 
+                            { lang.projects.user.siteLink }
+                        </a>
+                        <a href="#" target="_blank" className="link col-md-5">
+                            { lang.projects.user.githubLink }
+                        </a>
+                    </div>
+                    <p>
+                        <span> {lang.projects.user.spanTools } </span>
+                        { lang.projects.user.textTools}
+                    </p>
+                    <p>
+                        <span> {lang.projects.user.spanDiscript} </span>
+                        { lang.projects.user.textDicript }
+                    </p>
                 </div>
                 <div className="user-screenshot col-12">
                 </div>
@@ -27,11 +43,24 @@ function Projects(props) {
             <div className="weather row">
                 <div className="discr col-md-6 col-lg-8">
                     <div className="subtitle row">
-                        <h3>Sky Watcher</h3>
+                        <h3> { lang.projects.weather.subtitle } </h3>
                     </div>
-                    <p> {textContent.skyWatcherText} </p>
-                    <p> {textContent.skyWatcherText} </p>
-                    <p> {textContent.skyWatcherText} </p>
+                    <div className="link-box row mb-2">
+                        <a href="#" target="_blank" className="link col-lg-8">
+                            { lang.projects.weather.siteLink } 
+                        </a>
+                        <a href="#" target="_blank" className="link col-lg-8" >
+                            {lang.projects.weather.githubLink}
+                        </a>
+                    </div>
+                    <p>
+                        <span> { lang.projects.weather.spanTools } </span>
+                        { lang.projects.weather.textTools }
+                    </p>
+                    <p>
+                        <span> { lang.projects.weather.spanDiscript } </span>
+                        { lang.projects.weather.textDicript }
+                    </p>
                 </div>
                 <div className="weather-screenshot col-md-6 col-lg-4"></div>
             </div>

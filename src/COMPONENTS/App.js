@@ -3,6 +3,7 @@ import Navbar from './Navbar.js'
 import Summary from './Summary.js'
 import Projects from './Projects.js'
 import Contacts from './Contacts.js'
+import LangButton from './LangButton.js'
 import './app.scss'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="container">
       <div className="app row">
+        <LangButton/>
         <Navbar/>
         <Summary/>
         <Projects/>
