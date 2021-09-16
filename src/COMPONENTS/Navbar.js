@@ -29,27 +29,25 @@ function Navbar(props) {
         }
     }
     return (
-        <section className='navbar container px-3'>
-            <div className="box row">
-                <a href="https://webref.ru/css" className="col-2 btn">
+        <section className='navbar row'>
+                <a name="home" href="#" className="col-2 col-sm-3 btn">
                     {lang.navbar.home}
                 </a>
-                <a href="https://webref.ru/css" className="col-2 btn">
+                {/* <a href="https://webref.ru/css" className="col-2 btn">
                     {lang.navbar.projects}
-                </a>
-                <a href="#contacts" className="col-2 btn">
+                </a> */}
+                <a href="#contacts" className="col-3 col-sm-3 btn">
                     {lang.navbar.contacts}
                 </a>
-                <a href="https://drive.google.com/file/d/1Lr05RkXCVdrd4yoEPv1a5fQ3rwu-sVMN/view?usp=sharing" className="col-4 btn">
+                <a href="https://drive.google.com/file/d/1Lr05RkXCVdrd4yoEPv1a5fQ3rwu-sVMN/view?usp=sharing" className="col-3 col-sm-3 btn">
                     {lang.navbar.resume}
                 </a>
-                <div className="col-2">
+                <div className="col-4 col-sm-3">
                     <div className="lang-button row">
-                        <div className={engButton} onClick={switchLangEng}>ENG</div>
-                        <div className={rusButton} onClick={switchLangRus}>RUS</div>
+                        <span className={engButton} onClick={switchLangEng}>eng</span>
+                        <span className={rusButton} onClick={switchLangRus}>rus</span>
                     </div>
                 </div>
-            </div>
         </section>
     )
 }

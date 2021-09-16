@@ -29,7 +29,6 @@
       85%{ width: 53%; }
       100%{ width: 50%; }
     }
-
   }
 
   // =========== Navbar =======
@@ -40,40 +39,34 @@
     color: #fff;
     background-color: #2d2e32;
     z-index: 1;
-    .box{
-      margin: 0 1rem;
-      .lang-button{
-        color: $color-main;
-        max-width: 150px;
-        background-color: #fff;
-        border-radius: 5px;
-        overflow: hidden;
-        .active{
-          background-color: red;
-        }
-        .lang{
-          font-weight: 800;
-          cursor: pointer;
-        }
-        .lang:hover{
-          color: $color-1;
-        }
-      }
-    
-    }
-    .btn {
-      cursor: pointer;
+    cursor: pointer;
+    text-align: center;
+
+    .lang-button{
+      max-width: 6rem;
+      margin: 0 auto;
+      color: $color-main;
       text-align: center;
+      background-color: #fff;
+      border-radius: 3px;
+      overflow: hidden;
+      .active{
+        background-color: red;
+      }
+      .lang{
+        font-weight: 500;
+      }
+      .lang:hover{
+        color: $color-1;
+      }
+    }
+    
+    .btn {
       transition: all 200ms linear;
       &:hover {
         background-color: #6ef3a5;
         border-radius: 3px;
         color: $color-1;
-      }
-    }
-    @media (max-width: 575.98px) {
-      .cross{
-        display: inline;
       }
     }
   }

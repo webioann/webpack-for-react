@@ -4,7 +4,7 @@ export const content = {
             home: "Home",
             projects: "Projects",
             contacts: "Contacts",
-            resume: "download resume"
+            resume: "Resume"
         },
         summary: {
             title: "Summary for me",
@@ -43,7 +43,7 @@ export const content = {
             home: "Домой",
             projects: "Мои проэкты",
             contacts: "Контакты",
-            resume: "загрузить резюме"
+            resume: "Резюме"
         },
         summary: {
             title: "Коротко обо мне",

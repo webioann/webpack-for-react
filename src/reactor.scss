@@ -41,10 +41,10 @@ body,*{
 /* ======================  HTML * BODY  ==========================*/
 
 html,body{
-  font-size: 15px;
-	font-family: $font-three; 
+  font-size: 14px;
+	font-family: $font-second; 
 	min-height: 100%;
-  font-weight: 400;
+  font-weight: 300;
   color:  $color-1;
   background-color: white;
 	width: 100%;
@@ -52,7 +52,7 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-  
+  scroll-behavior: smooth;
 }
 
 /*=========================GREED STYLING====================*/
@@ -202,7 +202,7 @@ html,body{
 /* ================ xs .col- mobile portrite =================*/
 @media (max-width: 575.98px) {
   html,body{
-    font-size: 15px;
+    font-size: 14px;
   }
   .container-xs{
     max-width: auto;
@@ -211,7 +211,7 @@ html,body{
 /* ================ .col-sm- mobile landscape =================*/
 @media (min-width: 576px) {
   html,body{
-    font-size: 16px;
+    font-size: 15px;
   }
   .container-sm,
   .container{
@@ -306,7 +306,7 @@ html,body{
 /* ================== .col-md- mobile landscape ========*/
 @media (min-width: 768px) {
   html,body{
-    font-size: 17px;
+    font-size: 16px;
   }
   .container-md,
   .container-sm,
@@ -398,7 +398,7 @@ html,body{
 /* ================ .col-lg- tablet =============*/
 @media (min-width: 992px) {
   html,body{
-    font-size: 18px;
+    font-size: 17px;
   }
   .container-lg,
   .container-md,
@@ -495,7 +495,7 @@ html,body{
 /* ==================.col-xl- big monitors ==================*/
 @media (min-width: 1200px) {
   html,body{
-    font-size: 19px;
+    font-size: 18px;
   }
   .container-xl,
   .container-lg,
@@ -593,7 +593,7 @@ html,body{
 /* ==================.col-xxl- very big monitors ==================*/
 @media (min-width: 1400px) {
   html,body{
-    font-size: 20px;
+    font-size: 19px;
   }
   .container-xxl,
   .container-xl,
