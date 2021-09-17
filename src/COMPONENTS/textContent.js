@@ -18,10 +18,19 @@ export const content = {
         },
         projects: {
             title: "Projects",
+
+            portfolio: {
+                subtitle: "Portfolio",
+                githubLink: "github/webioann/portfolio",
+                spanTools: "Use tools : ",
+                textTools: " React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery",
+                spanDiscript: "Discription : ",
+                textDicript: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur repellat, voluptas ullam",
+            },
             user: {
                 subtitle: "User database",
                 siteLink: "visit site",
-                githubLink: "visit git-hub",
+                githubLink: "github/webioann/users-database",
                 spanTools: "Use tools : ",
                 textTools: " React, Redux-toolkit, Webpack, REST Api, Sass, react-hooks, mobile-first, custom CSS-librery",
                 spanDiscript: "Discription : ",
@@ -30,7 +39,7 @@ export const content = {
             weather: {
                 subtitle: "Sky Watcher",
                 siteLink: "visit site",
-                githubLink: "visit git-hubbbbbbbbbb",
+                githubLink: "github/webioann/sky-watcher",
                 spanTools: "Use tools : ",
                 textTools: " React, Redux, Webpack, REST Api, Sass, react-hooks, mobile-first, custom CSS-librery",
                 spanDiscript: "Discription : ",
@@ -57,10 +66,18 @@ export const content = {
         },
         projects: {
             title: "Мои проэкты",
+            portfolio: {
+                subtitle: "Portfolio - это этот сайт ",
+                githubLink: "github/webioann/portfolio",
+                spanTools: "Использовал здесь : ",
+                textTools: " React, Redux-toolkit, Webpack,  Sass, react-hooks, mobile-first, собственную CSS библиотеку",
+                spanDiscript: "Описание проэкта : ",
+                textDicript: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur repellat, voluptas ullam",
+            },
             user: {
                 subtitle: "User database - база данных пользователей ",
                 siteLink: "посетите сайт",
-                githubLink: "гляньте код на git-hub",
+                githubLink: "github/webioann/users-database",
                 spanTools: "Использовал здесь : ",
                 textTools: " React, Redux-toolkit, Webpack, REST Api, Sass, react-hooks, mobile-first, собственную CSS библиотеку",
                 spanDiscript: "Описание проэкта : ",
@@ -69,7 +86,7 @@ export const content = {
             weather: {
                 subtitle: "Sky Watcher - погода у вас в городе",
                 siteLink: "посетите сайт",
-                githubLink: "гляньте код на git-hubbbbbbbbbb",
+                githubLink: "github/webioann/sky-watcher",
                 spanTools: "Использовал здесь : ",
                 textTools: " React, Redux, Webpack, REST Api, Sass, react-hooks, mobile-first, собственную CSS библиотеку",
                 spanDiscript: "Discription : ",
