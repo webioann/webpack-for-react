@@ -15,6 +15,8 @@ $dark-grey: #333447;
 $border-col: rgba(255,255,255,0.9);
 $color-main: #212529;
 $color-1: blue;
+$bg-neo: #e0e0e0;
+
 
 
 $gutter: 1rem;
@@ -41,12 +43,12 @@ body,*{
 /* ======================  HTML * BODY  ==========================*/
 
 html,body{
+  background-color: $bg-neo;
   font-size: 14px;
 	font-family: $font-second; 
 	min-height: 100%;
   font-weight: 300;
   color:  $color-1;
-  background-color: white;
 	width: 100%;
   min-height: 100vh;
 	-ms-text-size-adjust: 100%;

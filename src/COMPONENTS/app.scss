@@ -1,13 +1,14 @@
 @import "../reactor.scss";
 
 .app {
+
   color: $color-main;
   scroll-behavior: smooth;
   position: relative;
-  border: 1px solid red;
+  padding-top: 1rem;
   section{
-    padding-top: $gut-3;
-    padding-bottom: $gut-3;
+    padding-top: $gut-1;
+    padding-bottom: $gut-1;
     .subtitle{
       margin-bottom: 1rem;
     }
@@ -37,7 +38,6 @@
     position: sticky;
     top: 0;
     color: #fff;
-    background-color: #2d2e32;
     z-index: 1;
     cursor: pointer;
     text-align: center;
@@ -63,9 +63,18 @@
     
     .btn {
       transition: all 200ms linear;
-      &:hover {
+      padding-bottom: $gut-3;
+      button{
+        box-shadow: 3px 3px 6px #bebebe,
+        -3px -3px 6px #fff;
+        border-radius: 5px;
+        font-weight: 600;
+        text-align: center;
+        padding: $gut-1;
+        background-color: $bg-neo;
+      }
+      button:hover {
         background-color: #6ef3a5;
-        border-radius: 3px;
         color: $color-1;
       }
     }
@@ -74,26 +83,38 @@
   // ====== Summary ======
   
   .summary {
-    background-color: #ccc;
     .title{
       text-align: center;
     }
   
     .info{
       .aboutme {
-        border-radius: $gut-1;
+        margin-top: $gut-2;
+        .text{ 
+          box-shadow: 6px 6px 12px #bebebe,
+          -6px -6px 12px #fff;
+          border-radius: 5px;
+          font-weight: 600;
+          text-align: center;
+          border-radius: 8px;
+          font-weight: 400;
+          text-align: left;
+          padding: $gut-3;
+        }
       }
       .skills {
+        margin-top: $gut-2;
         color: #000;
         .tech-skills{
           .tool{
-            overflow: hidden;
-            text-align: center;
-            padding: $gut-1;
+            padding-bottom: $gut-3;
             p{
-              background-color: #bbb;
+              box-shadow: 3px 3px 6px #bebebe,
+              -3px -3px 6px #fff;
               border-radius: 5px;
               font-weight: 600;
+              text-align: center;
+            
               padding: $gut-1 0;
             }
           }
@@ -131,7 +152,6 @@
 
 //  ======== Projects ======
   .projects{
-    background-color: #fff;
     .title{
       text-align: center;
     }
@@ -142,9 +162,12 @@
     .link-box{
       justify-content: space-between;
       .link{
-        background-color: #bbb;
+        box-shadow: 3px 3px 6px #bebebe,
+        -3px -3px 6px #fff;
         border-radius: 5px;
         font-weight: 600;
+        text-align: center;
+      
         padding: $gut-1 $gut-2;
         margin-bottom: $gut-2;
       }
@@ -155,7 +178,7 @@
       .user-screenshot{
         background-image: url('../assets/Screenshot1.jpg');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         width: 100%;
         min-height: 600px;
@@ -177,7 +200,6 @@
 
   .contacts{
     color: #fff;
-    background-color: #bbb;
     .col-10{
       font-size: 16px;
       text-overflow: clip;
@@ -220,7 +242,6 @@
 
   .footer{
     color: #fff;
-    background-color: #bbb;
     text-align: center;
   }
 }
