@@ -3,7 +3,7 @@ import './app.scss'
 
 function Contacts() {
     return (
-        <div className="contacts row">
+        <div className="contacts row my-3">
             <a name="contacts" href="#"></a>
 
             <div className="viber col-sm-6 col-lg-3">

@@ -23,17 +23,19 @@ function App() {
   }, [lang])
   console.log(langMode,lang);
   return (
-    <div className="container">
-      <div className="app row">
-        <Navbar/>
-        <Summary/>
-        <Projects/>
-        <Contacts/>
-        <section className="footer">
-          &copy;
-          2021. Create by Webioann.
-          &reg;
-        </section>
+    <div className="portfolio-app">
+      <div className="app container">
+        <div className="row">
+          <Navbar/>
+          <Summary/>
+          <Projects/>
+          <Contacts/>
+          <section className="footer">
+            &copy;
+            2021. Create by Webioann.
+            &reg;
+          </section>
+        </div>
       </div>
     </div>
   );

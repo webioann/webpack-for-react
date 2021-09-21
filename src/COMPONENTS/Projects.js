@@ -15,12 +15,12 @@ function Projects() {
                 <h2> { lang.projects.title } </h2>
             </div>
             {/* ============== PORTFOLIO =================== */}
-            <div className="portfolio row">
+            <div className="portfolio row mt-4 py-3">
                 <div className="discr col-12">
                     <div className="subtitle row">
                         <h3>#1 { lang.projects.portfolio.subtitle } </h3>
                     </div>
-                    <div className="link-box row mb-2">
+                    <div className="link-box row mb-3">
                         <a href="https://github.com/webioann/portfolio/" target="_blank" className="link col-md-5">
                             { lang.projects.portfolio.githubLink }
                         </a>
@@ -37,12 +37,12 @@ function Projects() {
             </div>
 
             {/* ============== USER DATABASE =============== */}
-            <div className="user row">
+            <div className="user row mt-4 py-3">
                 <div className="discr col-12">
                     <div className="subtitle row">
                         <h3>#2 { lang.projects.user.subtitle } </h3>
                     </div>
-                    <div className="link-box row mb-2">
+                    <div className="link-box row mb-3">
                         <a href="#" target="_blank" className="link col-md-5"> 
                             { lang.projects.user.siteLink }
                         </a>
@@ -63,12 +63,12 @@ function Projects() {
                 </div>
             </div>
             {/* ============= SKY WATCHER ==================== */}
-            <div className="weather row">
+            <div className="weather row mt-4 py-3">
                 <div className="discr col-md-6 col-lg-8">
                     <div className="subtitle row">
                         <h3>#3 { lang.projects.weather.subtitle } </h3>
                     </div>
-                    <div className="link-box row mb-2">
+                    <div className="link-box row mb-3">
                         <a href="#" target="_blank" className="link col-lg-8">
                             { lang.projects.weather.siteLink } 
                         </a>

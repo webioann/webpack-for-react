@@ -6,7 +6,7 @@ import './app.scss'
 import { content } from './textContent'
 
 function Navbar(props) {
-
+    let resumeLink = "https://drive.google.com/file/d/1Lr05RkXCVdrd4yoEPv1a5fQ3rwu-sVMN/view?usp=sharing"
     const langMode = useSelector(state => state.langMode.lang)
     const dispatch = useDispatch()
     let lang = langMode;
@@ -30,22 +30,19 @@ function Navbar(props) {
     }
     return (
         <section className='navbar row'>
-                <a name="home" href="#" className="col btn">
-                    <button> {lang.navbar.home} </button>
-                </a>
-                <a href="#contacts" className="col btn">
-                    <button> {lang.navbar.contacts} </button>
-                </a>
-                <a className="col btn"
-                    href="https://drive.google.com/file/d/1Lr05RkXCVdrd4yoEPv1a5fQ3rwu-sVMN/view?usp=sharing" >
-                    <button> {lang.navbar.resume} </button>
-                </a>
-                <div className="col">
-                    <div className="lang-button row">
-                        <span className={engButton} onClick={switchLangEng}>eng</span>
-                        <span className={rusButton} onClick={switchLangRus}>rus</span>
-                    </div>
-                </div>
+            <div className="col-3">
+                <a name="home" href="#"> {lang.navbar.home} </a>
+            </div>
+            <div className="col-3">
+                <a href="#contacts"> {lang.navbar.contacts} </a>
+            </div>
+            <div className="col-3">
+                <a href={resumeLink} > {lang.navbar.resume} </a>
+            </div>
+            <div className="col-3">
+                <span className={engButton} onClick={switchLangEng}>eng</span>
+                <span className={rusButton} onClick={switchLangRus}>rus</span>
+            </div>
         </section>
     )
 }

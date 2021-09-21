@@ -13,13 +13,15 @@ $font-three: 'Nunito', sans-serif;
 
 $dark-grey: #333447;
 $border-col: rgba(255,255,255,0.9);
-$color-main: #212529;
+$color-main: #474747;
 $color-1: blue;
 $bg-neo: #e0e0e0;
-
+$carrot: #f85904;
 
 
 $gutter: 1rem;
+$gutter-half: 0.5rem;
+
 $gut-1: calc( 1rem * 0.25);
 $gut-2: calc( 1rem * 0.5);
 $gut-3: 1rem ;
@@ -43,7 +45,7 @@ body,*{
 /* ======================  HTML * BODY  ==========================*/
 
 html,body{
-  background-color: $bg-neo;
+  background-color: grey;
   font-size: 14px;
 	font-family: $font-second; 
 	min-height: 100%;
@@ -86,19 +88,19 @@ html,body{
 .row{
 	display: flex;
   flex-wrap: wrap;
-  flex: 1 0 100%;
-  width: 100%;
+  // flex: 1 0 100%;
+  // width: 100%;
   margin-top: 0;
-  margin-right: -$gut-2;
-  margin-left: -$gut-2;  
+  // margin-right: -$gutter-half;
+  // margin-left: -$gutter-half;  
 }
 .row > * {
   box-sizing: border-box;
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: $gut-2;
-  padding-left: $gut-2;
+  padding-right: $gutter-half;
+  padding-left: $gutter-half;
   margin-top: 0;
 }
 
@@ -210,7 +212,7 @@ html,body{
     max-width: auto;
   }
 }
-/* ================ .col-sm- mobile landscape =================*/
+/* ================== .col-sm- mobile landscape ==========*/
 @media (min-width: 576px) {
   html,body{
     font-size: 15px;
@@ -305,7 +307,7 @@ html,body{
 
 }
 
-/* ================== .col-md- mobile landscape ========*/
+/* ================== .col-md- mobile landscape ==========*/
 @media (min-width: 768px) {
   html,body{
     font-size: 16px;
@@ -397,7 +399,7 @@ html,body{
   }
 }
 
-/* ================ .col-lg- tablet =============*/
+/* ================== .col-lg- tablet =====================*/
 @media (min-width: 992px) {
   html,body{
     font-size: 17px;
@@ -494,7 +496,7 @@ html,body{
 
 }
 
-/* ==================.col-xl- big monitors ==================*/
+/* ==================.col-xl- big monitors ================*/
 @media (min-width: 1200px) {
   html,body{
     font-size: 18px;
@@ -592,7 +594,7 @@ html,body{
 
 }
 
-/* ==================.col-xxl- very big monitors ==================*/
+/* ================.col-xxl- very big monitors ============*/
 @media (min-width: 1400px) {
   html,body{
     font-size: 19px;
