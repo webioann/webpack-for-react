@@ -7,30 +7,29 @@ $shad: #bebebe;
   position: relative;
   padding-top: 1rem;
   section{
-    padding-top: $gut-1;
     padding-bottom: $gut-1;
-    .subtitle{
-      margin-bottom: 1rem;
-    }
-    .subtitle::after{
-      content: '';
-      width: 0%;
-      height: 3px;
-      border-radius: 1px;
-      background-color: $carrot;
-      animation-name: growLine;
-      animation-duration: 4300ms;
-      animation-delay: 400ms;
-      animation-timing-function: linear;
-      animation-iteration-count: 1;
-      animation-direction: normal;
-      animation-fill-mode: forwards;
-    }
-    @keyframes growLine {
-      0%{ width: 0%; }
-      85%{ width: 53%; }
-      100%{ width: 50%; }
-    }
+  }
+  .subtitle{
+    margin-bottom: 1rem;
+  }
+  .subtitle::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    border-radius: 1px;
+    background-color: $carrot;
+    animation-name: growLine;
+    animation-duration: 4300ms;
+    animation-delay: 400ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  @keyframes growLine {
+    0%{ width: 0%; }
+    85%{ width: 53%; }
+    100%{ width: 50%; }
   }
 
   // =========== Navbar =======
@@ -41,41 +40,37 @@ $shad: #bebebe;
     z-index: 1;
     cursor: pointer;
     text-align: center;
-
-    .lang-button{
-      max-width: 6rem;
-      margin: 0 auto;
-      color: $color-main;
-      text-align: center;
-      background-color: #fff;
-      border-radius: 3px;
-      overflow: hidden;
-      .active{
-        background-color: $carrot;
-      }
-      .lang{
-        font-weight: 500;
-      }
-      .lang:hover{
-        color: $color-1;
-      }
-    }
-    
-    .btn {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+    li{
+      text-transform: uppercase;
       transition: all 200ms linear;
-      padding-bottom: $gut-3;
-      button{
+      a{
+        padding: 5px 10px;
+        overflow: hidden;
+        color: $color-main;
         box-shadow: 3px 3px 6px #bebebe,
         -3px -3px 6px #fff;
         border-radius: 5px;
         font-weight: 600;
         text-align: center;
-        padding: $gut-1;
-        background-color: $bg-neo;
       }
-      button:hover {
+      a:hover{
+        color: $carrot;
+      }
+    }
+    .lang-button{
+      .active{
         background-color: $carrot;
-        color: $color-1;
+        color: $color-main;
+      }
+      .lang{
+        font-weight: 500;
+      }
+      .lang:hover{
+        color: $color-main;
       }
     }
   }

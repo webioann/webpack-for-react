@@ -1,7 +1,8 @@
 import React,{ useState,useEffect } from 'react'
 import { content } from './textContent'
 import { useSelector, useDispatch } from 'react-redux'
-import Navbar from './Navbar.js'
+// import Navbar from './Navbar.js'
+import Navy from './Navy.js'
 import Summary from './Summary.js'
 import Projects from './Projects.js'
 import Contacts from './Contacts.js'
@@ -26,7 +27,7 @@ function App() {
     <div className="portfolio-app">
       <div className="app container">
         <div className="row">
-          <Navbar/>
+          <Navy/>
           <Summary/>
           <Projects/>
           <Contacts/>

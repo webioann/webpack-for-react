@@ -1,10 +1,10 @@
 export const content = {
     eng: {
         navbar: {
-            home: "Home",
-            projects: "Projects",
-            contacts: "Contacts",
-            resume: "Resume"
+            home: "home",
+            projects: "projects",
+            contacts: "contacts",
+            resume: "resume"
         },
         summary: {
             title: "Summary for me",
@@ -49,10 +49,10 @@ export const content = {
     },
     rus: {
         navbar: {
-            home: "Домой",
-            projects: "Мои проэкты",
-            contacts: "Контакты",
-            resume: "Резюме"
+            home: "домой",
+            projects: "мои проэкты",
+            contacts: "контакты",
+            resume: "резюме"
         },
         summary: {
             title: "Коротко обо мне",
