@@ -46,6 +46,8 @@ body,*{
 
 html,body{
   background-color: grey;
+  background-image: url('../assets/space-bg.jpg');
+  background-size: cover;
   font-size: 14px;
 	font-family: $font-second; 
 	min-height: 100%;

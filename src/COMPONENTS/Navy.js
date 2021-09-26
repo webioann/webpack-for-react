@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { langEng,langRus } from '../Redux-toolkit/langModeSlice'
-import './app.scss'
+import './navbar.scss'
 import { content } from './textContent'
 
 
@@ -10,22 +10,22 @@ function Navy() {
     const langMode = useSelector(state => state.langMode.lang)
     const dispatch = useDispatch()
     let lang = langMode;
-    const[engButton,setEngButton] = useState("active lang")
-    const[rusButton,setRusButton] = useState("lang pl-1")
+    const[engButton,setEngButton] = useState("active")
+    const[rusButton,setRusButton] = useState("not-active")
 
 
     const switchLangRus = () => {
         if( langMode === content.eng ) {
             dispatch(langRus())
-            setEngButton("lang")
-            setRusButton("active lang pl-1")
+            setEngButton("not-active")
+            setRusButton("active")
         }
     }
     const switchLangEng = () => {
         if( langMode === content.rus ) {
             dispatch(langEng())
-            setRusButton("lang pl-1")
-            setEngButton("active lang")
+            setRusButton("not-active")
+            setEngButton("active")
         }
     }
 

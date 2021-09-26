@@ -1,0 +1,100 @@
+@import '../reactor.scss';
+
+.summary {
+    padding-top: $gut-3;
+    padding-bottom: $gut-3;
+    .title{
+        text-align: center;
+    }
+    .subtitle{
+        margin-bottom: 1rem;
+    }
+    .subtitle::after{
+        content: '';
+        width: 0%;
+        height: 3px;
+        border-radius: 1px;
+        background-color: $carrot;
+        animation-name: growLine;
+        animation-duration: 4300ms;
+        animation-delay: 400ms;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes growLine {
+    0%{ width: 0%; }
+    85%{ width: 53%; }
+    100%{ width: 50%; }
+    }
+    
+    .info{
+        .aboutme {
+        margin-top: $gut-2;
+        .text{ 
+            box-shadow: 6px 6px 12px #bebebe,
+            -6px -6px 12px #fff;
+            border-radius: 5px;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 400;
+            text-align: left;
+            padding: $gut-3;
+        }
+        }
+        .skills {
+        margin-top: $gut-2;
+        .tech-skills{
+            .tool{
+            padding-bottom: $gut-3;
+            p{
+                transition: all 200ms linear;
+                box-shadow: 3px 3px 6px #bebebe,
+                -3px -3px 6px #fff;
+                border-radius: 5px;
+                font-weight: 600;
+                text-align: center;
+                padding: $gut-1 0;
+            }
+            p:hover{
+                box-shadow: inset  3px 3px 6px #bebebe,
+                inset -3px -3px 6px #fff;
+                color: $carrot;
+            }
+            }
+            .on-start{
+            transform: translateY(20px);
+            visibility: hidden;
+            opacity: 0;
+            animation-name: onStart;
+            animation-duration: 1000ms;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            }
+            @keyframes onStart {
+            0%{
+                transform: translateY(20px);
+                visibility: hidden;
+                opacity: 0;
+            }
+            85%{
+                transform: translateY(-7px);}
+            100%{
+                transform: translateY(0px);
+                visibility: visible;
+                opacity: 1;
+            }
+            }
+
+        }
+        }
+
+    }
+}
+
+
+

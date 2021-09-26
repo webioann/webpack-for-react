@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-import './app.scss'
+import './projects.scss'
 
 function Projects() {
 
@@ -14,7 +14,6 @@ function Projects() {
             <div className="title row">
                 <h2> { lang.projects.title } </h2>
             </div>
-            {/* ============== PORTFOLIO =================== */}
             <div className="portfolio row mt-4 py-3">
                 <div className="discr col-12">
                     <div className="subtitle row">
@@ -36,7 +35,6 @@ function Projects() {
                 </div>
             </div>
 
-            {/* ============== USER DATABASE =============== */}
             <div className="user row mt-4 py-3">
                 <div className="discr col-12">
                     <div className="subtitle row">
@@ -62,7 +60,7 @@ function Projects() {
                 <div className="user-screenshot col-12">
                 </div>
             </div>
-            {/* ============= SKY WATCHER ==================== */}
+
             <div className="weather row mt-4 py-3">
                 <div className="discr col-md-6 col-lg-8">
                     <div className="subtitle row">

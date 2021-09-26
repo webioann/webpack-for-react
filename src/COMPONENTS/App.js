@@ -13,6 +13,7 @@ function App() {
   const langMode = useSelector(state => state.langMode.lang)
   const [lang,setLang] = useState( content.eng ) 
 
+  useEffect(() => { console.log("RENDER") },[])
 
   useEffect( () => {
     if( langMode === "ENG" ) {

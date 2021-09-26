@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { dataSkills } from './data-skills.js'
 import { useSelector } from 'react-redux'
-import './app.scss'
+import './summary.scss'
 
 function Summary() {
     const [classes,setClases] = useState('tool col-4 col-md-6 col-lg-4 on-start')
