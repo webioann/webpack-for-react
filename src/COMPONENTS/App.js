@@ -1,8 +1,7 @@
 import React,{ useState,useEffect } from 'react'
 import { content } from './textContent'
-import { useSelector, useDispatch } from 'react-redux'
-// import Navbar from './Navbar.js'
-import Navy from './Navy.js'
+import { useSelector } from 'react-redux'
+import Navbar from './Navbar.js'
 import Summary from './Summary.js'
 import Projects from './Projects.js'
 import Contacts from './Contacts.js'
@@ -26,9 +25,8 @@ function App() {
   console.log(langMode,lang);
   return (
     <div className="portfolio-app">
+      <Navbar/>
       <div className="app container">
-        <div className="row">
-          <Navy/>
           <Summary/>
           <Projects/>
           <Contacts/>
@@ -37,7 +35,6 @@ function App() {
             2021. Create by Webioann.
             &reg;
           </section>
-        </div>
       </div>
     </div>
   );

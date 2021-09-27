@@ -4,13 +4,6 @@
 .projects{
     padding-top: $gut-3;
     padding-bottom: $gut-3;
-    
-    background-color: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 15px;
-    padding: 32px;
-    backdrop-filter: blur(10px);
-
     .title{
         text-align: center;
     }
@@ -21,7 +14,6 @@
         content: '';
         width: 0%;
         height: 3px;
-        border-radius: 1px;
         background-color: $carrot;
         animation-name: growLine;
         animation-duration: 4300ms;
@@ -59,20 +51,20 @@
         }
     }
     .portfolio{
-        box-shadow: 6px 6px 12px #bebebe,
-        -6px -6px 12px #fff;
-        border-radius: 8px;
+        // box-shadow: 6px 6px 12px #bebebe,
+        // -6px -6px 12px #fff;
+        // border-radius: 8px;
 
     }
     .user{
-        padding-bottom: $gut-3;
-        box-shadow: 6px 6px 12px #bebebe,
-        -6px -6px 12px #fff;
-        border-radius: 8px;
+        // padding-bottom: $gut-3;
+        // box-shadow: 6px 6px 12px #bebebe,
+        // -6px -6px 12px #fff;
+        // border-radius: 8px;
         .user-screenshot{
             background-image: url('../assets/Screenshot1.jpg');
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-position: center;
             width: 100%;
             min-height: 600px;
@@ -81,9 +73,9 @@
         }
     }
     .weather{
-        box-shadow: 6px 6px 12px #bebebe,
-        -6px -6px 12px #fff;
-        border-radius: 8px;
+        // box-shadow: 6px 6px 12px #bebebe,
+        // -6px -6px 12px #fff;
+        // border-radius: 8px;
         padding-bottom: $gut-3;
         .weather-screenshot{
             min-height: 300px;

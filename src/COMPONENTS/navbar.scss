@@ -1,33 +1,49 @@
 @import '../reactor.scss';
 
-
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     z-index: 1;
     cursor: pointer;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
     height: 50px;
     line-height: 50px;
+
+    background-color: green;
     li{
-        text-transform: uppercase;
         transition: all 200ms linear;
-        a{
-        padding: 5px 10px;
-        overflow: hidden;
-        color: $color-main;
-        box-shadow: 3px 3px 6px #bebebe,
-        -3px -3px 6px #fff;
-        border-radius: 5px;
-        font-weight: 600;
         text-align: center;
+        a{
+            position: relative;
+            width: 130px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            color: $color-main;
+            // border: 1px solid rgba(255,255,255,0.1);
+            // border-radius: 5px;
+            text-align: center;
         }
-        a:hover{
-        color: $carrot;
+        a:hover:after{
+            animation: growBottom 500ms linear forwards;
         }
+        a:after{
+            content: '';
+            pointer-events: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: rgba(255,255,255,0.1);
+        }
+        @keyframes growBottom {
+            0%{ width: 0%; }
+            100%{ width: 100%; }
+        }    
     }
+
     .lang-button{
         color: $color-main;
         font-weight: 500;

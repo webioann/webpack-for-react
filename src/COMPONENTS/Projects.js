@@ -14,7 +14,7 @@ function Projects() {
             <div className="title row">
                 <h2> { lang.projects.title } </h2>
             </div>
-            <div className="portfolio row mt-4 py-3">
+            <div className="portfolio row mt-3 py-3">
                 <div className="discr col-12">
                     <div className="subtitle row">
                         <h3>#1 { lang.projects.portfolio.subtitle } </h3>
@@ -35,7 +35,7 @@ function Projects() {
                 </div>
             </div>
 
-            <div className="user row mt-4 py-3">
+            <div className="user row mt-3 py-3">
                 <div className="discr col-12">
                     <div className="subtitle row">
                         <h3>#2 { lang.projects.user.subtitle } </h3>
@@ -61,7 +61,7 @@ function Projects() {
                 </div>
             </div>
 
-            <div className="weather row mt-4 py-3">
+            <div className="weather row mt-3 py-3">
                 <div className="discr col-md-6 col-lg-8">
                     <div className="subtitle row">
                         <h3>#3 { lang.projects.weather.subtitle } </h3>

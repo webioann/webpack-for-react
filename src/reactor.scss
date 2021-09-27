@@ -14,7 +14,7 @@ $font-three: 'Nunito', sans-serif;
 $dark-grey: #333447;
 $border-col: rgba(255,255,255,0.9);
 $color-main: #474747;
-$color-1: blue;
+$color-second: #ffffff;
 $bg-neo: #e0e0e0;
 $carrot: #f85904;
 
@@ -46,13 +46,13 @@ body,*{
 
 html,body{
   background-color: grey;
-  background-image: url('../assets/space-bg.jpg');
+  background-image: url('../assets/shain.jpg');
   background-size: cover;
   font-size: 14px;
 	font-family: $font-second; 
 	min-height: 100%;
   font-weight: 300;
-  color:  $color-1;
+  color:  $color-main;
 	width: 100%;
   min-height: 100vh;
 	-ms-text-size-adjust: 100%;
