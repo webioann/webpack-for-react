@@ -8,6 +8,7 @@
     }
     .subtitle{
         margin-bottom: 1rem;
+        background-color: blue;
     }
     .subtitle::after{
         content: '';
@@ -25,7 +26,7 @@
     }
     @keyframes growLine {
     0%{ width: 0%; }
-    85%{ width: 53%; }
+    95%{ width: 53%; }
     100%{ width: 50%; }
     }
     
@@ -33,9 +34,6 @@
         .aboutme {
         margin-top: $gut-2;
         .text{ 
-            // box-shadow: 6px 6px 12px #bebebe,
-            // -6px -6px 12px #fff;
-            // border-radius: 5px;
             font-weight: 600;
             font-weight: 400;
             text-align: left;

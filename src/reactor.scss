@@ -45,11 +45,13 @@ body,*{
 /* ======================  HTML * BODY  ==========================*/
 
 html,body{
-  background-color: grey;
+  // background-color: black;
+  // background-color: white;
+  // background: linear-gradient(225deg, rgba(36,16,0,0.9332107843137255) 0%, rgba(121,9,39,1) 35%, rgba(106,0,255,1) 100%);
   background-image: url('../assets/shain.jpg');
   background-size: cover;
   font-size: 14px;
-	font-family: $font-second; 
+	font-family: $font-main; 
 	min-height: 100%;
   font-weight: 300;
   color:  $color-main;
@@ -59,6 +61,8 @@ html,body{
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+
+  z-index: -10;
 }
 
 /*=========================GREED STYLING====================*/

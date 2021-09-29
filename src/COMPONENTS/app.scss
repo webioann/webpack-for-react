@@ -1,19 +1,65 @@
 @import "../reactor.scss";
 
+$dark-glass: rgba(0,0,0,0.2);
+
 .portfolio-app{
+  position: relative;
   .app {
-    background-color: rgba(255,255,255,0.3);
+    // background-color: $dark-glass;
+    background-color: rgba(255,255,255,0.1);
     border: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     color: $color-second;
-    // overflow: hidden;
     padding-top: 50px;
+    z-index: 1;
     .footer{
       text-align: center;
       padding: 1rem;
     }
-  }
   
+  }
+  .blob-box{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .blob{
+      position: absolute;
+      top: 250px;
+      left: 600px;
+      margin: 0 auto;
+      z-index: 0;
+      height: 250px;
+      width: 250px;
+      background: linear-gradient(to left, #fff, red);
+      border-radius: 30% 88% 40% 75% / 35% 45% 66% 65%;
+      animation: blob 8s ease infinite;
+    }
+    .blob-svg{
+      margin-top: 300px;
+      animation: blob-svg 8s ease infinite;
+    }
+    .blob3-svg{
+      animation: blob-svg 8s ease infinite;
+    }
+
+    @keyframes blob {
+      0%{ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%; }
+      50%{ border-radius: 72% 33% 57% 47% / 61% 31% 71% 39%;
+          transform: translateX(-200px) rotate(360deg) translateY(-100px);
+        }
+      100%{ border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%; }
+    }
+    @keyframes blob-svg {
+      0%{ transform: translateX(0px) rotate(0deg) translateY(0px); }
+      50%{ transform: translateX(200px) rotate(360deg) translateY(100px); }
+      100%{ transform: translateX(0px) rotate(0deg) translateY(0px); }
+    }
+
+  }
+
 }
 
 

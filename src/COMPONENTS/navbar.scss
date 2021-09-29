@@ -1,6 +1,8 @@
 @import '../reactor.scss';
 
 .navbar {
+    color: #fff;
+    font-weight: 500;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,8 +12,6 @@
     cursor: pointer;
     height: 50px;
     line-height: 50px;
-
-    background-color: green;
     li{
         transition: all 200ms linear;
         text-align: center;
@@ -20,10 +20,8 @@
             width: 130px;
             text-transform: uppercase;
             padding: 0 10px;
-            color: $color-main;
-            // border: 1px solid rgba(255,255,255,0.1);
-            // border-radius: 5px;
             text-align: center;
+            color: #fff;
         }
         a:hover:after{
             animation: growBottom 500ms linear forwards;
@@ -36,7 +34,7 @@
             left: 0;
             width: 0%;
             height: 100%;
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255,255,255,0.3);
         }
         @keyframes growBottom {
             0%{ width: 0%; }
@@ -45,15 +43,11 @@
     }
 
     .lang-button{
-        color: $color-main;
-        font-weight: 500;
-
         .active{
         color: $carrot;
         padding: 0 $gut-1;
         }
         .not-active{
-        color: $color-main;
         padding: 0 $gut-1;
         }
     }
