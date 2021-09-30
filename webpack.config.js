@@ -52,12 +52,3 @@ module.exports = {
         ]
     }
 }
-// optimization: {
-//     minimize: false,
-//     minimizer: [new TerserPlugin({ test: /\.(js|jsx)$/ })],
-// },
-
-// {
-//     test: /\.css$/,
-//     use:[MiniCssExtractPlugin.loader,"css-loader",'postcss-loader' ]
-// },

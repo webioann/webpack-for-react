@@ -1,6 +1,7 @@
 @import '../reactor.scss';
 
 .navbar {
+    padding: 0;
     color: #fff;
     font-weight: 500;
     position: fixed;
@@ -10,23 +11,25 @@
     margin: 0 auto;
     z-index: 1;
     cursor: pointer;
-    height: 50px;
-    line-height: 50px;
+    line-height: 40px;
+    background-color: $bg-dark;
     li{
+        display: flex;
+        justify-content: center;
         transition: all 200ms linear;
-        text-align: center;
+        position: relative;
+
+        border: 1px solid red;
         a{
-            position: relative;
-            width: 130px;
             text-transform: uppercase;
             padding: 0 10px;
             text-align: center;
-            color: #fff;
+            color: $color-light;
         }
-        a:hover:after{
+        a:hover::after{
             animation: growBottom 500ms linear forwards;
         }
-        a:after{
+        a::after{
             content: '';
             pointer-events: none;
             position: absolute;
@@ -50,5 +53,9 @@
         .not-active{
         padding: 0 $gut-1;
         }
+    }
+    .sun-moon{
+        display: flex;
+        align-items: center;
     }
 }
