@@ -3,30 +3,29 @@ import { useSelector, useDispatch } from 'react-redux'
 import { langEng,langRus } from '../Redux-toolkit/langModeSlice'
 import './navbar.scss'
 import { content } from './textContent'
-import { FaRegSun } from "react-icons/fa";
-
+import ThemSwitcher from './ThemSwitcher'
 
 function Navbar() {
 
     let resumeLink = "https://drive.google.com/file/d/1Lr05RkXCVdrd4yoEPv1a5fQ3rwu-sVMN/view?usp=sharing"
-    const langMode = useSelector(state => state.langMode.lang)
+
+    const lang = useSelector(state => state.langMode.lang)
     const dispatch = useDispatch()
-    let lang = langMode;
     const[engButton,setEngButton] = useState("active")
     const[rusButton,setRusButton] = useState("not-active")
 
     const switchLangRus = () => {
-      if( langMode === content.eng ) {
-          dispatch(langRus())
-          setEngButton("not-active")
-          setRusButton("active")
+      if( lang === content.eng ) {
+        dispatch(langRus())
+        setEngButton("not-active")
+        setRusButton("active")
       }
     }
     const switchLangEng = () => {
-      if( langMode === content.rus ) {
-          dispatch(langEng())
-          setRusButton("not-active")
-          setEngButton("active")
+      if( lang === content.rus ) {
+        dispatch(langEng())
+        setRusButton("not-active")
+        setEngButton("active")
       }
     }
 
@@ -46,7 +45,7 @@ function Navbar() {
               <span className={rusButton} onClick={switchLangRus}> rus </span>
           </li>
           <li className="sun-moon col-1">
-            <FaRegSun/>
+            <ThemSwitcher/>
           </li>
         </ul>
     );

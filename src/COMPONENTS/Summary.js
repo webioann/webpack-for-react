@@ -4,10 +4,10 @@ import { useSelector } from 'react-redux'
 import './summary.scss'
 
 function Summary() {
+    
     const [classes,setClases] = useState('tool col-4 col-md-6 col-lg-4 on-start')
     const langMode = useSelector(state => state.langMode.lang)
     let lang = langMode;
-
     return (
         <section className="summary row">
             <div className="title row">

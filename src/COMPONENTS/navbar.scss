@@ -2,7 +2,6 @@
 
 .navbar {
     padding: 0;
-    color: #fff;
     font-weight: 500;
     position: fixed;
     top: 0;
@@ -12,19 +11,15 @@
     z-index: 1;
     cursor: pointer;
     line-height: 40px;
-    background-color: $bg-dark;
     li{
         display: flex;
         justify-content: center;
         transition: all 200ms linear;
         position: relative;
-
-        border: 1px solid red;
         a{
             text-transform: uppercase;
             padding: 0 10px;
             text-align: center;
-            color: $color-light;
         }
         a:hover::after{
             animation: growBottom 500ms linear forwards;

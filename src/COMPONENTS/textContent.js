@@ -69,7 +69,7 @@ export const content = {
             portfolio: {
                 subtitle: "Portfolio - это этот сайт ",
                 githubLink: "github/webioann/portfolio",
-                spanTools: "Использовал здесь : ",
+                spanTools: "Использовал : ",
                 textTools: " React, Redux-toolkit, Webpack,  Sass, react-hooks, mobile-first, собственную CSS библиотеку",
                 spanDiscript: "Описание проэкта : ",
                 textDicript: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur repellat, voluptas ullam",
@@ -78,7 +78,7 @@ export const content = {
                 subtitle: "User database - база данных пользователей ",
                 siteLink: "посетите сайт",
                 githubLink: "github/webioann/users-database",
-                spanTools: "Использовал здесь : ",
+                spanTools: "Использовал : ",
                 textTools: " React, Redux-toolkit, Webpack, REST Api, Sass, react-hooks, mobile-first, собственную CSS библиотеку",
                 spanDiscript: "Описание проэкта : ",
                 textDicript: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur repellat, voluptas ullam",
@@ -87,9 +87,9 @@ export const content = {
                 subtitle: "Sky Watcher - погода у вас в городе",
                 siteLink: "посетите сайт",
                 githubLink: "github/webioann/sky-watcher",
-                spanTools: "Использовал здесь : ",
+                spanTools: "Использовал : ",
                 textTools: " React, Redux, Webpack, REST Api, Sass, react-hooks, mobile-first, собственную CSS библиотеку",
-                spanDiscript: "Discription : ",
+                spanDiscript: "Описание проэкта : ",
                 textDicript: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur repellat, voluptas ullam",
             }
         }
