@@ -12,8 +12,14 @@ export const themeReducer = createSlice({
         border: borderLight
     },
     reducers: {
-    themeLight: state => { state.theme = light },
-    themeDark: state => { state.theme = dark }
+    themeLight: state => { 
+        state.theme = light,
+        state.border = borderDark
+    },
+    themeDark: state => {
+        state.theme = dark,
+        state.border = borderLight
+     }
     }
 })
 

@@ -7,6 +7,7 @@ function Summary() {
     
     const [classes,setClases] = useState('tool col-4 col-md-6 col-lg-4 on-start')
     const langMode = useSelector(state => state.langMode.lang)
+    const border = useSelector(state => state.themeMode.border)
     let lang = langMode;
     return (
         <section className="summary row">
@@ -30,7 +31,7 @@ function Summary() {
                         { dataSkills.map((data) => ( <div key={data.id}
                             className={classes}
                             style={{ animationDelay: data.delay }}>
-                            <p> { data.title } </p>
+                            <p style={border}> { data.title } </p>
                         </div>))}
                     </div>
                 </div>
