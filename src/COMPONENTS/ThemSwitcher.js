@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { themeLight,themeDark } from '../Redux-toolkit/themeReducer'
 import './navbar.scss'
@@ -9,14 +9,22 @@ import { FaMoon } from "react-icons/fa"
 function ThemSwitcher() {
 
     const dispatch = useDispatch()
-    const[theme,setTheme] = useState('dark')
+    const[theme,setTheme] = useState("dark")
+    console.log(theme);
+
+    useEffect(() => {
+        const localTheme = localStorage.getItem('theme')
+        if(localTheme) {
+            setTheme(localTheme)
+        }
+    },[])
 
     if( theme === 'dark') {
         return (
             <span onClick={ () => {
                 dispatch(themeLight())
                 setTheme('light')
-                console.log("DARK");
+                localStorage.setItem("theme", "light")
             }}>
                 <FaRegSun/>
             </span>
@@ -26,7 +34,7 @@ function ThemSwitcher() {
             <span onClick={ () => {
                 dispatch(themeDark())
                 setTheme('dark')
-                console.log("LIGHT");
+                localStorage.setItem("theme", "dark")
             }}>
                 <FaMoon/>
             </span>

@@ -1,11 +1,13 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { langEng,langRus } from '../Redux-toolkit/langModeSlice'
 import './navbar.scss'
 import { content } from './textContent'
 import ThemSwitcher from './ThemSwitcher'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 
 function Navbar() {
+
 
     let resumeLink = "https://drive.google.com/file/d/1Lr05RkXCVdrd4yoEPv1a5fQ3rwu-sVMN/view?usp=sharing"
 
@@ -14,11 +16,17 @@ function Navbar() {
     const[engButton,setEngButton] = useState("active")
     const[rusButton,setRusButton] = useState("not-active")
 
+    // localStorage.setItem("langContent", JSON.stringify( content.eng ));
+    // const newLang = JSON.parse(localStorage.getItem("content");
+
+    useEffect(() => {localStorage.setItem("content", JSON.stringify( content.eng ))},[])
+
     const switchLangRus = () => {
       if( lang === content.eng ) {
         dispatch(langRus())
         setEngButton("not-active")
         setRusButton("active")
+        localStorage.setItem("content", JSON.stringify( content.rus ))
       }
     }
     const switchLangEng = () => {
@@ -26,6 +34,7 @@ function Navbar() {
         dispatch(langEng())
         setRusButton("not-active")
         setEngButton("active")
+        localStorage.setItem("content", JSON.stringify( content.eng ))
       }
     }
 

@@ -21,6 +21,9 @@
             padding: 0 10px;
             text-align: center;
         }
+        a:hover{
+            color: $carrot;
+        }
         a:hover::after{
             animation: growBottom 500ms linear forwards;
         }
