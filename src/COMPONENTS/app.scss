@@ -2,13 +2,20 @@
 
 .portfolio-app {
   position: relative;
-  .app {
-    background-color: $bg-dark;
-    color: $color-light;
+  .app{
     padding-top: 40px;
     .footer {
       text-align: center;
       padding: 1rem;
     }
   }
+  .dark{
+    background-color: $bg-dark;
+    color: $color-light;
+  }
+  .light{
+    background-color: $bg-light;
+    color: $color-dark;
+  }
+
 }

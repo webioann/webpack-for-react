@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { themeLight,themeDark } from '../Redux-toolkit/globeSlicer'
+import { themeLight,themeDark } from '../Redux-toolkit/themeReducer'
 import './navbar.scss'
 import { FaRegSun } from "react-icons/fa"
 import { FaMoon } from "react-icons/fa"
@@ -9,7 +9,7 @@ import { FaMoon } from "react-icons/fa"
 function ThemeToggler() {
 
     const dispatch = useDispatch()
-    const theme = useSelector(state => state.slicer.theme)
+    const theme = useSelector(state => state.themeMode.theme)
     const [themeMode,setThemeMode] = useState( 'dark')
 
     useEffect(() => {

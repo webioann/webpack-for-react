@@ -9,13 +9,13 @@ import './app.scss'
 function App() {
 
   const lang = useSelector(state => state.langMode.lang) 
-  const theme = useSelector(state => state.slicer.theme) 
+  const theme = useSelector(state => state.themeMode.theme) 
 
   useEffect(() => { console.log("RENDER") },[])
 
   return (
     <div className="portfolio-app">
-      <div className="app container" style={theme}>
+      <div className={`app container ${theme}`}>
         <Navbar/>
         <Summary/>
         <Projects/>

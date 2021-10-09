@@ -15,6 +15,3 @@ export const langModeSlice = createSlice({
 export const { langEng,langRus } = langModeSlice.actions
 
 export default langModeSlice.reducer
-
-
-// JSON.parse(localStorage.getItem("content"))
