@@ -13,7 +13,7 @@ function ThemeToggler() {
     const [themeMode,setThemeMode] = useState( 'dark')
 
     useEffect(() => {
-        const localTheme = localStorage.getItem('theme','dark')
+        const localTheme = localStorage.getItem('theme')
         if(localTheme === undefined) {
             setThemeMode('dark')
             localStorage.setItem('theme','dark')

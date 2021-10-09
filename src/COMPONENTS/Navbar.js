@@ -15,27 +15,36 @@ function Navbar() {
     const dispatch = useDispatch()
     const[engButton,setEngButton] = useState("active")
     const[rusButton,setRusButton] = useState("not-active")
+    const[langMode,setLangMode] = useState('ENG')
 
-    // localStorage.setItem("langContent", JSON.stringify( content.eng ));
-    // const newLang = JSON.parse(localStorage.getItem("content");
-
-    // useEffect(() => {localStorage.setItem("content", JSON.stringify( content.eng ))},[])
-
-    const switchLangRus = () => {
-      // if( lang === content.eng ) {
-        dispatch(langRus())
-        setEngButton("not-active")
-        setRusButton("active")
-        // localStorage.setItem("content", JSON.stringify( content.rus ))
-      // }
-    }
-    const switchLangEng = () => {
-      // if( lang === content.rus ) {
+    useEffect(() => {
+      const localLang = localStorage.getItem("lang")
+      if(localLang === undefined) {
+        setLangMode('ENG')
+        localStorage.setItem("lang", 'ENG')
+      }else if(localLang === 'ENG') {
         dispatch(langEng())
         setRusButton("not-active")
         setEngButton("active")
-        // localStorage.setItem("content", JSON.stringify( content.eng ))
-      // }
+      }else if(localLang === 'RUS') {
+        dispatch(langRus())
+        setEngButton("not-active")
+        setRusButton("active")
+      }
+
+    },[])
+
+    const switchLangRus = () => {
+        dispatch(langRus())
+        setEngButton("not-active")
+        setRusButton("active")
+        localStorage.setItem("lang", 'RUS')
+    }
+    const switchLangEng = () => {
+        dispatch(langEng())
+        setRusButton("not-active")
+        setEngButton("active")
+        localStorage.setItem("lang", 'ENG')
     }
 
     return (
