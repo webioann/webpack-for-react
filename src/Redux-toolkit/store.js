@@ -1,10 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
 import langModeReducer from './langModeSlice'
-import themeModeReducer from './themeReducer'
+// import themeModeReducer from './themeReducer'
+import globeReducer from './globeSlicer'
 
 export default configureStore({
     reducer: {
         langMode: langModeReducer,
-        themeMode: themeModeReducer
+        slicer: globeReducer
     }
 })
+
+// langMode: langModeReducer,
+// themeMode: themeModeReducer,

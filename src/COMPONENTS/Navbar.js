@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { langEng,langRus } from '../Redux-toolkit/langModeSlice'
 import './navbar.scss'
 import { content } from './textContent'
-import ThemSwitcher from './ThemSwitcher'
+import ThemeToggler from './ThemeToggler'
 import { useLocalStorage } from '../hooks/useLocalStorage'
 
 function Navbar() {
@@ -19,23 +19,23 @@ function Navbar() {
     // localStorage.setItem("langContent", JSON.stringify( content.eng ));
     // const newLang = JSON.parse(localStorage.getItem("content");
 
-    useEffect(() => {localStorage.setItem("content", JSON.stringify( content.eng ))},[])
+    // useEffect(() => {localStorage.setItem("content", JSON.stringify( content.eng ))},[])
 
     const switchLangRus = () => {
-      if( lang === content.eng ) {
+      // if( lang === content.eng ) {
         dispatch(langRus())
         setEngButton("not-active")
         setRusButton("active")
-        localStorage.setItem("content", JSON.stringify( content.rus ))
-      }
+        // localStorage.setItem("content", JSON.stringify( content.rus ))
+      // }
     }
     const switchLangEng = () => {
-      if( lang === content.rus ) {
+      // if( lang === content.rus ) {
         dispatch(langEng())
         setRusButton("not-active")
         setEngButton("active")
-        localStorage.setItem("content", JSON.stringify( content.eng ))
-      }
+        // localStorage.setItem("content", JSON.stringify( content.eng ))
+      // }
     }
 
     return (
@@ -54,7 +54,7 @@ function Navbar() {
               <span className={rusButton} onClick={switchLangRus}> rus </span>
           </li>
           <li className="sun-moon col-1">
-            <ThemSwitcher/>
+            <ThemeToggler/>
           </li>
         </ul>
     );

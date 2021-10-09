@@ -8,17 +8,10 @@ import './app.scss'
 
 function App() {
 
-  const [lang,setLang] = useState( useSelector(state => state.langMode.lang) ) 
-  const theme = useSelector(state => state.themeMode.theme) 
-  const [langMode,setLangMode] = useState( 'ENG' ) 
+  const lang = useSelector(state => state.langMode.lang) 
+  const theme = useSelector(state => state.slicer.theme) 
 
   useEffect(() => { console.log("RENDER") },[])
-
-  useEffect( () => {
-    console.log(lang,langMode,theme);
-  }, [lang,theme])
-
- 
 
   return (
     <div className="portfolio-app">

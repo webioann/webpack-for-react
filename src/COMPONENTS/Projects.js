@@ -5,9 +5,7 @@ import './projects.scss'
 
 function Projects() {
 
-    const langMode = useSelector(state => state.langMode.lang)
-    let lang = langMode;
-
+    const lang = useSelector(state => state.slicer.lang)
 
     return (
         <section className="projects row">

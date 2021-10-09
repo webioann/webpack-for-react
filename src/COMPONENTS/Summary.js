@@ -6,9 +6,9 @@ import './summary.scss'
 function Summary() {
     
     const [classes,setClases] = useState('tool col-4 col-md-6 col-lg-4 on-start')
-    const langMode = useSelector(state => state.langMode.lang)
-    const border = useSelector(state => state.themeMode.border)
-    let lang = langMode;
+    const lang = useSelector(state => state.langMode.lang)
+    const border = useSelector(state => state.slicer.border)
+
     return (
         <section className="summary row">
             <div className="title row">
