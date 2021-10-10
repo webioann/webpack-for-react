@@ -2,20 +2,23 @@
 
 .portfolio-app {
   position: relative;
-  .app{
-    padding-top: 40px;
-    .footer {
-      text-align: center;
-      padding: 1rem;
-    }
-  }
+
   .dark{
-    background-color: $bg-dark;
+    padding-top: 40px;
+    background: rgba( 0, 0, 0, 0.7 );
+    backdrop-filter: blur( 3px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     color: $color-light;
   }
   .light{
-    background-color: $bg-light;
+    padding-top: 40px;
+    background: rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba( 0, 0, 0, 0.18 );
     color: $color-dark;
   }
 
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
 }

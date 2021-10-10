@@ -7,24 +7,18 @@ import Contacts from './Contacts.js'
 import './app.scss'
 
 function App() {
-
-  const lang = useSelector(state => state.langMode.lang) 
   const theme = useSelector(state => state.themeMode.theme) 
 
   useEffect(() => { console.log("RENDER") },[])
 
   return (
     <div className="portfolio-app">
-      <div className={`app container ${theme}`}>
+      <div className={`container ${theme}`}>
         <Navbar/>
         <Summary/>
         <Projects/>
         <Contacts/>
-        <section className="footer">
-          &copy;
-          2021. Create by Webioann.
-          &reg;
-        </section>
+        <footer> &copy; 2021. Create by Webioann. &reg; </footer>
       </div>
     </div>
   );

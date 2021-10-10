@@ -15,12 +15,10 @@ function Navbar() {
     const dispatch = useDispatch()
     const[engButton,setEngButton] = useState("active")
     const[rusButton,setRusButton] = useState("not-active")
-    const[langMode,setLangMode] = useState('ENG')
 
     useEffect(() => {
       const localLang = localStorage.getItem("lang")
       if(localLang === undefined) {
-        setLangMode('ENG')
         localStorage.setItem("lang", 'ENG')
       }else if(localLang === 'ENG') {
         dispatch(langEng())
@@ -31,7 +29,6 @@ function Navbar() {
         setEngButton("not-active")
         setRusButton("active")
       }
-
     },[])
 
     const switchLangRus = () => {
@@ -48,23 +45,26 @@ function Navbar() {
     }
 
     return (
-        <ul className="navbar container row gy-0">
-          <li className="col-3">
-            <a name="home" href="#">{lang.navbar.home}</a>
-          </li>
-          <li className="col-3">
-            <a href="#contacts"> {lang.navbar.contacts} </a>
-          </li>
-          <li className="col-3">
-            <a href={resumeLink} target="_blank">{lang.navbar.resume}</a>
-          </li>
-          <li className="col-2 lang-button">
-              <span className={engButton} onClick={switchLangEng}> eng </span>
-              <span className={rusButton} onClick={switchLangRus}> rus </span>
-          </li>
-          <li className="sun-moon col-1">
-            <ThemeToggler/>
-          </li>
+        <ul className="navbar container">
+          <div className="row gy-0">
+            <li className="col-3">
+              <a name="home" href="#">{lang.navbar.home}</a>
+            </li>
+            <li className="col-3">
+              <a href="#contacts"> {lang.navbar.contacts} </a>
+            </li>
+            <li className="col-3">
+              <a href={resumeLink} target="_blank">{lang.navbar.resume}</a>
+            </li>
+            <li className="col-2 lang-button">
+                <span className={engButton} onClick={switchLangEng}> eng </span>
+                <span className={rusButton} onClick={switchLangRus}> rus </span>
+            </li>
+            <li className="sun-moon col-1">
+              <ThemeToggler/>
+            </li>
+
+          </div>
         </ul>
     );
 }

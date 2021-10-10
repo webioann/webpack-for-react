@@ -10,38 +10,32 @@ function ThemeToggler() {
 
     const dispatch = useDispatch()
     const theme = useSelector(state => state.themeMode.theme)
-    const [themeMode,setThemeMode] = useState( 'dark')
 
     useEffect(() => {
         const localTheme = localStorage.getItem('theme')
         if(localTheme === undefined) {
-            setThemeMode('dark')
-            localStorage.setItem('theme','dark')
+            localStorage.setItem('theme','light')
         }else if(localTheme !== undefined) {
-            setThemeMode(localTheme)
-            localTheme === 'dark' ? dispatch(themeDark()) : dispatch(themeLight())
+            localTheme === 'light' ?  dispatch(themeLight()): dispatch(themeDark())
         }
     },[])
 
-    if( themeMode === 'dark') {
+    if( theme === 'dark' ) {
         return (
             <span onClick={ () => {
                 dispatch(themeLight())
-                setThemeMode( 'light' )
                 localStorage.setItem("theme", 'light')
             }}>
                 <FaRegSun/>
             </span>
         )
-    }
-     else {
+    } else if ( theme === 'light' ) {
         return (
             <span onClick={ () => {
                 dispatch(themeDark())
-                setThemeMode( 'dark' )
                 localStorage.setItem("theme", 'dark')
             }}>
-                <FaMoon/>
+                <FaMoon color='white'/>
             </span>
         )
     }

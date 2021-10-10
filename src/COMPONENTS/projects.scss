@@ -54,7 +54,7 @@
   }
   .user {
     .user-screenshot {
-      background-image: url("../assets/Screenshot1.jpg");
+      background-image: url("../assets/Mobile.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -62,7 +62,10 @@
       min-height: 600px;
       border-radius: $gut-1;
       margin: 1rem 0;
+      @media (min-width: 768px) {background-image: url("../assets/Tablet.jpg");}
+      @media (min-width: 1200px) {background-image: url("../assets/Desktop.jpg");}
     }
+
   }
   .weather {
     padding-bottom: $gut-3;
