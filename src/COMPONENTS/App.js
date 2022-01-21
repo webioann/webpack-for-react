@@ -1,9 +1,10 @@
 import React,{ useState,useEffect } from 'react'
-import Container from './container/Container.js';
+import Container from './Container/Container.js';
 import Navbar from './Navbar.js'
 import Summary from './Summary.js'
 import Projects from './Projects.js'
-import Contacts from './Contacts.js'
+import Contacts from './Contacts.js';
+import Footer from './Footer/Footer.js';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
       <Summary/>
       <Projects/>
       <Contacts/>
-      <footer> &copy; 2021. Create by Webioann. &reg; </footer>
+      <Footer/>
     </Container>
   )
 }
