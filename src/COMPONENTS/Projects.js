@@ -1,34 +1,36 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-
+import useTranslator from '../hooks/useTranslator'
+import { projTitle,portfolio,dashboard,weather } from '../data/multiLang'
 import './projects.scss'
 
 function Projects() {
 
-    const lang = useSelector(state => state.langMode.lang)
+    const lang = useSelector(state => state.redux.lang)
 
     return (
         <section className="projects row">
             <div className="title row">
-                <h2> { lang.projects.title } </h2>
+                <h2> { useTranslator(projTitle) } </h2>
             </div>
+
             <div className="portfolio row mt-3 py-3">
                 <div className="discr col-12">
                     <div className="subtitle row">
-                        <h3>#1 { lang.projects.portfolio.subtitle } </h3>
+                        <h3>#1 { useTranslator(portfolio.subtitle) } </h3>
                     </div>
                     <div className="link-box row mb-3">
                         <a href="https://github.com/webioann/portfolio/" target="_blank" className="link col-md-5">
-                            { lang.projects.portfolio.githubLink }
+                            githubLink 
                         </a>
                     </div>
                     <p>
-                        <span> {lang.projects.user.spanTools } </span>
-                        { lang.projects.portfolio.textTools}
+                        <span> { useTranslator(dashboard.spanTools) } </span>
+                        { useTranslator(portfolio.textTools) }
                     </p>
                     <p>
-                        <span> {lang.projects.user.spanDiscript} </span>
-                        { lang.projects.portfolio.textDicript }
+                        <span> { useTranslator(dashboard.spanDiscript) } </span>
+                        { useTranslator(portfolio.textDicript) }
                     </p>
                 </div>
             </div>
@@ -36,23 +38,23 @@ function Projects() {
             <div className="user row mt-3 py-3">
                 <div className="discr col-12">
                     <div className="subtitle row">
-                        <h3>#2 { lang.projects.user.subtitle } </h3>
+                        <h3>#2 { useTranslator(dashboard.subtitle) } </h3>
                     </div>
                     <div className="link-box row mb-3">
                         <a href="#" target="_blank" className="link col-md-5"> 
-                            { lang.projects.user.siteLink }
+                            siteLink 
                         </a>
                         <a href="https://github.com/webioann/users-database/" target="_blank" className="link col-md-5">
-                            { lang.projects.user.githubLink }
+                            githubLink 
                         </a>
                     </div>
                     <p>
-                        <span> {lang.projects.user.spanTools } </span>
-                        { lang.projects.user.textTools}
+                        <span> { useTranslator(dashboard.spanTools) } </span>
+                        { useTranslator(dashboard.textTools) }
                     </p>
                     <p>
-                        <span> {lang.projects.user.spanDiscript} </span>
-                        { lang.projects.user.textDicript }
+                        <span> { useTranslator(dashboard.spanDiscript) } </span>
+                        { useTranslator(dashboard.textDicript) }
                     </p>
                 </div>
                 <div className="user-screenshot col-12">
@@ -62,23 +64,23 @@ function Projects() {
             <div className="weather row mt-3 py-3">
                 <div className="discr col-md-6 col-lg-8">
                     <div className="subtitle row">
-                        <h3>#3 { lang.projects.weather.subtitle } </h3>
+                        <h3>#3 { useTranslator(weather.subtitle) } </h3>
                     </div>
                     <div className="link-box row mb-3">
                         <a href="#" target="_blank" className="link col-lg-8">
-                            { lang.projects.weather.siteLink } 
+                            siteLink  
                         </a>
                         <a href="https://github.com/webioann/sky-watcher/" target="_blank" className="link col-lg-8" >
-                            {lang.projects.weather.githubLink}
+                            githubLink
                         </a>
                     </div>
                     <p>
-                        <span> { lang.projects.weather.spanTools } </span>
-                        { lang.projects.weather.textTools }
+                        <span> { useTranslator(weather.spanTools) } </span>
+                        { useTranslator(weather.textTools) }
                     </p>
                     <p>
-                        <span> { lang.projects.weather.spanDiscript } </span>
-                        { lang.projects.weather.textDicript }
+                        <span> { useTranslator(weather.spanDiscript) } </span>
+                        { useTranslator(weather.textDicript) }
                     </p>
                 </div>
                 <div className="weather-screenshot col-md-6 col-lg-4"></div>

@@ -1,21 +1,20 @@
 import React,{useState,useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { themeLight,themeDark } from '../Redux-toolkit/themeReducer'
+import { themeLight,themeDark } from '../Redux-toolkit/reduxSlice'
+import { FaRegSun,FaMoon } from "react-icons/fa"
 import './navbar.scss'
-import { FaRegSun } from "react-icons/fa"
-import { FaMoon } from "react-icons/fa"
-
 
 function ThemeToggler() {
 
     const dispatch = useDispatch()
-    const theme = useSelector(state => state.themeMode.theme)
+    const theme = useSelector(state => state.redux.theme)
 
     useEffect(() => {
         const localTheme = localStorage.getItem('theme')
         if(localTheme === undefined) {
             localStorage.setItem('theme','light')
-        }else if(localTheme !== undefined) {
+        }
+        else {
             localTheme === 'light' ?  dispatch(themeLight()): dispatch(themeDark())
         }
     },[])
@@ -40,5 +39,4 @@ function ThemeToggler() {
         )
     }
 }
-
-export default ThemeToggler
+export default ThemeToggler;

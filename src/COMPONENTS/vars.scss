@@ -1,0 +1,64 @@
+/* ===================  VARIABLES  ================*/
+
+$font-main: "Lato", Helvetica, sans-serif;
+$font-second: "Roboto", sans-serif;
+$font-three: "Nunito", sans-serif;
+
+$dark-grey: #333447;
+$border-col: rgba(255, 255, 255, 0.9);
+$carrot: #f85904;
+
+$bg-dark: #202124;
+$bg-light: #ffffff;
+
+$color-dark: #474747;
+$color-light: #ffffff;
+
+$gutter: 1rem;
+$gutter-half: 0.5rem;
+
+$gut-1: calc(1rem * 0.25);
+$gut-2: calc(1rem * 0.5);
+$gut-3: 1rem;
+$gut-4: calc(1rem * 1.5);
+$gut-5: calc(1rem * 3);
+
+/*==========================TOTALL STYLES=====================*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* ====================== RESET ========================*/
+
+body,
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ======================  HTML * BODY  ==========================*/
+
+html,
+body {
+    font-size: 14px;
+    font-family: $font-main;
+    min-height: 100%;
+    font-weight: 300;
+    color: $color-dark;
+    width: 100%;
+    min-height: 100vh;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+

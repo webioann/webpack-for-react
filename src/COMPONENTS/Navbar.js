@@ -1,19 +1,17 @@
 import React,{useState, useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { langEng,langRus } from '../Redux-toolkit/langModeSlice'
-import { langEngs,langRuss } from '../Redux-toolkit/reduxSlicer'
-import './navbar.scss'
-import { content } from './textContent'
-import ThemeToggler from './ThemeToggler'
+import { langEng,langRus } from '../Redux-toolkit/reduxSlice'
+import ThemeToggler from './ThemeToggler'//===== ?????
 import useTranslator from '../hooks/useTranslator'
-import { navbarText } from '../data/textContent'
+import './navbar.scss'
+
 
 function Navbar() {
 
 
     let resumeLink = "https://drive.google.com/file/d/1Lr05RkXCVdrd4yoEPv1a5fQ3rwu-sVMN/view?usp=sharing"
 
-    const lang = useSelector(state => state.langMode.lang)
+    const lang = useSelector(state => state.redux.lang)
     const dispatch = useDispatch()
     const[engButton,setEngButton] = useState("active")
     const[rusButton,setRusButton] = useState("not-active")
@@ -24,12 +22,10 @@ function Navbar() {
         localStorage.setItem("lang", 'ENG')
       }else if(localLang === 'ENG') {
         dispatch(langEng())
-        dispatch(langEngs())
         setRusButton("not-active")
         setEngButton("active")
       }else if(localLang === 'RUS') {
         dispatch(langRus())
-        dispatch(langRuss())
         setEngButton("not-active")
         setRusButton("active")
       }
