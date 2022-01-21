@@ -9,8 +9,8 @@ function App() {
 
   return (
     <Container>
-      {/* <Navbar/>
-      <Summary/> */}
+      <Navbar/>
+      <Summary/>
       <Projects/>
       <Contacts/>
       <footer> &copy; 2021. Create by Webioann. &reg; </footer>

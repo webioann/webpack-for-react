@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { langEng,langRus } from '../Redux-toolkit/reduxSlice'
 import ThemeToggler from './ThemeToggler'//===== ?????
 import useTranslator from '../hooks/useTranslator'
+import { navbar } from '../data/multiLang'
 import './navbar.scss'
 
 
@@ -48,13 +49,19 @@ function Navbar() {
         <ul className="navbar container">
           <div className="row gy-0">
             <li className="col-3">
-              <a name="home" href="#">{useTranslator(navbarText.home)}</a>
+              <a name="home" href="#">
+                {useTranslator(navbar.home)}
+              </a>
             </li>
             <li className="col-3">
-              <a href="#contacts"> {lang.navbar.contacts} </a>
+              <a href="#contacts">
+                {useTranslator(navbar.contacts)}
+              </a>
             </li>
             <li className="col-3">
-              <a href={resumeLink} target="_blank">{lang.navbar.resume}</a>
+              <a href={resumeLink} target="_blank">
+                {useTranslator(navbar.resume)}
+              </a>
             </li>
             <li className="col-2 lang-button">
                 <span className={engButton} onClick={switchLangEng}> eng </span>

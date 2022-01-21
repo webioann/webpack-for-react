@@ -6,8 +6,6 @@ import './projects.scss'
 
 function Projects() {
 
-    const lang = useSelector(state => state.redux.lang)
-
     return (
         <section className="projects row">
             <div className="title row">

@@ -27,17 +27,17 @@ export const summary = {
         eng: 'Summary for me',
         rus: 'Коротко обо мне'
     },
-    projects: {
-        eng: 'projects',
-        rus: 'мои проэкты'
+    aboutMeSubtitle: {
+        eng: 'about me',
+        rus: 'обо мне'
     },
-    contacts: {
-        eng: 'contacts',
-        rus: 'контакты'
+    aboutMeText: {
+        eng: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur',
+        rus: 'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.'
     },
-    resume: {
-        eng: 'resume',
-        rus: 'резюме'
+    skills: {
+        eng: 'skills',
+        rus: 'навыки'
     },
 };
 //=====================================
@@ -58,7 +58,7 @@ export const portfolio = {
     },
     textDicript: {
         eng: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur',
-        rus: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur'
+        rus: 'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.'
     },
 };
 //==========================================
@@ -78,7 +78,7 @@ export const dashboard = {
     },
     textDicript: {
         eng: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur',
-        rus: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur'
+        rus: 'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.'
     },
 };
 //================================
@@ -98,7 +98,7 @@ export const weather = {
     },
     textDicript: {
         eng: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur',
-        rus: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur'
+        rus: 'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.'
     },
 };
 //======================
