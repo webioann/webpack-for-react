@@ -1,0 +1,32 @@
+@import '../vars.scss';
+
+.theme-switcher-light,
+.theme-switcher-dark{
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: inherit;
+}
+.theme-switcher-light{
+    background-color: $lt-hover;
+    .icon-light{
+        color: $color-light;
+    }
+}
+.theme-switcher-dark{
+    background-color: $dk-hover;
+    .icon-dark{
+        color: $color-light;
+    }
+}
+/* @media (min-width: 576px) {
+    .theme-switcher-light,
+    .theme-switcher-dark{
+        margin-right: 0;
+    }
+} */

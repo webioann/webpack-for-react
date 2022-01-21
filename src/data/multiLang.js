@@ -51,7 +51,10 @@ export const portfolio = {
         eng: 'Use tools : ',
         rus: 'Использовал : '
     },
-    textTools: " React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery",
+    textTools: {
+        eng: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery',
+        rus: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery'
+    },
     spanDiscript: {
         eng: 'Discription : ',
         rus: 'Описание проэкта : '
@@ -71,7 +74,10 @@ export const dashboard = {
         eng: 'Use tools : ',
         rus: 'Использовал : '
     },
-    textTools: " React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery",
+    textTools: {
+        eng: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery',
+        rus: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery'
+    },
     spanDiscript: {
         eng: 'Discription : ',
         rus: 'Описание проэкта : '
@@ -91,7 +97,10 @@ export const weather = {
         eng: 'Use tools : ',
         rus: 'Использовал : '
     },
-    textTools: " React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery",
+    textTools: {
+        eng: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery',
+        rus: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery'
+    },
     spanDiscript: {
         eng: 'Discription : ',
         rus: 'Описание проэкта : '

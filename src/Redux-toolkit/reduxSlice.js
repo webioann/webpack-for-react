@@ -4,7 +4,7 @@ export const reduxSlice = createSlice({
     name: 'redux',
     initialState: {
         lang: 'eng',
-        theme: 'dark'
+        theme: 'light'
     },
     reducers: {
         langEng: state => { state.lang = 'eng' },
