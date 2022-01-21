@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { content } from '../COMPONENTS/textContent'
+import { content } from '../components/textContent'
 
 export const langModeSlice = createSlice({
     name: 'langMode',

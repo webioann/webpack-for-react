@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { dataSkills } from './data-skills.js'
+import { dataSkills } from '../data/data-skills'
 import { useSelector } from 'react-redux'
 import './summary.scss'
 
@@ -27,8 +27,8 @@ function Summary() {
                     <div className="subtitle row">
                         <h3> { lang.summary.skills.subtitle }</h3>
                     </div>
-                    <div className='tech-skills row'>
-                        { dataSkills.map((data) => ( <div key={data.id}
+                    <div className='tech-skills row'>
+                        { dataSkills.map((data) => ( <div key={data.id}
                             className={classes}
                             style={{ animationDelay: data.delay }}>
                             <p className={border}> { data.title } </p>

@@ -1,10 +1,12 @@
 import React,{useState, useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { langEng,langRus } from '../Redux-toolkit/langModeSlice'
+import { langEngs,langRuss } from '../Redux-toolkit/reduxSlicer'
 import './navbar.scss'
 import { content } from './textContent'
 import ThemeToggler from './ThemeToggler'
-import { useLocalStorage } from '../hooks/useLocalStorage'
+import useTranslator from '../hooks/useTranslator'
+import { navbarText } from '../data/textContent'
 
 function Navbar() {
 
@@ -22,10 +24,12 @@ function Navbar() {
         localStorage.setItem("lang", 'ENG')
       }else if(localLang === 'ENG') {
         dispatch(langEng())
+        dispatch(langEngs())
         setRusButton("not-active")
         setEngButton("active")
       }else if(localLang === 'RUS') {
         dispatch(langRus())
+        dispatch(langRuss())
         setEngButton("not-active")
         setRusButton("active")
       }
@@ -48,7 +52,7 @@ function Navbar() {
         <ul className="navbar container">
           <div className="row gy-0">
             <li className="col-3">
-              <a name="home" href="#">{lang.navbar.home}</a>
+              <a name="home" href="#">{useTranslator(navbarText.home)}</a>
             </li>
             <li className="col-3">
               <a href="#contacts"> {lang.navbar.contacts} </a>
