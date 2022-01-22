@@ -1,11 +1,8 @@
-import React from 'react'
+import React,{ useState,useEffect } from 'react'
 import Container from './Container/Container.js';
 import Burger from './Burger/Burger.js';
 import Navbar from './Navbar/Navbar.js';
-import NavbarMobile from './NavbarMobile/NavbarMobile.js';
-import Link_Home from './Link_Home/Link_Home.js';
-import Link_Contacts from './Link_Contacts/Link_Contacts.js';
-import Link_Resume from './Link_Resume/Link_Resume.js';
+import Menu from './Menu/Menu.js';
 import LangButton from './LangButton/LangButton.js';
 import ThemeToggler from './ThemeToggler/ThemeToggler.js';
 import Summary from './Summary.js'
@@ -15,16 +12,21 @@ import Footer from './Footer/Footer.js';
 
 function App() {
 
+  const [move,setMove] = useState('-370px')
+
+  const move_navbar = () => {
+    move === '-370px' ? setMove('0px') : setMove('-370px')
+    console.log(`CLICK`);
+  }
+
   return (
     <Container>
-      <Navbar>
-        <Link_Home/>
-        <Link_Contacts/>
-        <Link_Resume/>
+      <Navbar move={move}>
+        <Menu/>
         <LangButton/>
         <ThemeToggler/>
       </Navbar>
-      <Burger/>
+      <Burger move_navbar={move_navbar}/>
       <Summary/>
       <Projects/>
       <Contacts/>

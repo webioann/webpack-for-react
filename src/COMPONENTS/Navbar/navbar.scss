@@ -11,14 +11,23 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        .navbar {
-            background: $navbar-bg;
-            backdrop-filter: blur( 3px );
+        overflow: hidden;
+        .navbar-light, .navbar-dark {
+            background: $navbar-bg-lt;
+            backdrop-filter: blur( 2px );
             -webkit-backdrop-filter: blur( 3px );
             display: flex;
             flex-direction: column;
             padding: 10px 1rem;
+            transition: all 0.7s linear;
         }
+        .navbar-light{
+            background: $navbar-bg-lt;
+        }
+        .navbar-dark{
+            background: $navbar-bg-dk;
+        }
+
         @media (min-width: 576px) {
             .navbar{
                 flex-direction: row;
