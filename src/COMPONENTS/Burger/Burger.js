@@ -5,8 +5,12 @@ import './burger.scss';
 function Burger() {
 
     return (
-        <div className='burger-box'>
-            <GiHamburgerMenu className='burger-icon'/>
+        <div id='fixed-top'>
+            <div className='wrapper-burger'>
+                <div className='burger-box'>
+                    <GiHamburgerMenu className='burger-icon'/>
+                </div>
+            </div>
         </div>
     );
 }

@@ -23,16 +23,8 @@ function App() {
         <Link_Resume/>
         <LangButton/>
         <ThemeToggler/>
-        <Burger/>
       </Navbar>
-      {/* <NavbarMobile>
-        <Link_Home/>
-        <Link_Contacts/>
-        <Link_Resume/>
-        <LangButton/>
-        <ThemeToggler/>
-        
-      </NavbarMobile> */}
+      <Burger/>
       <Summary/>
       <Projects/>
       <Contacts/>
