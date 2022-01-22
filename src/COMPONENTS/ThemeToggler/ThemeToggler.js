@@ -14,11 +14,11 @@ function ThemeToggle() {
     }
 
     return (
-        <div className={`theme-switcher-${themeMode}`}
+        <div className='theme-toggler'
             onClick={switchThemeMode}>
             {themeMode === 'light' 
-                ? <FaMoon className={`icon-${themeMode}`}/>
-                : <FaRegSun className={`icon-${themeMode}`}/>}
+                ? <FaMoon className='moon-icon'/>
+                : <FaRegSun className='sun-icon'/>}
         </div>
     )
 }

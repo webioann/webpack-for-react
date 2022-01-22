@@ -1,7 +1,7 @@
 import React from 'react';
 import useTranslator from '../../hooks/useTranslator'
 import { navbar } from '../../data/multiLang'
-import './navbar.scss'
+import './link-contacts.scss'
 
 function Link_Contacts() {
 

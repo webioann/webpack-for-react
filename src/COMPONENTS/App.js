@@ -1,9 +1,11 @@
 import React from 'react'
 import Container from './Container/Container.js';
+import Burger from './Burger/Burger.js';
 import Navbar from './Navbar/Navbar.js';
-import Link_Home from './Navbar/Link_Home.js';
-import Link_Contacts from './Navbar/Link_Contacts.js';
-import Link_Resume from './Navbar/Link_Resume.js';
+import NavbarMobile from './NavbarMobile/NavbarMobile.js';
+import Link_Home from './Link_Home/Link_Home.js';
+import Link_Contacts from './Link_Contacts/Link_Contacts.js';
+import Link_Resume from './Link_Resume/Link_Resume.js';
 import LangButton from './LangButton/LangButton.js';
 import ThemeToggler from './ThemeToggler/ThemeToggler.js';
 import Summary from './Summary.js'
@@ -21,7 +23,16 @@ function App() {
         <Link_Resume/>
         <LangButton/>
         <ThemeToggler/>
+        <Burger/>
       </Navbar>
+      {/* <NavbarMobile>
+        <Link_Home/>
+        <Link_Contacts/>
+        <Link_Resume/>
+        <LangButton/>
+        <ThemeToggler/>
+        
+      </NavbarMobile> */}
       <Summary/>
       <Projects/>
       <Contacts/>

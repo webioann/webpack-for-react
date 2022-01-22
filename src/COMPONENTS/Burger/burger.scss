@@ -1,0 +1,17 @@
+@import '../vars.scss';
+
+.burger-box{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    .burger-icon{
+        color: $carrot;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+@media (min-width: 576px) {
+    .burger-box{
+        display: none;
+    }
+}
