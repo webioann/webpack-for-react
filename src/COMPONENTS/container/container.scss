@@ -1,23 +1,17 @@
 @import '../vars.scss';
 
-.container-fluid-light{
-    background-color: $lt-all-box-bg;
-}
-.container-fluid-dark{
-    background-color: $dk-all-box-bg;
-}
 .container-light,
 .container-dark{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding: 40px 1rem 1rem 1rem;
     position: relative;
     overflow: hidden;
 }
-.container-light{
-    background-color: $lt-app;
-}
-.container-dark{
-    background-color: $dk-app;
-}
+// .container-light{
+//     background-color: $lt-app;
+// }
+// .container-dark{
+//     background-color: $dk-app;
+// }

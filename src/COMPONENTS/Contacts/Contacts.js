@@ -15,24 +15,20 @@ function Contacts() {
                 <p>{ phone }</p>
             </div>
 
-            <div className="linkedin box">
-                <a href={ linkedInLink } target="_blank">
-                    <FaLinkedin className='icon'/>
-                </a>
+            <a className='linkedin box' href={ linkedInLink } target="_blank">
+                <FaLinkedin className='icon'/>
                 <p>linkedin./alexander-veles</p>
-            </div>
+            </a>
 
             <div className="email box">
                 <HiOutlineMail className='icon'/>
                 <p>{ email }</p>
             </div>
 
-            <div className="git-hub box">
-                <a href={ gitHubLink } target="_blank">
-                    <VscGithub className='icon'/>
-                </a>
+            <a className='git-hub box' href={ gitHubLink } target="_blank">
+                <VscGithub className='icon'/>
                 <p>github.com/webioann</p>
-            </div>
+            </a>
         </div>
     )
 }

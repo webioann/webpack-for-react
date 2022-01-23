@@ -1,8 +1,8 @@
-@import "../reactor.scss";
+@import "../vars.scss";
 
 .projects {
-  padding-top: $gut-3;
-  padding-bottom: $gut-3;
+  padding-top: 10px;
+  padding-bottom: 10px;
   .title {
     text-align: center;
   }
@@ -35,7 +35,7 @@
   }
 
   span {
-    color: $color-light;
+    color: green;
     font-weight: 800;
   }
   .link-box {
@@ -43,8 +43,8 @@
     .link {
       font-weight: 600;
       text-align: center;
-      padding: $gut-1 $gut-2;
-      margin-bottom: $gut-2;
+      padding: 5px 8px;
+      margin-bottom: 8px;
     }
     .link:hover {
       color: $carrot;
@@ -54,25 +54,25 @@
   }
   .user {
     .user-screenshot {
-      background-image: url("../assets/Mobile.jpg");
+      background-image: url("../../assets/Mobile.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       width: 100%;
       min-height: 600px;
-      border-radius: $gut-1;
+      border-radius: 5px;
       margin: 1rem 0;
-      @media (min-width: 768px) {background-image: url("../assets/Tablet.jpg");}
-      @media (min-width: 1200px) {background-image: url("../assets/Desktop.jpg");}
+      @media (min-width: 768px) {background-image: url("../../assets/Tablet.jpg");}
+      @media (min-width: 1200px) {background-image: url("../../assets/Desktop.jpg");}
     }
 
   }
   .weather {
-    padding-bottom: $gut-3;
+    padding-bottom: 10px;
     .weather-screenshot {
       min-height: 300px;
       background-color: #ccc;
-      border-radius: $gut-1;
+      border-radius: 5px;
       margin: 1rem 0;
     }
   }

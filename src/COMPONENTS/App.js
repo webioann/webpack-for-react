@@ -1,12 +1,12 @@
 import React,{ useState,useEffect } from 'react';
 import Container from './Container/Container.js';
-import Burger from './Burger/Burger.js';
+// import Burger from './Burger/Burger.js';
 import Navbar from './Navbar/Navbar.js';
 import Menu from './Menu/Menu.js';
 import LangButton from './LangButton/LangButton.js';
 import ThemeToggler from './ThemeToggler/ThemeToggler.js';
-import Summary from './Summary.js';
-import Projects from './Projects.js';
+import Summary from './Summary/Summary.js';
+import Projects from './Projects/Projects.js';
 import Contacts from './Contacts/Contacts.js';
 import Footer from './Footer/Footer.js';
 //========= hooks import ==========
@@ -36,7 +36,6 @@ function App() {
         <LangButton/>
         <ThemeToggler/>
       </Navbar>
-      
       <Summary/>
       <Projects/>
       <Contacts/>

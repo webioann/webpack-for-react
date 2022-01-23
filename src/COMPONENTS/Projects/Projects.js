@@ -1,18 +1,17 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import useTranslator from '../hooks/useTranslator'
-import { projTitle,portfolio,dashboard,weather } from '../data/multiLang'
-import './projects.scss'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import useTranslator from '../../hooks/useTranslator';
+import { projTitle,portfolio,dashboard,weather } from '../../data/multiLang';
+import { VscGithub } from 'react-icons/vsc';
+import { CgWebsite } from 'react-icons/cg';
+import './projects.scss';
 
 function Projects() {
 
     return (
-        <section className="projects row">
-            <div className="title row">
-                <h2> { useTranslator(projTitle) } </h2>
-            </div>
-
-            <div className="portfolio row mt-3 py-3">
+        <section className="projects">
+            <h2 className="title">{ useTranslator(projTitle) }</h2>
+            <section className="portfolio-box">
                 <div className="discr col-12">
                     <div className="subtitle row">
                         <h3>#1 { useTranslator(portfolio.subtitle) } </h3>
@@ -31,9 +30,9 @@ function Projects() {
                         { useTranslator(portfolio.textDicript) }
                     </p>
                 </div>
-            </div>
+            </section>
 
-            <div className="user row mt-3 py-3">
+            <section className="dashboard">
                 <div className="discr col-12">
                     <div className="subtitle row">
                         <h3>#2 { useTranslator(dashboard.subtitle) } </h3>
@@ -57,9 +56,9 @@ function Projects() {
                 </div>
                 <div className="user-screenshot col-12">
                 </div>
-            </div>
+            </section>
 
-            <div className="weather row mt-3 py-3">
+            <section className="weather row mt-3 py-3">
                 <div className="discr col-md-6 col-lg-8">
                     <div className="subtitle row">
                         <h3>#3 { useTranslator(weather.subtitle) } </h3>
@@ -82,7 +81,7 @@ function Projects() {
                     </p>
                 </div>
                 <div className="weather-screenshot col-md-6 col-lg-4"></div>
-            </div>
+            </section>
 
         </section>
     )
