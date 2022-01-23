@@ -6,7 +6,7 @@ function Container(props) {
     const theme = useSelector(state => state.redux.theme) 
 
     return (
-        <div className={`container-fluid-${theme}`}>
+        <div id='top' className={`container-fluid-${theme}`}>
             <div className={`container-${theme}`}>
                 {props.children}
             </div>

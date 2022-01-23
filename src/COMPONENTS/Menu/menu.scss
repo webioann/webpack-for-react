@@ -1,9 +1,28 @@
 @import '../vars.scss';
 
-.link{
-    color: #fff;
-    font-weight: 500;
-
-    flex: 1;
-    text-align: center;
+.menu{
+    display: flex;
+    flex-direction: column;
+    .link{
+        color: #fff;
+        font-weight: 700;
+        display: flex;
+        padding: 1rem;
+        flex: 1;
+        a:hover{
+            color: $carrot;
+        }
+    }
+}
+@media (min-width: 576px) {
+    .menu{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        .link{
+            justify-content: center;
+            padding: 0;
+        }
+    }
 }

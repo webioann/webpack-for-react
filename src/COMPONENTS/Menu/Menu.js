@@ -1,17 +1,15 @@
 import React from 'react';
 import useTranslator from '../../hooks/useTranslator';
-import { navbar } from '../../data/multiLang'
-
+import { navbar } from '../../data/multiLang';
+import { resumeLink } from '../../constants/constants';
 import './menu.scss'
 
 function Menu() {
 
-    const resumeLink = "https://drive.google.com/file/d/1Lr05RkXCVdrd4yoEPv1a5fQ3rwu-sVMN/view?usp=sharing"
-
     return (
         <div className='menu'>
             <div className='link'>
-                <a name='home' href='#'>
+                <a href='#top'>
                     { useTranslator(navbar.home) }
                 </a>
             </div>

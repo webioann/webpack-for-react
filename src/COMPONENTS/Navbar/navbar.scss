@@ -6,13 +6,12 @@
     left: 0;
     right: 0;
     z-index: 10;
-    .wrapper{
+    .nav-wrapper{
         max-width: 1200px;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
         overflow: hidden;
         .navbar-light, .navbar-dark {
+            width: 50%; //============ width 50%
             background: $navbar-bg-lt;
             backdrop-filter: blur( 2px );
             -webkit-backdrop-filter: blur( 3px );
@@ -20,6 +19,7 @@
             flex-direction: column;
             padding: 10px 1rem;
             transition: all 0.7s linear;
+            position: relative;
         }
         .navbar-light{
             background: $navbar-bg-lt;
@@ -29,11 +29,11 @@
         }
 
         @media (min-width: 576px) {
-            .navbar{
+            .navbar-light, .navbar-dark{
                 flex-direction: row;
+                align-items: center;
+                width: 100%;
             }
         }
-    
     }
-    
 }

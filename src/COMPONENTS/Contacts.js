@@ -3,8 +3,8 @@ import './contacts.scss'
 
 function Contacts() {
     return (
-        <div className="contacts row my-3">
-            <a name="contacts" href="#"></a>
+        <div id='contacts' className="contacts row my-3">
+            {/* <a name="contacts" href="#"></a> */}
 
             <div className="viber col-sm-6 col-lg-3">
                 <div className="row py-2">
