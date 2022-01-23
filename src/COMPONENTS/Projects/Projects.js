@@ -11,33 +11,44 @@ function Projects() {
     return (
         <section className="projects">
             <h2 className="title">{ useTranslator(projTitle) }</h2>
-            <section className="portfolio-box">
-                <div className="discr col-12">
-                    <div className="subtitle row">
-                        <h3>#1 { useTranslator(portfolio.subtitle) } </h3>
+            <section className="portfolio">
+                <div className="wrapper">
+                    <h3 className="subtitle">#1 { useTranslator(portfolio.subtitle) }</h3>
+
+                    <div className='discription'>
+                        <span>{ useTranslator(dashboard.spanDiscript) }</span>
+                        <p>{ useTranslator(portfolio.textDicript) }</p>
                     </div>
-                    <div className="link-box row mb-3">
+                    
+                    <div className='used-tools'>
+                        <span>{ useTranslator(dashboard.spanTools) }</span>
+                        <p>{ useTranslator(portfolio.textTools) }</p>
+                    </div>
+
+                    <div className="link-box">
                         <a href="https://github.com/webioann/portfolio/" target="_blank" className="link col-md-5">
                             githubLink 
                         </a>
                     </div>
-                    <p>
-                        <span> { useTranslator(dashboard.spanTools) } </span>
-                        { useTranslator(portfolio.textTools) }
-                    </p>
-                    <p>
-                        <span> { useTranslator(dashboard.spanDiscript) } </span>
-                        { useTranslator(portfolio.textDicript) }
-                    </p>
                 </div>
+
             </section>
 
             <section className="dashboard">
-                <div className="discr col-12">
-                    <div className="subtitle row">
-                        <h3>#2 { useTranslator(dashboard.subtitle) } </h3>
+                <div className="wrapper">
+                    <h3 className="subtitle">#2 { useTranslator(dashboard.subtitle) } </h3>
+                    
+                    <div className='discription'>
+                        <span>{ useTranslator(dashboard.spanDiscript) }</span>
+                        <p>{ useTranslator(dashboard.textDicript) }</p>
                     </div>
-                    <div className="link-box row mb-3">
+
+                    <div className='used-tools'>
+                        <span>{ useTranslator(dashboard.spanTools) }</span>
+                        <p>{ useTranslator(dashboard.textTools) }</p>
+                    </div>
+
+                    <div className="link-box">
                         <a href="#" target="_blank" className="link col-md-5"> 
                             siteLink 
                         </a>
@@ -45,24 +56,29 @@ function Projects() {
                             githubLink 
                         </a>
                     </div>
-                    <p>
-                        <span> { useTranslator(dashboard.spanTools) } </span>
-                        { useTranslator(dashboard.textTools) }
-                    </p>
-                    <p>
-                        <span> { useTranslator(dashboard.spanDiscript) } </span>
-                        { useTranslator(dashboard.textDicript) }
-                    </p>
                 </div>
-                <div className="user-screenshot col-12">
+
+                <div className='screenshot'>
+
                 </div>
+
             </section>
 
-            <section className="weather row mt-3 py-3">
-                <div className="discr col-md-6 col-lg-8">
-                    <div className="subtitle row">
-                        <h3>#3 { useTranslator(weather.subtitle) } </h3>
+            <section className="weather">
+                <div className="wrapper">
+                    <h3 className="subtitle">#3 { useTranslator(weather.subtitle) } </h3>
+
+                    <div className='discription'>
+                        <span>{ useTranslator(weather.spanDiscript) }</span>
+                        <p>{ useTranslator(weather.textDicript) }</p>
                     </div>
+
+                    <div className='used-tools'>
+                        <span>{ useTranslator(weather.spanTools) }</span>
+                        <p>{ useTranslator(weather.textTools) }</p>
+                    </div>
+
+
                     <div className="link-box row mb-3">
                         <a href="#" target="_blank" className="link col-lg-8">
                             siteLink  
@@ -71,16 +87,11 @@ function Projects() {
                             githubLink
                         </a>
                     </div>
-                    <p>
-                        <span> { useTranslator(weather.spanTools) } </span>
-                        { useTranslator(weather.textTools) }
-                    </p>
-                    <p>
-                        <span> { useTranslator(weather.spanDiscript) } </span>
-                        { useTranslator(weather.textDicript) }
-                    </p>
                 </div>
-                <div className="weather-screenshot col-md-6 col-lg-4"></div>
+
+                <div className='screenshot'>
+
+                </div>
             </section>
 
         </section>
