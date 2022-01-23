@@ -11,6 +11,7 @@ function Projects() {
     return (
         <section className="projects">
             <h2 className="title">{ useTranslator(projTitle) }</h2>
+
             <section className="portfolio">
                 <div className="wrapper">
                     <h3 className="subtitle">#1 { useTranslator(portfolio.subtitle) }</h3>
@@ -27,7 +28,7 @@ function Projects() {
 
                     <div className="link-box">
                         <a href="https://github.com/webioann/portfolio/" target="_blank" className="link col-md-5">
-                            githubLink 
+                            <VscGithub/>
                         </a>
                     </div>
                 </div>
@@ -50,10 +51,10 @@ function Projects() {
 
                     <div className="link-box">
                         <a href="#" target="_blank" className="link col-md-5"> 
-                            siteLink 
+                            <CgWebsite/> 
                         </a>
                         <a href="https://github.com/webioann/users-database/" target="_blank" className="link col-md-5">
-                            githubLink 
+                            <VscGithub/>
                         </a>
                     </div>
                 </div>
@@ -81,10 +82,10 @@ function Projects() {
 
                     <div className="link-box row mb-3">
                         <a href="#" target="_blank" className="link col-lg-8">
-                            siteLink  
+                            <CgWebsite/>  
                         </a>
                         <a href="https://github.com/webioann/sky-watcher/" target="_blank" className="link col-lg-8" >
-                            githubLink
+                            <VscGithub/>
                         </a>
                     </div>
                 </div>
