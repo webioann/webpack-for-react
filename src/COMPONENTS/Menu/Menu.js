@@ -1,8 +1,8 @@
 import React from 'react';
 import useTranslator from '../../hooks/useTranslator';
 import { navbar } from '../../data/multiLang';
-import { resumeLink } from '../../constants/constants';
-import './menu.scss'
+import { resumeLink } from '../../data/constants';
+import './menu.scss';
 
 function Menu() {
 
@@ -19,7 +19,7 @@ function Menu() {
                 </a>
             </div>
             <div className='link'>
-                <a href={resumeLink}>
+                <a href={ resumeLink } target="_blank">
                     { useTranslator(navbar.resume) }
                 </a>
             </div>

@@ -7,7 +7,7 @@ import LangButton from './LangButton/LangButton.js';
 import ThemeToggler from './ThemeToggler/ThemeToggler.js';
 import Summary from './Summary.js';
 import Projects from './Projects.js';
-import Contacts from './Contacts.js';
+import Contacts from './Contacts/Contacts.js';
 import Footer from './Footer/Footer.js';
 //========= hooks import ==========
 import { useWindowWidth } from '../hooks/useWindowWidth'
