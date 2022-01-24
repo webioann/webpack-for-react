@@ -17,8 +17,8 @@ function ThemeToggle() {
         <div className='theme-toggler'
             onClick={switchThemeMode}>
             {themeMode === 'light' 
-                ? <FaMoon className='moon-icon'/>
-                : <FaRegSun className='sun-icon'/>}
+                ? <FaMoon className='icon moon'/>
+                : <FaRegSun className='icon sun'/>}
         </div>
     )
 }

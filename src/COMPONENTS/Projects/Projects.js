@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import useTranslator from '../../hooks/useTranslator';
 import { projTitle,portfolio,dashboard,weather } from '../../data/multiLang';
+import { gitHubPortfolio,gitHubDashboard,gitHubWeather } from '../../data/constants';
 import { VscGithub } from 'react-icons/vsc';
 import { CgWebsite } from 'react-icons/cg';
 import './projects.scss';
@@ -26,11 +27,15 @@ function Projects() {
                         <p>{ useTranslator(portfolio.textTools) }</p>
                     </div>
 
-                    <div className="link-box">
-                        <a href="https://github.com/webioann/portfolio/" target="_blank" className="link col-md-5">
-                            <VscGithub/>
+                        <a href={gitHubPortfolio} 
+                            target="_blank"
+                            className='link-box'>
+                            <VscGithub className='icon'/>
+                            <span className='link-text'>
+                                see my code
+                            </span>
                         </a>
-                    </div>
+
                 </div>
 
             </section>
@@ -49,14 +54,25 @@ function Projects() {
                         <p>{ useTranslator(dashboard.textTools) }</p>
                     </div>
 
-                    <div className="link-box">
-                        <a href="#" target="_blank" className="link col-md-5"> 
-                            <CgWebsite/> 
-                        </a>
-                        <a href="https://github.com/webioann/users-database/" target="_blank" className="link col-md-5">
-                            <VscGithub/>
-                        </a>
-                    </div>
+
+                    <a href={gitHubDashboard} 
+                        target="_blank"
+                        className='link-box'>
+                        <VscGithub className='icon'/>
+                        <span className='link-text'>
+                            see my code
+                        </span>
+                    </a>
+
+                    <a href='#' 
+                        target="_blank"
+                        className='link-box'>
+                        <CgWebsite className='icon'/>
+                        <span className='link-text'>
+                            visit my site
+                        </span>
+                    </a>
+
                 </div>
 
                 <div className='screenshot'>
@@ -80,12 +96,12 @@ function Projects() {
                     </div>
 
 
-                    <div className="link-box row mb-3">
-                        <a href="#" target="_blank" className="link col-lg-8">
-                            <CgWebsite/>  
+                    <div className="link-box-tt">
+                        <a href="#" target="_blank" className="link">
+                            <CgWebsite className='icon'/>  
                         </a>
-                        <a href="https://github.com/webioann/sky-watcher/" target="_blank" className="link col-lg-8" >
-                            <VscGithub/>
+                        <a href={gitHubWeather} target="_blank" className="link" >
+                            <VscGithub className='icon'/>
                         </a>
                     </div>
                 </div>

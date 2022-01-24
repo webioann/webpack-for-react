@@ -10,11 +10,26 @@
   .subtitle {
     padding: 1rem;
   }
-  
   .wrapper{
     display: flex;
     flex-direction: column;
   
+  }
+  .link-box{
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
+    margin-top: 10px;
+    max-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+    .link-text{
+      margin-left: 10px;
+    }
+  }
+  span {
+    color: green;
+    font-weight: 800;
   }
 
   // =====================
@@ -32,20 +47,4 @@
     flex-direction: column;
   }
 
-  span {
-    color: green;
-    font-weight: 800;
-  }
-  .link-box {
-    justify-content: space-between;
-    .link {
-      font-weight: 600;
-      text-align: center;
-      padding: 5px 8px;
-      margin-bottom: 8px;
-    }
-    .link:hover {
-      color: $carrot;
-    }
-  }
 }

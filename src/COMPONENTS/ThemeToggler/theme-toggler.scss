@@ -11,11 +11,8 @@
     position: absolute;
     top: 0;
     right: 20px;
-    .moon-icon{
-        color: $carrot;
-    }
-    .sun-icon{
-        color: $carrot;
+    .moon, .sun{
+        font-size: 1rem;
     }
 }
 @media (min-width: 576px) {

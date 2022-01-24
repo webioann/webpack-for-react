@@ -90,6 +90,17 @@ body {
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
 }
+//======= GLOBAL CLASSES ==================
+.icon {
+    color: $carrot;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.not-link{
+    cursor: default;
+}
+
+//===============================
 ul li {
     list-style: none;
 }

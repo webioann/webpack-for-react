@@ -16,7 +16,7 @@ function Contacts() {
             </div>
 
             <a className='linkedin box' href={ linkedInLink } target="_blank">
-                <FaLinkedin className='icon'/>
+                <FaLinkedin className='icon not-link'/>
                 <p>linkedin./alexander-veles</p>
             </a>
 
@@ -26,7 +26,7 @@ function Contacts() {
             </div>
 
             <a className='git-hub box' href={ gitHubLink } target="_blank">
-                <VscGithub className='icon'/>
+                <VscGithub className='icon not-link'/>
                 <p>github.com/webioann</p>
             </a>
         </div>
