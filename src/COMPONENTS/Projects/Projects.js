@@ -1,10 +1,7 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import useTranslator from '../../hooks/useTranslator';
 import { projTitle,portfolio,dashboard,weather } from '../../data/multiLang';
 import { gitHubPortfolio,gitHubDashboard,gitHubWeather } from '../../data/constants';
-import { VscGithub } from 'react-icons/vsc';
-import { CgWebsite } from 'react-icons/cg';
 import LinkBox from '../LinkBox/LinkBox'
 import './projects.scss';
 
