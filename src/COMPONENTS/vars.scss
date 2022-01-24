@@ -124,6 +124,7 @@ a:active {
 //================== animation groveLine ====================
 .subtitle::after{
     content: '';
+    display: flex;
     animation-name: growLine;
     animation-duration: 4300ms;
     animation-delay: 400ms;
@@ -138,8 +139,8 @@ a:active {
 }
 @keyframes growLine {
     0%{ width: 0%; }
-    95%{ width: 53%; }
-    100%{ width: 50%; }
+    95%{ width: 103%; }
+    100%{ width: 100%; }
 }
 //=========================================
 

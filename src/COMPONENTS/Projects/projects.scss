@@ -22,19 +22,10 @@
     color: green;
     font-weight: 700;
   }
-  // =====================
-  .portfolio{
-    display: flex;
-  }
-
-  .dashboard{
+  section{
     display: flex;
     flex-direction: column;
-  }
 
-  .weather{
-    display: flex;
-    flex-direction: column;
   }
 
 }
