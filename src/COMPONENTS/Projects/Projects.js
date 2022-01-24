@@ -5,6 +5,7 @@ import { projTitle,portfolio,dashboard,weather } from '../../data/multiLang';
 import { gitHubPortfolio,gitHubDashboard,gitHubWeather } from '../../data/constants';
 import { VscGithub } from 'react-icons/vsc';
 import { CgWebsite } from 'react-icons/cg';
+import LinkBox from '../LinkBox/LinkBox'
 import './projects.scss';
 
 function Projects() {
@@ -27,15 +28,7 @@ function Projects() {
                         <p>{ useTranslator(portfolio.textTools) }</p>
                     </div>
 
-                        <a href={gitHubPortfolio} 
-                            target="_blank"
-                            className='link-box'>
-                            <VscGithub className='icon'/>
-                            <span className='link-text'>
-                                see my code
-                            </span>
-                        </a>
-
+                    <LinkBox href={gitHubPortfolio} type='github'/>
                 </div>
 
             </section>
@@ -53,26 +46,10 @@ function Projects() {
                         <span>{ useTranslator(dashboard.spanTools) }</span>
                         <p>{ useTranslator(dashboard.textTools) }</p>
                     </div>
-
-
-                    <a href={gitHubDashboard} 
-                        target="_blank"
-                        className='link-box'>
-                        <VscGithub className='icon'/>
-                        <span className='link-text'>
-                            see my code
-                        </span>
-                    </a>
-
-                    <a href='#' 
-                        target="_blank"
-                        className='link-box'>
-                        <CgWebsite className='icon'/>
-                        <span className='link-text'>
-                            visit my site
-                        </span>
-                    </a>
-
+                    <div className='link-row'>
+                        <LinkBox href={'#'} type='site'/>
+                        <LinkBox href={gitHubDashboard} type='github'/>
+                    </div>
                 </div>
 
                 <div className='screenshot'>
@@ -94,16 +71,11 @@ function Projects() {
                         <span>{ useTranslator(weather.spanTools) }</span>
                         <p>{ useTranslator(weather.textTools) }</p>
                     </div>
-
-
-                    <div className="link-box-tt">
-                        <a href="#" target="_blank" className="link">
-                            <CgWebsite className='icon'/>  
-                        </a>
-                        <a href={gitHubWeather} target="_blank" className="link" >
-                            <VscGithub className='icon'/>
-                        </a>
+                    <div className='link-row'>
+                        <LinkBox href={'#'} type='site'/>
+                        <LinkBox href={gitHubWeather} type='github'/>
                     </div>
+
                 </div>
 
                 <div className='screenshot'>
