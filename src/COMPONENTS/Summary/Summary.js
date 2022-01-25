@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { dataSkills } from '../../data/data-skills'
 import { useSelector } from 'react-redux';
 import useTranslator from '../../hooks/useTranslator'
-import { summary } from '../../data/multiLang'
+import { summary } from '../../data/multiLang';
+import Tooltip from '../Tooltip/Tooltip'
 
 import './summary.scss'
 
@@ -30,9 +31,9 @@ function Summary() {
                             <li key={data.id}
                                 className='tool on-start'
                                 style={{ animationDelay: data.delay }}>
-                                <p className={border}> { data.title } </p>
-                            </li>))
-                        }
+                                <p className='tool-text'> { data.title } </p>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 

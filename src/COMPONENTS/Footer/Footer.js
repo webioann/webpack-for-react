@@ -4,7 +4,7 @@ import './footer.scss'
 function Footer() {
     return (
         <footer>
-            &copy; 2021. Create by Webioann. &reg; 
+            &copy; 2021. Created by Webioann. &reg; 
         </footer>
     )
 }

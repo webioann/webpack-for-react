@@ -1,6 +1,6 @@
 import React,{ useState,useEffect } from 'react';
 import Container from './Container/Container.js';
-// import Burger from './Burger/Burger.js';
+import Burger from './Burger/Burger.js';
 import Navbar from './Navbar/Navbar.js';
 import Menu from './Menu/Menu.js';
 import LangButton from './LangButton/LangButton.js';
@@ -33,7 +33,7 @@ function App() {
       <Navbar 
         move={move}
         move_navbar={move_navbar}
-        >
+        Burger={<Burger move_navbar={move_navbar}/>}>
         <Menu/>
         <LangButton/>
         <ThemeToggler/>

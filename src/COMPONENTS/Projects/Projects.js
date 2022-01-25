@@ -11,38 +11,21 @@ function Projects() {
         <section className="projects">
             <h2 className="title">{ useTranslator(projTitle) }</h2>
 
-            <section className="portfolio">
-                <div className="wrapper">
-                    <h3 className="subtitle">#1 { useTranslator(portfolio.subtitle) }</h3>
-
-                    <div className='discription'>
-                        <span>{ useTranslator(dashboard.spanDiscript) }</span>
-                        <p>{ useTranslator(portfolio.textDicript) }</p>
-                    </div>
-                    
-                    <div className='used-tools'>
-                        <span>{ useTranslator(dashboard.spanTools) }</span>
-                        <p>{ useTranslator(portfolio.textTools) }</p>
-                    </div>
-
-                    <LinkBox href={gitHubPortfolio} type='github'/>
-                </div>
-
-            </section>
 
             <section className="dashboard">
                 <div className="wrapper">
-                    <h3 className="subtitle">#2 { useTranslator(dashboard.subtitle) } </h3>
-                    
-                    <div className='discription'>
+                    <h3 className="subtitle">#1 { useTranslator(dashboard.subtitle) } </h3>
+                                            
+                    <p className='discription'>
                         <span>{ useTranslator(dashboard.spanDiscript) }</span>
-                        <p>{ useTranslator(dashboard.textDicript) }</p>
-                    </div>
-
-                    <div className='used-tools'>
+                        { useTranslator(dashboard.textDicript) }
+                    </p>
+                        
+                    <p className='used-tools'>
                         <span>{ useTranslator(dashboard.spanTools) }</span>
-                        <p>{ useTranslator(dashboard.textTools) }</p>
-                    </div>
+                        { useTranslator(dashboard.textTools) }
+                    </p>
+
                     <div className='link-row'>
                         <LinkBox href={'#'} type='site'/>
                         <LinkBox href={gitHubDashboard} type='github'/>
@@ -55,19 +38,40 @@ function Projects() {
 
             </section>
 
+            <section className="portfolio">
+                <div className="wrapper">
+                    <h3 className="subtitle">#2 { useTranslator(portfolio.subtitle) }</h3>
+
+                    <p className='discription'>
+                        <span>{ useTranslator(dashboard.spanDiscript) }</span>
+                        { useTranslator(portfolio.textDicript) }
+                    </p>
+                    
+                    <p className='used-tools'>
+                        <span>{ useTranslator(dashboard.spanTools) }</span>
+                        { useTranslator(portfolio.textTools) }
+                    </p>
+
+                    <LinkBox href={gitHubPortfolio} type='github'/>
+                </div>
+
+            </section>
+
+
             <section className="weather">
                 <div className="wrapper">
                     <h3 className="subtitle">#3 { useTranslator(weather.subtitle) } </h3>
-
-                    <div className='discription'>
+                        
+                    <p className='discription'>
                         <span>{ useTranslator(weather.spanDiscript) }</span>
-                        <p>{ useTranslator(weather.textDicript) }</p>
-                    </div>
-
-                    <div className='used-tools'>
+                        { useTranslator(weather.textDicript) }
+                    </p>
+                        
+                    <p className='used-tools'>
                         <span>{ useTranslator(weather.spanTools) }</span>
-                        <p>{ useTranslator(weather.textTools) }</p>
-                    </div>
+                        { useTranslator(weather.textTools) }
+                    </p>
+
                     <div className='link-row'>
                         <LinkBox href={'#'} type='site'/>
                         <LinkBox href={gitHubWeather} type='github'/>
