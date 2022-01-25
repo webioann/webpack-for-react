@@ -16,16 +16,31 @@
   }
   .link-row{
     display: flex;
+    justify-content: space-between;
   }
+  @media (min-width: 576px) {
+    .link-row{
+      justify-content: flex-start;
+    }
+  }
+
   span{
     color: green;
     font-weight: 700;
     padding-right: 1rem;
   }
-  section{
+  .dashboard,
+  .portfolio,
+  .weather{
     display: flex;
     flex-direction: column;
-
+  }
+  @media (min-width: 992px) {
+    .dashboard,
+    .portfolio,
+    .weather{
+      flex-direction: row;
+    }
   }
 
 }

@@ -48,12 +48,12 @@ export const portfolio = {
     },
     githubLink: "github/webioann/portfolio",
     spanTools: {
-        eng: 'Use tools : ',
+        eng: 'Used tools : ',
         rus: 'Использовал : '
     },
     textTools: {
-        eng: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery',
-        rus: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery'
+        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Sass, CSS-animation, post-CSS, responsive design(mobile-first)',
+        rus: 'React, custom-hooks, Redux-toolkit, Webpack, Sass, CSS-animation, post-CSS, responsive design(mobile-first)'
     },
     spanDiscript: {
         eng: 'Discription : ',
@@ -71,12 +71,12 @@ export const dashboard = {
         rus: 'User database - база данных пользователей '
     },
     spanTools: {
-        eng: 'Use tools : ',
+        eng: 'Used tools : ',
         rus: 'Использовал : '
     },
     textTools: {
-        eng: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery',
-        rus: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery'
+        eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
+        rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
     },
     spanDiscript: {
         eng: 'Discription : ',
@@ -94,12 +94,12 @@ export const weather = {
         rus: 'Sky Watcher - погода у вас в городе'
     },
     spanTools: {
-        eng: 'Use tools : ',
+        eng: 'Used tools : ',
         rus: 'Использовал : '
     },
     textTools: {
-        eng: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery',
-        rus: 'React, Redux-toolkit, Webpack, Sass, react-hooks, mobile-first, custom CSS-librery'
+        eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
+        rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
     },
     spanDiscript: {
         eng: 'Discription : ',

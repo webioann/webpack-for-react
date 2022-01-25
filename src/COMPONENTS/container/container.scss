@@ -5,9 +5,11 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.7rem;
     position: relative;
     overflow: hidden;
+    line-height: 1.5;
+
 }
 @media (min-width: 576px) {
     .container-light,
