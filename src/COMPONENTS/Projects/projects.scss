@@ -29,6 +29,10 @@
     font-weight: 700;
     padding-right: 1rem;
   }
+  .screenshot{
+    margin-left: 0;
+  }
+
   .dashboard,
   .portfolio,
   .weather{
@@ -41,6 +45,9 @@
     .weather{
       flex-direction: row;
     }
+    .screenshot{
+      margin-left: 1rem;
+    }
+  
   }
-
 }

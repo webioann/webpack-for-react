@@ -52,8 +52,8 @@ export const portfolio = {
         rus: 'Использовал : '
     },
     textTools: {
-        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Sass, CSS-animation, post-CSS, responsive design(mobile-first)',
-        rus: 'React, custom-hooks, Redux-toolkit, Webpack, Sass, CSS-animation, post-CSS, responsive design(mobile-first)'
+        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first)',
+        rus: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first)'
     },
     spanDiscript: {
         eng: 'Discription : ',
@@ -75,8 +75,8 @@ export const dashboard = {
         rus: 'Использовал : '
     },
     textTools: {
-        eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
-        rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
+        eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
+        rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
     },
     spanDiscript: {
         eng: 'Discription : ',
@@ -98,8 +98,8 @@ export const weather = {
         rus: 'Использовал : '
     },
     textTools: {
-        eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
-        rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
+        eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
+        rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
     },
     spanDiscript: {
         eng: 'Discription : ',

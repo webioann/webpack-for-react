@@ -11,10 +11,10 @@ function Projects() {
         <section className="projects">
             <h2 className="title">{ useTranslator(projTitle) }</h2>
 
-
+            <h3 className="subtitle">#1 { useTranslator(dashboard.subtitle) } </h3>
             <section className="dashboard">
                 <div className="wrapper">
-                    <h3 className="subtitle">#1 { useTranslator(dashboard.subtitle) } </h3>
+                    
                                             
                     <p className='discription'>
                         <span>{ useTranslator(dashboard.spanDiscript) }</span>
@@ -38,9 +38,10 @@ function Projects() {
 
             </section>
 
+            <h3 className="subtitle">#2 { useTranslator(portfolio.subtitle) }</h3>
             <section className="portfolio">
                 <div className="wrapper">
-                    <h3 className="subtitle">#2 { useTranslator(portfolio.subtitle) }</h3>
+                    
 
                     <p className='discription'>
                         <span>{ useTranslator(dashboard.spanDiscript) }</span>
@@ -57,10 +58,10 @@ function Projects() {
 
             </section>
 
-
+            <h3 className="subtitle">#3 { useTranslator(weather.subtitle) } </h3>
             <section className="weather">
                 <div className="wrapper">
-                    <h3 className="subtitle">#3 { useTranslator(weather.subtitle) } </h3>
+                    
                         
                     <p className='discription'>
                         <span>{ useTranslator(weather.spanDiscript) }</span>
