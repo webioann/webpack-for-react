@@ -5,22 +5,14 @@ import './burger.scss';
 function Burger({ move_navbar }) {
 
     return (
-        <div className='burger-box'>
-            <GiHamburgerMenu 
-                className='burger-icon'
-                onClick={() => move_navbar()}
-            />
+        <div id='fixed-top'>
+            <div className='burger-box'>
+                <GiHamburgerMenu 
+                    className='burger-icon'
+                    onClick={() => move_navbar()}
+                />
+            </div>
         </div>
     );
 }
 export default Burger;
-{/* <div id='fixed-top'>
-<div className='wrapper-burger'>
-    <div className='burger-box'>
-        <GiHamburgerMenu 
-            className='burger-icon'
-            onClick={() => move_navbar()}
-        />
-    </div>
-</div>
-</div> */}

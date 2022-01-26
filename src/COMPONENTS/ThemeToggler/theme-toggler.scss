@@ -1,23 +1,38 @@
 @import '../vars.scss';
 
 .theme-toggler{
-    width: 25px;
-    height: 25px;
-    border-radius: 3px;
+    display: none;
+}
+.theme-toggler-mobile{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    // width: 25px;
+    // height: 25px;
+    // border-radius: 3px;
+    padding: 10px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 20px;
     .moon, .sun{
         font-size: 1rem;
     }
 }
 @media (min-width: 576px) {
     .theme-toggler{
-        position: relative;
-        right: 0;
+        // width: 25px;
+        // height: 25px;
+        // border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .moon, .sun{
+            font-size: 1rem;
+        }
+    }
+    .theme-toggler-mobile{
+        display: none;
     }
 }

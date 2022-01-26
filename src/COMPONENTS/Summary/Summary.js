@@ -9,8 +9,8 @@ import './summary.scss'
 
 function Summary() {
     
-    const [classes,setClases] = useState('tool on-start')
-    const border = useSelector(state => state.redux.theme)
+    // const [classes,setClases] = useState('tool on-start')
+    const theme = useSelector(state => state.redux.theme)
 
     return (
         <section className="summary">
@@ -31,7 +31,9 @@ function Summary() {
                             <li key={data.id}
                                 className='tool on-start'
                                 style={{ animationDelay: data.delay }}>
-                                <p className='tool-text'> { data.title } </p>
+                                <p className={`tool-text-${theme}`}>
+                                    { data.title } 
+                                </p>
                             </li>
                         ))}
                     </ul>

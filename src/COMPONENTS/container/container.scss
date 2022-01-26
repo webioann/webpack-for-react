@@ -11,6 +11,15 @@
     line-height: 1.5;
 
 }
+.container-light{
+    background-color: $bg-light;
+    color: $text-dark;
+}
+.container-dark{
+    background-color: $bg-dark;
+    color: $text-light;
+}
+
 @media (min-width: 576px) {
     .container-light,
     .container-dark{

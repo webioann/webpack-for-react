@@ -1,13 +1,13 @@
 @import '../vars.scss';
 
 .burger-box{
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
     .burger-icon{
         color: $carrot;
         font-size: 1.5rem;
@@ -19,33 +19,3 @@
         display: none;
     }
 }
-
-// #fixed-top{
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     z-index: 10;
-//     .wrapper-burger{
-//         max-width: 1200px;
-//         margin: 0 auto;
-//         display: flex;
-//         justify-content: flex-end;
-//         .burger-box{
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             padding: 10px;
-//             .burger-icon{
-//                 color: $carrot;
-//                 font-size: 1.5rem;
-//                 cursor: pointer;
-//             }
-//         }
-//         @media (min-width: 576px) {
-//             .burger-box{
-//                 display: none;
-//             }
-//         }
-//     }
-// }

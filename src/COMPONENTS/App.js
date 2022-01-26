@@ -1,5 +1,6 @@
 import React,{ useState,useEffect } from 'react';
 import Container from './Container/Container.js';
+import FixedTop from './FixedTop/FixedTop.js';
 import Burger from './Burger/Burger.js';
 import Navbar from './Navbar/Navbar.js';
 import Menu from './Menu/Menu.js';
@@ -26,18 +27,17 @@ function App() {
     console.log(`CLICK`);
   }
 
-
-
   return (
     <Container>
-      <Navbar 
-        move={move}
-        move_navbar={move_navbar}
-        Burger={<Burger move_navbar={move_navbar}/>}>
-        <Menu/>
-        <LangButton/>
-        <ThemeToggler/>
-      </Navbar>
+      <FixedTop>
+        <Navbar move={move}>
+          <Menu/>
+          <LangButton/>
+          <ThemeToggler/>
+        </Navbar>
+        <Burger move_navbar={move_navbar}/>
+        <ThemeToggler type={'mobile'}/>
+      </FixedTop>
       <Summary/>
       <Projects/>
       <Contacts/>

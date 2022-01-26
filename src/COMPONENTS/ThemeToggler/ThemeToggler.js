@@ -4,22 +4,25 @@ import { themeLight,themeDark } from '../../Redux-toolkit/reduxSlice'
 import { FaMoon,FaRegSun } from "react-icons/fa"
 import './theme-toggler.scss'
 
-function ThemeToggle() {
+function ThemeToggle({ type }) {
 
     const dispatch = useDispatch()
-    const themeMode = useSelector(state => state.redux.theme)
+    const theme = useSelector(state => state.redux.theme)
 
     const switchThemeMode = () => {
-        themeMode === 'light' ? dispatch(themeDark()) : dispatch(themeLight())
+        theme === 'light' ? dispatch(themeDark()) : dispatch(themeLight())
     }
 
     return (
-        <div className='theme-toggler'
+        <div className={ type === 'mobile' ? 'theme-toggler-mobile' : 'theme-toggler'}
             onClick={switchThemeMode}>
-            {themeMode === 'light' 
+            {theme === 'light' 
                 ? <FaMoon className='icon moon'/>
                 : <FaRegSun className='icon sun'/>}
         </div>
     )
+}
+ThemeToggle.defaultProps = {
+    type: '',
 }
 export default ThemeToggle;

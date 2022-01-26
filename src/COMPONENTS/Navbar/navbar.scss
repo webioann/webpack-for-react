@@ -1,41 +1,29 @@
 @import '../vars.scss';
 
-#fixed-top{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    .nav-wrapper{
-        max-width: 1200px;
-        margin: 0 auto;
-        overflow: hidden;
-        .navbar-light, .navbar-dark {
-            width: 50%; //============ width 50%
-            background: $navbar-bg-lt;
-            backdrop-filter: blur( 2px );
-            -webkit-backdrop-filter: blur( 3px );
-            display: flex;
-            flex-direction: column;
-            padding: 10px 1rem;
-            transition: all 0.7s linear;
-            position: relative;
-        }
-        .navbar-light{
-            background: $navbar-bg-lt;
-            color: $text-light;
-        }
-        .navbar-dark{
-            background: $navbar-bg-dk;
-            color: $text-dark;
-        }
+.navbar-light, .navbar-dark {
+    width: 50%; //============ width 50%
+    background: $navbar-bg-lt;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 3px );
+    display: flex;
+    flex-direction: column;
+    padding: 10px 1rem;
+    transition: all 0.7s linear;
+    position: relative;
+}
+.navbar-light{
+    background: $navbar-bg-lt;
+    color: $text-light;
+}
+.navbar-dark{
+    background: $navbar-bg-dk;
+    color: $text-dark;
+}
 
-        @media (min-width: 576px) {
-            .navbar-light, .navbar-dark{
-                flex-direction: row;
-                align-items: center;
-                width: 100%;
-            }
-        }
+@media (min-width: 576px) {
+    .navbar-light, .navbar-dark{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
     }
 }
