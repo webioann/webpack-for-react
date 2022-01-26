@@ -7,7 +7,7 @@
     .link{
         font-weight: 700;
         display: flex;
-        padding: 1rem;
+        padding: 5px 1rem;
         flex: 1;
         a:hover{
             color: $carrot;
@@ -30,7 +30,6 @@
         flex: 1;
         .link{
             justify-content: center;
-            padding: 0;
         }
     }
 }

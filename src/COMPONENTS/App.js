@@ -19,12 +19,11 @@ function App() {
   const windowWidth = useWindowWidth()
 
   useEffect(() => {
-    windowWidth > 575 ? setMove('0px') : setMove('-370px')
+    windowWidth > 575 ? setMove('0px') : setMove('-770px')
   },[windowWidth])
 
   const move_navbar = () => {
-    move === '-370px' ? setMove('0px') : setMove('-370px')
-    console.log(`CLICK`);
+    move === '-770px' ? setMove('0px') : setMove('-770px')
   }
 
   return (
@@ -35,7 +34,7 @@ function App() {
           <LangButton/>
           <ThemeToggler/>
         </Navbar>
-        <Burger move_navbar={move_navbar}/>
+        <Burger move_navbar={move_navbar} move={move}/>
         <ThemeToggler type={'mobile'}/>
       </FixedTop>
       <Summary/>

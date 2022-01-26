@@ -2,13 +2,8 @@
 
 .lang-button-light,
 .lang-button-dark{
-    width: 80px;
-    border-radius: 3px;
-    overflow: hidden;
-    margin-right: 1rem;
-    position: absolute;
-    top: 0;
-    left: 20px;
+    width: 120px;
+    padding: 5px 1rem;
     .switcher-box{
         display: flex;
         justify-content: space-between;

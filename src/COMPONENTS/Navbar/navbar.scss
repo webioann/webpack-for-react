@@ -1,13 +1,13 @@
 @import '../vars.scss';
 
-.navbar-light, .navbar-dark {
-    width: 50%; //============ width 50%
+.navbar-light, 
+.navbar-dark {
     background: $navbar-bg-lt;
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 3px );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
     display: flex;
     flex-direction: column;
-    padding: 10px 1rem;
+    padding: 0 1rem;
     transition: all 0.7s linear;
     position: relative;
 }
