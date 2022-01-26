@@ -3,10 +3,11 @@ import { VscGithub } from 'react-icons/vsc';
 import { CgWebsite } from 'react-icons/cg';
 import './link-box.scss'
 
-function LinkBox({ href,type }) {
+function LinkBox({ href,type,margin }) {
 
     return (
-        <a href={ href } 
+        <a href={ href }
+            style={{marginLeft: margin}}
             target="_blank"
             className='link-box'>
                 { type === 'site' ?  <CgWebsite className='icon'/> : <VscGithub className='icon'/> }
@@ -19,5 +20,6 @@ function LinkBox({ href,type }) {
 LinkBox.defaultProps = {
     href: 'https://github.com/webioann',
     type: 'site',
+    margin: '0px'
 }
 export default LinkBox;

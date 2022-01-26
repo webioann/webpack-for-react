@@ -3,13 +3,7 @@
 .projects {
   display: flex;
   flex-direction: column;
-  .title {
-    text-align: center;
-    padding: 1rem;
-  }
-  .subtitle {
-    padding: 1rem;
-  }
+  padding: 1rem 0;
   .wrapper{
     display: flex;
     flex-direction: column;
@@ -17,6 +11,7 @@
   .link-row{
     display: flex;
     justify-content: space-between;
+    padding-top: 1rem;
   }
   @media (min-width: 576px) {
     .link-row{

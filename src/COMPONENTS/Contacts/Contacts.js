@@ -11,22 +11,22 @@ function Contacts() {
         <div id='contacts' className="contacts">
 
             <div className="viber box">
-                <FaViber className='icon'/>
+                <FaViber className='icon not-link'/>
                 <p>{ phone }</p>
             </div>
 
             <a className='linkedin box' href={ linkedInLink } target="_blank">
-                <FaLinkedin className='icon not-link'/>
+                <FaLinkedin className='icon'/>
                 <p>linkedin./alexander-veles</p>
             </a>
 
             <div className="email box">
-                <HiOutlineMail className='icon'/>
+                <HiOutlineMail className='icon not-link'/>
                 <p>{ email }</p>
             </div>
 
             <a className='git-hub box' href={ gitHubLink } target="_blank">
-                <VscGithub className='icon not-link'/>
+                <VscGithub className='icon'/>
                 <p>github.com/webioann</p>
             </a>
         </div>

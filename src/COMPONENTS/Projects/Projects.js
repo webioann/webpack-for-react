@@ -28,7 +28,7 @@ function Projects() {
 
                     <div className='link-row'>
                         <LinkBox href={'#'} type='site'/>
-                        <LinkBox href={gitHubDashboard} type='github'/>
+                        <LinkBox href={gitHubDashboard} type='github' margin={'10px'}/>
                     </div>
                 </div>
 
@@ -52,8 +52,9 @@ function Projects() {
                         <span>{ useTranslator(dashboard.spanTools) }</span>
                         { useTranslator(portfolio.textTools) }
                     </p>
-
-                    <LinkBox href={gitHubPortfolio} type='github'/>
+                    <div className='link-row'>
+                        <LinkBox href={gitHubPortfolio} type='github'/>
+                    </div>
                 </div>
 
             </section>
@@ -75,7 +76,7 @@ function Projects() {
 
                     <div className='link-row'>
                         <LinkBox href={'#'} type='site'/>
-                        <LinkBox href={gitHubWeather} type='github'/>
+                        <LinkBox href={gitHubWeather} type='github' margin={'10px'}/>
                     </div>
 
                 </div>

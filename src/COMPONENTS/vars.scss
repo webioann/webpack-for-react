@@ -99,6 +99,13 @@ body {
 .not-link{
     cursor: default;
 }
+.title {
+    text-align: center;
+}
+
+.subtitle {
+    padding: 1rem 0;
+}
 
 //===============================
 ul li {
@@ -139,8 +146,8 @@ a:active {
 }
 @keyframes growLine {
     0%{ width: 0%; }
-    95%{ width: 103%; }
-    100%{ width: 100%; }
+    95%{ width: 83%; }
+    100%{ width: 80%; }
 }
 //=========================================
 

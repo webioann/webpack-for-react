@@ -1,19 +1,12 @@
 @import '../vars.scss';
 
 .summary {
-    .title{
-        text-align: center;
-        padding: 1rem;
-    }
+    padding: 1rem 0;
     .wrapper{
         display: flex;
         flex-direction: column;
         .about-box{
             flex: 1;
-            padding: 1rem;
-            .subtitle{
-                padding: 1rem;
-            }
             .about{ 
                 font-weight: 600;
                 font-weight: 400;
@@ -22,10 +15,6 @@
         }
         .skills-box{
             flex: 1;
-            padding: 1rem;
-            .subtitle{
-                padding: 1rem;
-            }
             .skills{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -38,14 +27,19 @@
                         box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
                         border-radius: 5px;
                         text-align: center;
-                        padding: 5px 0;
                     }
                 }
             }
             //===================================
             @media (min-width: 576px) {
-                .skills{
-                    grid-template-columns: 1fr 1fr 1fr;
+                .about-box{
+                    padding: 0 1rem 1rem 0;
+                }
+                .skills-box{
+                    padding: 0 0 1rem 1rem;
+                    .skills{
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
                 }
             }
             @media (min-width: 756px) {
