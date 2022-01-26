@@ -1,5 +1,12 @@
 @import '../vars.scss';
 
+.container-fluid-light{
+    background-color: $bg-light;
+}
+.container-fluid-dark{
+    background-color: $bg-dark;
+}
+
 .container-light,
 .container-dark{
     width: 100%;
@@ -14,10 +21,12 @@
 .container-light{
     background-color: $bg-light;
     color: $text-dark;
+    box-shadow: $shadow-big-lt;
 }
 .container-dark{
     background-color: $bg-dark;
     color: $text-light;
+    box-shadow: $shadow-big-dk;
 }
 
 @media (min-width: 576px) {

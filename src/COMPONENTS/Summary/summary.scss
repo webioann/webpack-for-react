@@ -8,8 +8,6 @@
         .about-box{
             flex: 1;
             .about{ 
-                font-weight: 600;
-                font-weight: 400;
                 text-align: left;
             }
         }
@@ -24,7 +22,6 @@
                     .tool-text-light,
                     .tool-text-dark{
                         transition: all 200ms linear;
-                        font-weight: 600;
                         border-radius: 5px;
                         text-align: center;
                     }
