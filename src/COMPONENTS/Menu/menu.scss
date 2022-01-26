@@ -1,10 +1,10 @@
 @import '../vars.scss';
 
-.menu{
+.menu-light,
+.menu-dark{
     display: flex;
     flex-direction: column;
     .link{
-        color: #fff;
         font-weight: 700;
         display: flex;
         padding: 1rem;
@@ -14,8 +14,16 @@
         }
     }
 }
+.menu-light{
+    color: $text-light;
+}
+.menu-dark{
+    color: $text-dark;
+}
+
 @media (min-width: 576px) {
-    .menu{
+    .menu-light,
+    .menu-dark{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;

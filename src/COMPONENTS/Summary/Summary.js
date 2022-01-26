@@ -3,7 +3,7 @@ import { dataSkills } from '../../data/data-skills'
 import { useSelector } from 'react-redux';
 import useTranslator from '../../hooks/useTranslator'
 import { summary } from '../../data/multiLang';
-import Tooltip from '../Tooltip/Tooltip'
+// import Tooltip from '../Tooltip/Tooltip'
 
 import './summary.scss'
 

@@ -30,18 +30,6 @@
                     }
                 }
             }
-            //===================================
-            @media (min-width: 576px) {
-                .about-box{
-                    padding: 0 1rem 1rem 0;
-                }
-                .skills-box{
-                    padding: 0 0 1rem 1rem;
-                    .skills{
-                        grid-template-columns: 1fr 1fr 1fr;
-                    }
-                }
-            }
             @media (min-width: 756px) {
                 .skills{
                     grid-template-columns: 1fr 1fr;
@@ -52,13 +40,21 @@
                     grid-template-columns: 1fr 1fr 1fr;
                 }
             }
+    
+        }
+        @media (min-width: 576px) {
+            .about-box{
+                padding: 0 1rem 1rem 0;
+            }
+            .skills-box{
+                padding: 0 0 1rem 1rem;
+            }
         }
     }
-    @media (min-width: 756px) {
+    @media (min-width: 576px) {
         .wrapper{
             flex-direction: row;
         }
     }
-
+        
 }
-

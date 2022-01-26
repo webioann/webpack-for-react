@@ -15,7 +15,7 @@ function LangButton() {
     }
 
     return (
-        <div className='lang-button'>
+        <div className={theme === 'light' ? 'lang-button-light' : 'lang-button-dark'}>
             <div className="switcher-box">
                 <span className={ lang === 'eng' ? `switcher shade-${theme}` : 'switcher'}
                     id = 'eng' 

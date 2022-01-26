@@ -1,7 +1,7 @@
 @import '../vars.scss';
 
-.lang-button{
-    color: #fff;
+.lang-button-light,
+.lang-button-dark{
     width: 80px;
     border-radius: 3px;
     overflow: hidden;
@@ -31,9 +31,16 @@
         }
     }
 }
+.lang-button-light{
+    color: $text-light;
+}
+.lang-button-dark{
+    color: $text-dark;
+}
 
 @media (min-width: 576px) {
-    .lang-button{
+    .lang-button-light,
+    .lang-button-dark{
         position: relative;
         left: 0;
     }
