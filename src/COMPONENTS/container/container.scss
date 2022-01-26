@@ -21,12 +21,14 @@
 .container-light{
     background-color: $bg-light;
     color: $text-dark;
-    box-shadow: $shadow-big-lt;
+    // box-shadow: $shadow-lt;
+    border: 2px solid #ddd;
 }
 .container-dark{
     background-color: $bg-dark;
     color: $text-light;
-    box-shadow: $shadow-big-dk;
+    // box-shadow: $shadow-big-dk;
+    border: 2px solid #292929;
 }
 
 @media (min-width: 576px) {
