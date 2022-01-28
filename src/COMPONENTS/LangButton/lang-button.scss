@@ -3,7 +3,9 @@
 .lang-button-light,
 .lang-button-dark{
     width: 120px;
-    padding: 5px 1rem;
+    margin-right: 1rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
     .switcher-box{
         display: flex;
         justify-content: space-between;
@@ -13,7 +15,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            padding: 3px 0;
+            // padding: 3px 0;
             font-weight: 700;
         }
         .shade-light{

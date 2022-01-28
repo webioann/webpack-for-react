@@ -2,7 +2,10 @@ import React from 'react';
 import useTranslator from '../../hooks/useTranslator';
 import { projTitle,portfolio,dashboard,weather } from '../../data/multiLang';
 import { gitHubPortfolio,gitHubDashboard,gitHubWeather } from '../../data/constants';
-import LinkBox from '../LinkBox/LinkBox'
+import LinkBox from '../LinkBox/LinkBox';
+import desktop from '../../assets/desk.png'
+import tablet from '../../assets/tablet.png'
+import mobile from '../../assets/mobile-dark.png'
 import './projects.scss';
 
 function Projects() {
@@ -33,7 +36,11 @@ function Projects() {
                 </div>
 
                 <div className='screenshot'>
-
+                    <picture>
+                        <source srcSet={tablet} media="(min-width: 500px) and (max-width: 767 .999px)"  type='image/png'/>
+                        <source  srcSet={desktop} media="(min-width: 768px)" type='image/png'/>
+                        <img src={mobile} alt='img'/>
+                    </picture>
                 </div>
 
             </section>

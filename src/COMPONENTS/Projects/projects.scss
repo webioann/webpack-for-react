@@ -25,7 +25,12 @@
     padding-right: 1rem;
   }
   .screenshot{
-    margin-left: 0;
+    margin-top: 1rem;
+    img{
+      width: 100%;
+      height: auto;
+  
+    }
   }
 
   .dashboard,
@@ -34,15 +39,15 @@
     display: flex;
     flex-direction: column;
   }
-  @media (min-width: 992px) {
-    .dashboard,
-    .portfolio,
-    .weather{
-      flex-direction: row;
-    }
-    .screenshot{
-      margin-left: 1rem;
-    }
+  // @media (min-width: 992px) {
+  //   .dashboard,
+  //   .portfolio,
+  //   .weather{
+  //     flex-direction: row;
+  //   }
+  //   .screenshot{
+  //     margin-left: 1rem;
+  //   }
   
-  }
+  // }
 }
