@@ -1,0 +1,46 @@
+@import '../vars.scss';
+
+.slider{
+    overflow: hidden;
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    .slide-1{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .slide-2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: slide 4s linear 2s 1 forwards;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .modal-tooltip{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        font-size: 20px;
+        color: blue;
+    }
+}
+@keyframes slide {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}

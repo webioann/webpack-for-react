@@ -4,6 +4,8 @@ import useTranslator from '../../hooks/useTranslator';
 import { projTitle,portfolio,dashboard,weather } from '../../data/multiLang';
 import { gitHubPortfolio,gitHubDashboard,gitHubWeather } from '../../data/constants';
 import LinkBox from '../LinkBox/LinkBox';
+import Slider from '../Slider/Slider';
+// ======== image imports ==============================
 import desktopDark from '../../assets/desktop-dk-eng.png'
 import desktopLight from '../../assets/desktop-lt-rus.png'
 import tabletDark from '../../assets/tablet-dk-eng.png'
@@ -48,14 +50,14 @@ function Projects() {
                         <LinkBox href={gitHubDashboard} type='github' margin={'10px'}/>
                     </div>
                 </div>
-
-                <div className='screenshot'>
+                <Slider/>
+                {/* <div className='screenshot'>
                     <picture>
                         <source srcSet={tabletImg} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
                         <source  srcSet={desktopImg} media="(min-width: 768px)" type='image/png'/>
                         <img src={mobileImg} alt='img'/>
                     </picture>
-                </div>
+                </div> */}
 
             </section>
 
