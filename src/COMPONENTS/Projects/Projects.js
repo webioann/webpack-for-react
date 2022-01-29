@@ -4,19 +4,25 @@ import useTranslator from '../../hooks/useTranslator';
 import { projTitle,portfolio,dashboard,weather } from '../../data/multiLang';
 import { gitHubPortfolio,gitHubDashboard,gitHubWeather } from '../../data/constants';
 import LinkBox from '../LinkBox/LinkBox';
-import desktop from '../../assets/desk.png'
-import tabletDark from '../../assets/tablet.png'
-import tabletLight from '../../assets/tablet-lt.png'
-import mobile from '../../assets/mobile-dark.png'
+import desktopDark from '../../assets/desktop-dk-eng.png'
+import desktopLight from '../../assets/desktop-lt-rus.png'
+import tabletDark from '../../assets/tablet-dk-eng.png'
+import tabletLight from '../../assets/tablet-lt-rus.png'
+import mobileDark from '../../assets/mobile-dk-eng.png'
+import mobileLight from '../../assets/mobile-lt-eng.png'
 import './projects.scss';
 
 function Projects() {
 
     const theme = useSelector(state => state.redux.theme) 
+    const [desktopImg,setDesktopImg] = useState(desktopDark)
     const [tabletImg,setTabletImg] = useState(tabletDark)
+    const [mobileImg,setMobileImg] = useState(mobileDark)
 
     useEffect(() => {
+        theme === 'light' ? setDesktopImg(desktopDark) : setDesktopImg(desktopLight)
         theme === 'light' ? setTabletImg(tabletDark) : setTabletImg(tabletLight)
+        theme === 'light' ? setMobileImg(mobileDark) : setMobileImg(mobileLight)
     },[theme])
 
 
@@ -46,8 +52,8 @@ function Projects() {
                 <div className='screenshot'>
                     <picture>
                         <source srcSet={tabletImg} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
-                        <source  srcSet={desktop} media="(min-width: 768px)" type='image/png'/>
-                        <img src={mobile} alt='img'/>
+                        <source  srcSet={desktopImg} media="(min-width: 768px)" type='image/png'/>
+                        <img src={mobileImg} alt='img'/>
                     </picture>
                 </div>
 
