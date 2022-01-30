@@ -1,4 +1,4 @@
-import React,{ useState,useEffect,useRef } from 'react';
+import React,{ useState,useEffect } from 'react';
 import { useSelector } from "react-redux";
 
 // ======== image imports ==============================
@@ -16,7 +16,7 @@ function Slider() {
     const [desktopImg,setDesktopImg] = useState(desktopDark)
     const [tabletImg,setTabletImg] = useState(tabletDark)
     const [mobileImg,setMobileImg] = useState(mobileDark)
-    const [bgClass,setBgClass] = useState('green')
+    const [animaClass,setAnimaClass] = useState('animated')
 
     useEffect(() => {
         theme === 'light' ? setDesktopImg(desktopDark) : setDesktopImg(desktopLight)
@@ -24,32 +24,21 @@ function Slider() {
         theme === 'light' ? setMobileImg(mobileDark) : setMobileImg(mobileLight)
     },[theme])
 
-    const style_1 = {
-        transform: 'translateX(0px)',
-        visibility: 'visible'
-    }
-    const style_2 = {
-        transform: 'translateX(100%)',
-        visibility: 'visible'
-    }
-
     return (
         <div className='slider'>
-            <picture className='slide-1' 
-                style={style_1}>
+            <picture className='slide-1'> 
                 <source srcSet={tabletImg} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
                 <source  srcSet={desktopImg} media="(min-width: 768px)" type='image/png'/>
                 <img src={mobileImg} alt='img'/>
             </picture>
-            <picture className='slide-2' 
-                style={style_2}>
+            <picture className='slide-2'> 
                 <source srcSet={tabletImg} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
                 <source  srcSet={desktopImg} media="(min-width: 768px)" type='image/png'/>
                 <img src={mobileImg} alt='img'/>
             </picture>
-            <div className='modal-tooltip'>
+            <div className='modal-tooltip'> 
                 <p >
-                    masage 
+                    message 
                 </p>
             </div>
         </div>

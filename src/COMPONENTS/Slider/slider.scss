@@ -1,4 +1,4 @@
-@import '../vars.scss';
+@import '../App/vars.scss';
 
 .slider{
     overflow: hidden;
@@ -20,7 +20,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        animation: slide 4s linear 2s 1 forwards;
+        animation: slide 2s linear 2s 1 forwards;
         img{
             width: 100%;
             height: auto;
@@ -35,6 +35,9 @@
         font-size: 20px;
         color: blue;
     }
+    // .animated{
+    //     animation: scroll 15s linear infinite;
+    // }
 }
 @keyframes slide {
     0%{

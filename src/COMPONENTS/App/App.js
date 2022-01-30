@@ -1,17 +1,17 @@
 import React,{ useState,useEffect } from 'react';
-import Container from './Container/Container.js';
-import FixedTop from './FixedTop/FixedTop.js';
-import Burger from './Burger/Burger.js';
-import Navbar from './Navbar/Navbar.js';
-import Menu from './Menu/Menu.js';
-import LangButton from './LangButton/LangButton.js';
-import ThemeToggler from './ThemeToggler/ThemeToggler.js';
-import Summary from './Summary/Summary.js';
-import Projects from './Projects/Projects.js';
-import Contacts from './Contacts/Contacts.js';
-import Footer from './Footer/Footer.js';
+import Container from '../Container/Container.js';
+import FixedTop from '../FixedTop/FixedTop.js';
+import Burger from '../Burger/Burger.js';
+import Navbar from '../Navbar/Navbar.js';
+import Menu from '../Menu/Menu.js';
+import LangButton from '../LangButton/LangButton.js';
+import ThemeToggler from '../ThemeToggler/ThemeToggler.js';
+import Summary from '../Summary/Summary.js';
+import Projects from '../Projects/Projects.js';
+import Contacts from '../Contacts/Contacts.js';
+import Footer from '../Footer/Footer.js';
 //========= hooks import ==========
-import { useWindowWidth } from '../hooks/useWindowWidth'
+import { useWindowWidth } from '../../hooks/useWindowWidth'
 
 function App() {
 
