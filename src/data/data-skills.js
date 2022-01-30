@@ -1,5 +1,5 @@
 export const dataSkills = [
-    {title: 'React JS',     id: 1,  delay: "400ms" , textEng: 'text for tooltip tttttttttttttttttttttttttttttttttttttttttt'},
+    {title: 'React JS',     id: 1,  delay: "400ms" , textEng: 'text for tooltip'},
     {title: 'JavaScript',   id: 2,  delay: "700ms" , textEng: 'text for tooltip'},
     {title: 'Redux-toolkit',id: 3,  delay: "1000ms", textEng: 'text for tooltip'},
     {title: 'Sass / Less',  id: 4,  delay: "1300ms", textEng: 'text for tooltip'},

@@ -1,10 +1,9 @@
 import React,{ useState,useEffect } from 'react';
 import { useSelector } from "react-redux";
 import useTranslator from '../../hooks/useTranslator';
-import { projTitle,portfolio,dashboard,weather } from '../../data/multiLang';
-import { gitHubPortfolio,gitHubDashboard,gitHubWeather } from '../../data/constants';
+import { projTitle,portfolio,dashboard } from '../../data/multiLang';
+import { gitHubPortfolio,gitHubDashboard } from '../../data/constants';
 import LinkBox from '../LinkBox/LinkBox';
-import Slider from '../Slider/Slider';
 // ======== image imports ==============================
 import desktopDark from '../../assets/desktop-dk-eng.png'
 import desktopLight from '../../assets/desktop-lt-rus.png'
@@ -50,14 +49,14 @@ function Projects() {
                         <LinkBox href={gitHubDashboard} type='github' margin={'10px'}/>
                     </div>
                 </div>
-                <Slider/>
-                {/* <div className='screenshot'>
+
+                <div className='screenshot'>
                     <picture>
                         <source srcSet={tabletImg} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
                         <source  srcSet={desktopImg} media="(min-width: 768px)" type='image/png'/>
                         <img src={mobileImg} alt='img'/>
                     </picture>
-                </div> */}
+                </div>
 
             </section>
 
@@ -65,7 +64,6 @@ function Projects() {
             <section className="portfolio">
                 <div className="wrapper">
                     
-
                     <p className='discription'>
                         <span>{ useTranslator(dashboard.spanDiscript) }</span>
                         { useTranslator(portfolio.textDicript) }
@@ -80,33 +78,6 @@ function Projects() {
                     </div>
                 </div>
 
-            </section>
-
-            <h3 className="subtitle">#3 { useTranslator(weather.subtitle) } </h3>
-            <section className="weather">
-                <div className="wrapper">
-                    
-                        
-                    <p className='discription'>
-                        <span>{ useTranslator(weather.spanDiscript) }</span>
-                        { useTranslator(weather.textDicript) }
-                    </p>
-                        
-                    <p className='used-tools'>
-                        <span>{ useTranslator(weather.spanTools) }</span>
-                        { useTranslator(weather.textTools) }
-                    </p>
-
-                    <div className='link-row'>
-                        <LinkBox href={'#'} type='site'/>
-                        <LinkBox href={gitHubWeather} type='github' margin={'10px'}/>
-                    </div>
-
-                </div>
-
-                <div className='screenshot'>
-
-                </div>
             </section>
 
         </section>
