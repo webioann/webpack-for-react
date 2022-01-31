@@ -26,23 +26,22 @@ function Projects() {
         theme === 'light' ? setMobileImg(mobileDark) : setMobileImg(mobileLight)
     },[theme])
 
-
     return (
         <section className="projects">
-            <h2 className="title">{ useTranslator(projTitle) }</h2>
+            <h2 className="title">{useTranslator(projTitle)}</h2>
 
-            <h3 className="subtitle">#1 { useTranslator(dashboard.subtitle) } </h3>
+            <h3 className="subtitle">#1 {useTranslator(dashboard.subtitle)} </h3>
             <section className="dashboard">
                 <div className="wrapper">
-                    <p className='discription'>
-                        <span>{ useTranslator(dashboard.spanDiscript) }</span>
-                        { useTranslator(dashboard.textDicript) }
-                    </p>
+                    <div className='discription'>
+                        <span>{useTranslator(dashboard.discr_span)}</span>
+                        <p>{useTranslator(dashboard.discr_text)}</p>
+                    </div>
                         
-                    <p className='used-tools'>
-                        <span>{ useTranslator(dashboard.spanTools) }</span>
-                        { useTranslator(dashboard.textTools) }
-                    </p>
+                    <div className='used-tools'>
+                        <span>{useTranslator(dashboard.used_tools_span)}</span>
+                        <p>{useTranslator(dashboard.used_tools_text)}</p>
+                    </div>
 
                     <div className='link-row'>
                         <LinkBox href={'#'} type='site'/>
@@ -58,26 +57,26 @@ function Projects() {
                     </picture>
                 </div>
 
-            </section>
+            </section> 
 
-            <h3 className="subtitle">#2 { useTranslator(portfolio.subtitle) }</h3>
+            <h3 className="subtitle">#2 {useTranslator(portfolio.subtitle)}</h3>
             <section className="portfolio">
                 <div className="wrapper">
                     
-                    <p className='discription'>
-                        <span>{ useTranslator(dashboard.spanDiscript) }</span>
-                        { useTranslator(portfolio.textDicript) }
-                    </p>
+                    <div className='discription'>
+                        <span>{useTranslator(portfolio.discr_span)}</span>
+                        <p>{useTranslator(portfolio.discr_text)}</p>
+                    </div>
                     
-                    <p className='used-tools'>
-                        <span>{ useTranslator(dashboard.spanTools) }</span>
-                        { useTranslator(portfolio.textTools) }
-                    </p>
+                    <div className='used-tools'>
+                        <span>{useTranslator(portfolio.used_tools_span)}</span>
+                        <p>{useTranslator(portfolio.used_tools_text)}</p>
+                    </div>
+
                     <div className='link-row'>
                         <LinkBox href={gitHubPortfolio} type='github'/>
                     </div>
                 </div>
-
             </section>
 
         </section>

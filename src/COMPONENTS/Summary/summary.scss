@@ -6,9 +6,17 @@
         display: flex;
         flex-direction: column;
         .about-box{
-            flex: 1;
+            flex: 2;
             .about{ 
-                text-align: left;
+                word-wrap: break-word;
+                font-weight: 400;
+                li{
+                    list-style: square inside;
+                }
+                .intro{
+                    font-weight: 700;
+                    color: blue;
+                }
             }
         }
         .skills-box{
@@ -33,17 +41,22 @@
                     }
                 }
             }
-            @media (min-width: 756px) {
-                .skills{
-                    grid-template-columns: 1fr 1fr;
-                }
-            }
-            @media (min-width: 992px) {
+            @media (min-width: 576px) {
                 .skills{
                     grid-template-columns: 1fr 1fr 1fr;
                 }
             }
-    
+
+            @media (min-width: 756px) {
+                .skills{
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+            }
+            @media (min-width: 992px) {
+                .skills{
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
         }
         @media (min-width: 576px) {
             .about-box{
@@ -54,7 +67,7 @@
             }
         }
     }
-    @media (min-width: 576px) {
+    @media (min-width: 992px) {
         .wrapper{
             flex-direction: row;
         }

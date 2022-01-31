@@ -61,17 +61,17 @@ export const about = {
         eng: 'Webpack - configuring builds for React using Sass, Less, post-CSS, TypeScript.',
         rus: 'Webpack: конфигурирую сборки для React с использованием Sass,Less,post-CSS,TypeScript.'
     },
-    prepros: {
-        eng: 'Preprocessors Sass, Less and any other (easy).',
-        rus: 'Препроцессоры Sass, Less и любой другой(легко).'
+    tools: {
+        eng: 'Tools: Sass, Less, Git, Git-hub, npm, yarn, markdown, JSdocs...',
+        rus: 'Инструменты: Sass, Less, Git, Git-hub, npm, yarn, markdown, JSdocs ...'
     },
     languages: {
         eng: 'English: A2 (reading technical documentation).',
         rus: 'Английский: А2 (чтение тех.документации).'
     },
     patterns: {
-        eng: 'I always try to follow the principles of DRY, SOLID, OOP, clean-code',
-        rus: 'Всегда стараюсь следовать принципам DRY,SOLID,OOP,clean-code'
+        eng: 'I always try to follow the principles of DRY,SOLID,OOP,clean-code.',
+        rus: 'Всегда стараюсь следовать принципам DRY,SOLID,OOP,clean-code.'
     },
     studying_now: {
         eng: 'Currently studying: TypeScript,React-native,React-router,axios,CRUD.',
@@ -82,8 +82,8 @@ export const about = {
         rus: 'План: стать full-stack Java-Script разработчиком.'
     },
     soft_skills: {
-        eng: 'Soft skills: not a fool,purposeful (or stubborn),I love learning (seriously!),extremely plodding(2500+ hours of study without "financial motivation").',
-        rus: 'Soft skills: не дурак,целеустремлен (или упрям),обожаю учится(серьезно!),крайне усидчив(2500+ часов обучения без "финансовой мотивации").'
+        eng: 'Soft skills: not a fool,purposeful(or stubborn),I love learning (seriously!),extremely plodding(2500+ hours of study without "financial motivation").',
+        rus: 'Soft skills: не дурак,целеустремлен(или упрям),обожаю учится(серьезно!),крайне усидчив(2500+ часов обучения без "финансовой мотивации").'
     },
 
 }
@@ -93,69 +93,45 @@ export const portfolio = {
         eng: 'Portfolio',
         rus: 'Portfolio - это этот сайт'
     },
-    githubLink: "github/webioann/portfolio",
-    spanTools: {
-        eng: 'Used tools : ',
-        rus: 'Использовал : '
+    // githubLink: "github/webioann/portfolio",
+    discr_span: {
+        eng: 'Discription :',
+        rus: 'Описание проэкта :'
     },
-    textTools: {
-        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first)',
-        rus: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first)'
+    discr_text: {
+        eng: 'Full adaptability of the application.',
+        rus: 'Полная адаптивность приложения .',
     },
-    spanDiscript: {
-        eng: 'Discription : ',
-        rus: 'Описание проэкта : '
+
+    used_tools_span: {
+        eng: 'Used tools :',
+        rus: 'Использовал :'
     },
-    textDicript: {
-        eng: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur',
-        rus: 'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.'
+    used_tools_text: {
+        eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
+        rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
     },
 };
 //==========================================
 export const dashboard = {
     subtitle: {
         eng: 'User database',
-        rus: 'User database - база данных пользователей '
+        rus: 'User database - база данных пользователей'
     },
-    spanTools: {
-        eng: 'Used tools : ',
-        rus: 'Использовал : '
+    discr_span: {
+        eng: 'Discription :',
+        rus: 'Описание проэкта :'
     },
-    textTools: {
+    discr_text: {
+        eng: 'The app gets users from "randomuser.me". Implemented filtering, on the client side, by nationality and gender of the user. Two interface languages - English and Russian. Two color themes. Statistics are displayed in a custom chart. Client side pagination. Changing the size of the request to the server (three options). Full adaptability of the application.',
+        rus: 'Приложение получает пользователей с "randomuser.me". Реализовано фильтрацию, на стороне клиента, по национальности и полу пользователя . Два языка интерфейса - английский и русский . Две цветовые темы . Выводится статистика в кастомном графике . Пагинация на стороне клиента . Изменение величины запроса к серверу(три варианта) . Полная адаптивность приложения .',
+    },
+    used_tools_span: {
+        eng: 'Used tools :',
+        rus: 'Использовал :'
+    },
+    used_tools_text: {
         eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
         rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
     },
-    spanDiscript: {
-        eng: 'Discription : ',
-        rus: 'Описание проэкта : '
-    },
-    textDicript: {
-        eng: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur',
-        rus: 'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.'
-    },
 };
-//================================
-export const weather = {
-    subtitle: {
-        eng: 'Sky Watcher',
-        rus: 'Sky Watcher - погода у вас в городе'
-    },
-    spanTools: {
-        eng: 'Used tools : ',
-        rus: 'Использовал : '
-    },
-    textTools: {
-        eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
-        rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
-    },
-    spanDiscript: {
-        eng: 'Discription : ',
-        rus: 'Описание проэкта : '
-    },
-    textDicript: {
-        eng: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi fugiat soluta eveniet itaque, consectetur',
-        rus: 'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.'
-    },
-};
-//======================
-
