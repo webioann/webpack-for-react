@@ -20,7 +20,7 @@ function Contacts() {
 
             <a className={`linkedin box-${theme}`} href={ linkedInLink } target="_blank">
                 <FaLinkedin className='icon'/>
-                <p>lin.../alexander-veles</p>
+                <p>linkedin/alexander-ve...</p>
             </a>
 
             <div className={`email box-${theme}`}>

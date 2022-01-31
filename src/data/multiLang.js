@@ -12,8 +12,8 @@ export const navbar = {
         rus: 'контакты'
     },
     resume: {
-        eng: 'resume',
-        rus: 'резюме'
+        eng: 'download CV',
+        rus: 'загрузить CV'
     },
 };
 //============================
@@ -93,7 +93,6 @@ export const portfolio = {
         eng: 'Portfolio',
         rus: 'Portfolio - это этот сайт'
     },
-    // githubLink: "github/webioann/portfolio",
     discr_span: {
         eng: 'Discription :',
         rus: 'Описание проэкта :'
@@ -108,8 +107,8 @@ export const portfolio = {
         rus: 'Использовал :'
     },
     used_tools_text: {
-        eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
-        rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
+        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first)',
+        rus: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first)'
     },
 };
 //==========================================
@@ -131,7 +130,7 @@ export const dashboard = {
         rus: 'Использовал :'
     },
     used_tools_text: {
-        eng: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
-        rus: 'React, custom-hooks, Redux-toolkit, RESTapi, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
+        eng: 'React, custom-hooks, Redux-toolkit, REST API, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
+        rus: 'React, custom-hooks, Redux-toolkit, REST API, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
     },
 };

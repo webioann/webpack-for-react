@@ -63,10 +63,10 @@ function Projects() {
             <section className="portfolio">
                 <div className="wrapper">
                     
-                    <div className='discription'>
+                    {/* <div className='discription'>
                         <span>{useTranslator(portfolio.discr_span)}</span>
                         <p>{useTranslator(portfolio.discr_text)}</p>
-                    </div>
+                    </div> */}
                     
                     <div className='used-tools'>
                         <span>{useTranslator(portfolio.used_tools_span)}</span>
