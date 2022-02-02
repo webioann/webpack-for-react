@@ -72,7 +72,33 @@ body {
 .subtitle {
     padding: 1rem 0;
 }
-
+// ======== deep-title and his animation ==============
+.deep-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: $grey;
+    text-transform: uppercase;
+    font-size: 16vw;
+    line-height: 0.9;
+    animation: showTitle 3s linear 1 forwards;
+}
+@media (min-width: 1400px) {
+    .deep-title{
+        font-size: 200px;
+    }
+}
+@keyframes showTitle{
+    from{
+        opacity: 0;
+        filter: blur(15px);
+    }
+    to{
+        opacity: 1;
+        filter: blur(5px);
+    }
+}
 //===============================
 ul li {
     list-style: none;
@@ -106,7 +132,7 @@ a:active {
     animation-direction: normal;
     animation-fill-mode: forwards;
     width: 0%;
-    height: 3px;
+    height: 2px;
     border-radius: 1px;
     background-color: $green;
 }

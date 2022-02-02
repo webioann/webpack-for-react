@@ -9,7 +9,6 @@
     background-color: $grey;
     transition: all 200ms ease;
     .link-text{
-        margin-left: 10px;
         color: $green;
         font-weight: 600;
         font-size: 0.8rem;
@@ -17,7 +16,6 @@
     &:hover{
         transform: scale(1.15);
     }
-
 }
 @media (min-width: 576px) {
     .link-box{

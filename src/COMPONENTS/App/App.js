@@ -1,5 +1,6 @@
 import React,{ useState,useEffect } from 'react';
 import Container from '../Container/Container.js';
+// import Cursor from '../Cursor/Cursor.js';
 import FixedTop from '../FixedTop/FixedTop.js';
 import Burger from '../Burger/Burger.js';
 import Navbar from '../Navbar/Navbar.js';

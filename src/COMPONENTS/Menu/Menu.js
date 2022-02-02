@@ -9,17 +9,17 @@ function Menu() {
     return (
         <div className='menu'>
             <div className='link'>
-                <a href='#top'>
+                <a href='#top' >
                     { useTranslator(navbar.home) }
                 </a>
             </div>
             <div className='link'>
-                <a href='#contacts'>
+                <a href='#contacts' >
                     { useTranslator(navbar.contacts) }
                 </a>
             </div>
             <div className='link'>
-                <a href={ resumeLink } target="_blank">
+                <a href={ resumeLink }  target="_blank">
                     { useTranslator(navbar.resume) }
                 </a>
             </div>

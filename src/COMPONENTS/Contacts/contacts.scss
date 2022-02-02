@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1rem;
   .box{
     display: flex;
     padding: 0.25rem 0.5rem;
@@ -12,13 +13,18 @@
     p {
       padding-left: 0.5rem;
     }
-  }
-  .box:hover{
-    background-color: $grey;
-    color: inherit;
-    border-radius: 8px;
-  }
+    &:hover{
+      color: inherit;
+    }      
+    // &:hover >p{
 
+    //   filter: drop-shadow(0 0 1px $green) drop-shadow(0 0 2px $green) drop-shadow(0 0 4px $green);
+    // }
+    // &:hover > .icon{
+    //   color: $text-light;
+    //   filter: drop-shadow(0 0 1px $green) drop-shadow(0 0 2px $green) drop-shadow(0 0 4px $green);
+    // }
+  }
 }
 @media (min-width: 576px) {
   .contacts{

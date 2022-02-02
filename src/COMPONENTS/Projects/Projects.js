@@ -16,7 +16,7 @@ function Projects() {
 
     return (
         <section className="projects">
-            <h2 className="title">{useTranslator(projTitle)}</h2>
+            <h1 className="deep-title">Projects</h1>
 
             <h3 className="subtitle">#1 {useTranslator(dashboard.subtitle)} </h3>
             <section className="dashboard">
@@ -33,15 +33,15 @@ function Projects() {
 
                     <div className='link-row'>
                         <LinkBox href={'#'} type='site'/>
-                        <LinkBox href={gitHubDashboard} type='github' margin={'10px'}/>
+                        <LinkBox href={gitHubDashboard} type='github' margin={'2rem'}/>
                     </div>
                 </div>
 
                 <div className='screenshot'>
                     <picture>
-                        <source srcSet={desktopLight} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
-                        <source  srcSet={tabletLight} media="(min-width: 768px)" type='image/png'/>
-                        <img src={mobileLight} alt='img'/>
+                        <source srcSet={tabletDark} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
+                        <source  srcSet={desktopDark} media="(min-width: 768px)" type='image/png'/>
+                        <img src={mobileDark} alt='img'/>
                     </picture>
                 </div>
 
