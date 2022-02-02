@@ -1,14 +1,10 @@
 import React from 'react';
 import { dataSkills } from '../../data/data-skills';
-import { useSelector } from 'react-redux';
 import useTranslator from '../../hooks/useTranslator';
 import { summary,about,skills } from '../../data/multiLang';
-// import Tooltip from '../Tooltip/Tooltip';
 import './summary.scss';
 
 function Summary() {
-    
-    const theme = useSelector(state => state.redux.theme)
 
     return (
         <section className="summary">
@@ -37,7 +33,7 @@ function Summary() {
                             <li key={data.id}
                                 className='tool on-start'
                                 style={{ animationDelay: data.delay }}>
-                                <p className={`tool-text-${theme}`}>
+                                <p className='tool-text'>
                                     { data.title } 
                                 </p>
                             </li>

@@ -6,7 +6,6 @@ import './lang-button.scss'
 function LangButton() {
 
     const dispatch = useDispatch()
-    const theme = useSelector(state => state.redux.theme)
     const lang = useSelector(state => state.redux.lang)
 
     const toggler = (event) => {
@@ -15,14 +14,14 @@ function LangButton() {
     }
 
     return (
-        <div className={theme === 'light' ? 'lang-button-light' : 'lang-button-dark'}>
+        <div className='lang-button'>
             <div className="switcher-box">
-                <span className={ lang === 'eng' ? `switcher shade-${theme}` : 'switcher'}
+                <span className={lang === 'eng' ? 'switcher active' : 'switcher'}
                     id = 'eng' 
                     onClick={toggler}>
                     eng
                 </span>
-                <span className={ lang === 'rus' ? `switcher shade-${theme}` : 'switcher'}
+                <span className={lang === 'rus' ? 'switcher active' : 'switcher'}
                     id = 'rus'
                     onClick={toggler}>
                     rus

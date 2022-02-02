@@ -1,9 +1,9 @@
 @import '../App/vars.scss';
 
-.menu-light,
-.menu-dark{
+.menu{
     display: flex;
     flex-direction: column;
+    color: $text-light;
     .link{
         font-weight: 700;
         display: flex;
@@ -14,16 +14,8 @@
         }
     }
 }
-.menu-light{
-    color: $text-light;
-}
-.menu-dark{
-    color: $text-light;
-}
-
 @media (min-width: 576px) {
-    .menu-light,
-    .menu-dark{
+    .menu{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;

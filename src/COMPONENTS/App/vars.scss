@@ -17,11 +17,10 @@ $shadow-dk:  0px 0px 6px rgba(255,255,255,0.3);
 // $shadow-big-lt: 0px 0px 10px rgba(0,0,0,0.3);
 // $shadow-big-dk:  0px 0px 10px rgba(255,255,255,0.3);
 
-$bg-light: #ffffff;
 $bg-dark: #1d1d1d;
-$lt-contr: #f85904;
 $dk-contr: #f85904;
 $green: #08fdd8;
+$grey: #262626;
 
 /*==========================TOTALL STYLES=====================*/
 
@@ -48,7 +47,7 @@ html,
 body {
     font-family: $font-main;
     min-height: 100%;
-    font-weight: 500;
+    font-weight: 400;
     color: $color-dark;
     width: 100%;
     min-height: 100vh;
@@ -59,7 +58,7 @@ body {
 }
 //======= GLOBAL CLASSES ==================
 .icon {
-    color: $carrot;
+    color: $green;
     font-size: 1.3rem;
     cursor: pointer;
 }

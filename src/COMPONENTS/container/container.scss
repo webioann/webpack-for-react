@@ -1,35 +1,16 @@
 @import '../App/vars.scss';
 
-.container-fluid-light{
-    background-color: $bg-light;
-}
-.container-fluid-dark{
+.container-fluid{
     background-color: $bg-dark;
-}
-
-.container-light,
-.container-dark{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-    position: relative;
-    overflow: hidden;
-    line-height: 1.5;
-
-}
-.container-light{
-    background-color: $bg-light;
-    color: $text-dark;
-}
-.container-dark{
-    background-color: $bg-dark;
-    color: $text-light;
-}
-
-@media (min-width: 576px) {
-    .container-light,
-    .container-dark{
-        padding: 40px 1rem 1rem 1rem;
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        position: relative;
+        overflow: hidden;
+        line-height: 1.5;
+        background-color: $bg-dark;
+        color: $text-light;
     }
 }

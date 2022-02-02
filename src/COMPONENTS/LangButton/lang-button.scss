@@ -1,11 +1,11 @@
 @import '../App/vars.scss';
 
-.lang-button-light,
-.lang-button-dark{
+.lang-button{
     width: 120px;
     margin-right: 1rem;
     border: 1px solid #fff;
     border-radius: 5px;
+    color: $text-light;
     .switcher-box{
         display: flex;
         justify-content: space-between;
@@ -17,27 +17,16 @@
             cursor: pointer;
             // padding: 3px 0;
             font-weight: 700;
+            color: $text-light;
         }
-        .shade-light{
-            color: $lt-contr;
-            transition: color 200ms linear 100ms;
-        }
-        .shade-dark{
-            color: $dk-contr;
+        .active{
+            color: $green;
             transition: color 200ms linear 100ms;
         }
     }
 }
-.lang-button-light{
-    color: $text-light;
-}
-.lang-button-dark{
-    color: $text-dark;
-}
-
 @media (min-width: 576px) {
-    .lang-button-light,
-    .lang-button-dark{
+    .lang-button{
         position: relative;
         left: 0;
     }

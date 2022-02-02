@@ -1,26 +1,15 @@
 @import '../App/vars.scss';
 
-.navbar-light, 
-.navbar-dark {
-    background: $navbar-bg-lt;
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 5px );
+.navbar{
+    background-color: #262626;
     display: flex;
     flex-direction: column;
     padding: 10px 1rem;
     transition: all 0.7s linear;
     position: relative;
 }
-.navbar-light{
-    background: $navbar-bg-lt;
-}
-.navbar-dark{
-    // background: $navbar-bg-dk;
-    background-color: #262626;
-}
-
 @media (min-width: 576px) {
-    .navbar-light, .navbar-dark{
+    .navbar{
         flex-direction: row;
         align-items: center;
         width: 100%;

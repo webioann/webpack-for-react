@@ -1,5 +1,4 @@
-import React,{ useState,useEffect } from 'react';
-import { useSelector } from "react-redux";
+import React,{ useState } from 'react';
 
 // ======== image imports ==============================
 import desktopDark from '../../assets/desktop-dk-eng.png';
@@ -12,17 +11,10 @@ import './slider.scss';
 
 function Slider() {
 
-    const theme = useSelector(state => state.redux.theme) 
     const [desktopImg,setDesktopImg] = useState(desktopDark)
     const [tabletImg,setTabletImg] = useState(tabletDark)
     const [mobileImg,setMobileImg] = useState(mobileDark)
     const [animaClass,setAnimaClass] = useState('animated')
-
-    useEffect(() => {
-        theme === 'light' ? setDesktopImg(desktopDark) : setDesktopImg(desktopLight)
-        theme === 'light' ? setTabletImg(tabletDark) : setTabletImg(tabletLight)
-        theme === 'light' ? setMobileImg(mobileDark) : setMobileImg(mobileLight)
-    },[theme])
 
     return (
         <div className='slider'>

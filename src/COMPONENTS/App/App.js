@@ -5,7 +5,6 @@ import Burger from '../Burger/Burger.js';
 import Navbar from '../Navbar/Navbar.js';
 import Menu from '../Menu/Menu.js';
 import LangButton from '../LangButton/LangButton.js';
-import ThemeToggler from '../ThemeToggler/ThemeToggler.js';
 import Summary from '../Summary/Summary.js';
 import Projects from '../Projects/Projects.js';
 import Contacts from '../Contacts/Contacts.js';
@@ -32,10 +31,8 @@ function App() {
         <Navbar move={move}>
           <Menu/>
           <LangButton/>
-          <ThemeToggler/>
         </Navbar>
         <Burger move_navbar={move_navbar} move={move}/>
-        <ThemeToggler type={'mobile'}/>
       </FixedTop>
       <Summary/>
       <Projects/>
