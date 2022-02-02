@@ -1,5 +1,6 @@
 @import '../App/vars.scss';
 
+// ==> styles for class 'on-start' in folder 'vars.scss'
 .summary {
     padding: 1rem 0;
     .wrapper{
@@ -8,14 +9,13 @@
         .about-box{
             flex: 2;
             .about{ 
-                word-wrap: break-word;
                 font-weight: 400;
-                li{
-                    list-style: square inside;
-                }
+                // li{
+                //     list-style: square inside;
+                // }
                 .intro{
                     font-weight: 700;
-                    color: blue;
+                    color: $green;
                 }
             }
         }
@@ -27,17 +27,24 @@
                 gap: 1rem;
                 .tool{
                     position: relative;
+
                     .tool-text-light,
                     .tool-text-dark{
                         transition: all 200ms linear;
                         border-radius: 5px;
                         text-align: center;
+                        &:hover{
+                            transform: scale(1.15);
+                        }
+
                     }
                     .tool-text-light{
                         box-shadow: $shadow-lt;
                     }
                     .tool-text-dark{
-                        box-shadow: $shadow-dk;
+                        // box-shadow: $shadow-dk;
+                        background-color: #262626;
+                        color: $green;
                     }
                 }
             }

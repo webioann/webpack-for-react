@@ -18,9 +18,10 @@ $shadow-dk:  0px 0px 6px rgba(255,255,255,0.3);
 // $shadow-big-dk:  0px 0px 10px rgba(255,255,255,0.3);
 
 $bg-light: #ffffff;
-$bg-dark: #212121;
+$bg-dark: #1d1d1d;
 $lt-contr: #f85904;
 $dk-contr: #f85904;
+$green: #08fdd8;
 
 /*==========================TOTALL STYLES=====================*/
 
@@ -108,7 +109,7 @@ a:active {
     width: 0%;
     height: 3px;
     border-radius: 1px;
-    background-color: $carrot;
+    background-color: $green;
 }
 @keyframes growLine {
     0%{ width: 0%; }

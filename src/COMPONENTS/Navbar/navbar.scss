@@ -13,11 +13,10 @@
 }
 .navbar-light{
     background: $navbar-bg-lt;
-    color: $text-light;
 }
 .navbar-dark{
-    background: $navbar-bg-dk;
-    color: $text-dark;
+    // background: $navbar-bg-dk;
+    background-color: #262626;
 }
 
 @media (min-width: 576px) {

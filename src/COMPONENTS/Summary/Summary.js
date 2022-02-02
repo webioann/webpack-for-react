@@ -12,10 +12,10 @@ function Summary() {
 
     return (
         <section className="summary">
-            <h2 className="title row"> { useTranslator(summary.title) } </h2>
+            <h2 className="title row"> {useTranslator(summary.title)} </h2>
             <div className="wrapper">
                 <div className="about-box">
-                    <h3 className="subtitle">{ useTranslator(about.subtitle) }</h3>
+                    <h3 className="subtitle">{useTranslator(about.subtitle)}</h3>
                     <ul className="about">
                         <li className='intro'>{useTranslator(about.intro)}</li>
                         <li className='html-css'>{useTranslator(about.html_css)}</li>

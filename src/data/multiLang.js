@@ -42,7 +42,7 @@ export const about = {
         rus: 'обо мне'
     },
     intro: {
-        eng: 'Im Aleksander, React JS junior-strong front-end developer from Ukraine.',
+        eng: 'I\'m Aleksander, React JS junior-strong front-end developer from Ukraine.',
         rus: 'Я Александр, React JS джуниор-стронг фронтенд разработчик из Украины.'
     },
     html_css: {
@@ -82,8 +82,8 @@ export const about = {
         rus: 'План: стать full-stack Java-Script разработчиком.'
     },
     soft_skills: {
-        eng: 'Soft skills: not a fool,purposeful(or stubborn),I love learning (seriously!),extremely plodding(2500+ hours of study without "financial motivation").',
-        rus: 'Soft skills: не дурак,целеустремлен(или упрям),обожаю учится(серьезно!),крайне усидчив(2500+ часов обучения без "финансовой мотивации").'
+        eng: 'Soft skills: not a fool, purposeful (or stubborn), I love learning (seriously!), extremely plodding (2500+ hours of study without "financial motivation").',
+        rus: 'Soft skills: не дурак, целеустремлен (или упрям), обожаю учится (серьезно!), крайне усидчив (2500+ часов обучения без "финансовой мотивации").'
     },
 
 }
@@ -107,8 +107,8 @@ export const portfolio = {
         rus: 'Использовал :'
     },
     used_tools_text: {
-        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first)',
-        rus: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first)'
+        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first).',
+        rus: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first).'
     },
 };
 //==========================================
@@ -122,15 +122,15 @@ export const dashboard = {
         rus: 'Описание проэкта :'
     },
     discr_text: {
-        eng: 'The app gets users from "randomuser.me". Implemented filtering, on the client side, by nationality and gender of the user. Two interface languages - English and Russian. Two color themes. Statistics are displayed in a custom chart. Client side pagination. Changing the size of the request to the server (three options). Full adaptability of the application.',
-        rus: 'Приложение получает пользователей с "randomuser.me". Реализовано фильтрацию, на стороне клиента, по национальности и полу пользователя . Два языка интерфейса - английский и русский . Две цветовые темы . Выводится статистика в кастомном графике . Пагинация на стороне клиента . Изменение величины запроса к серверу(три варианта) . Полная адаптивность приложения .',
+        eng: 'The app gets users from "randomuser.me". Implemented filtering, on the client side, by nationality and gender of the user. Two interface languages - English and Russian. Switching color theme. Statistics are displayed in a custom chart. Client side pagination. Changing the size of the request to the server (three options). Full adaptability of the application.',
+        rus: 'Приложение получает пользователей с "randomuser.me". Реализовано фильтрацию, на стороне клиента, по национальности и полу пользователя. Два языка интерфейса - английский и русский. Переключение цветовой темы. Выводится статистика в кастомном графике. Пагинация на стороне клиента. Изменение величины запроса к серверу(три варианта). Полная адаптивность приложения.',
     },
     used_tools_span: {
         eng: 'Used tools :',
         rus: 'Использовал :'
     },
     used_tools_text: {
-        eng: 'React, custom-hooks, Redux-toolkit, REST API, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)',
-        rus: 'React, custom-hooks, Redux-toolkit, REST API, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first)'
+        eng: 'React, custom-hooks, Redux-toolkit, REST API, Webpack, Git-hub, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first).',
+        rus: 'React, custom-hooks, Redux-toolkit, REST API, Webpack, Git-hub, Sass and Less, CSS-анимация, post-CSS, адаптивный дизайн(mobile-first).'
     },
 };

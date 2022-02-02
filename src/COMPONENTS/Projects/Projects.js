@@ -51,9 +51,9 @@ function Projects() {
 
                 <div className='screenshot'>
                     <picture>
-                        <source srcSet={tabletImg} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
+                        <source srcSet={desktopImg} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
                         <source  srcSet={desktopImg} media="(min-width: 768px)" type='image/png'/>
-                        <img src={mobileImg} alt='img'/>
+                        <img src={desktopImg} alt='img'/>
                     </picture>
                 </div>
 
