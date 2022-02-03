@@ -1,11 +1,11 @@
 import React,{ useState,useEffect } from 'react';
 import Container from '../Container/Container.js';
-// import Cursor from '../Cursor/Cursor.js';
+import Star from '../Star/Star.js';
 import FixedTop from '../FixedTop/FixedTop.js';
 import Burger from '../Burger/Burger.js';
 import Navbar from '../Navbar/Navbar.js';
 import Menu from '../Menu/Menu.js';
-import LangButton from '../LangButton/LangButton.js';
+import LangSwitch from '../LangSwitch/LangSwitch.js';
 import Summary from '../Summary/Summary.js';
 import Projects from '../Projects/Projects.js';
 import Contacts from '../Contacts/Contacts.js';
@@ -28,10 +28,11 @@ function App() {
 
   return (
     <Container>
+      <Star/>
       <FixedTop>
         <Navbar move={move}>
           <Menu/>
-          <LangButton/>
+          <LangSwitch/>
         </Navbar>
         <Burger move_navbar={move_navbar} move={move}/>
       </FixedTop>

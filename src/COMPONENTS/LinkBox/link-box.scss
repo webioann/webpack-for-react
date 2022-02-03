@@ -12,6 +12,8 @@
         color: $green;
         font-weight: 600;
         font-size: 0.8rem;
+        margin-left: 10px;
+
     }
     &:hover{
         transform: scale(1.15);
@@ -23,7 +25,6 @@
         padding: 4px 8px;
         .link-text{
             font-size: 1rem;
-            margin-left: 1rem;
         }
     }
 }
