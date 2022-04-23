@@ -1,45 +1,54 @@
 @import "../App/vars.scss";
 
-.contacts {
+.contacts{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 1rem;
-  .box{
+  position: relative;
+  // .deep-title{
+  //   padding-bottom: 1rem;
+  // }
+  .contacts-field{
     display: flex;
-    padding: 0.25rem 0.5rem;
+    flex-direction: column;
+    z-index: 100;
     width: 100%;
-    transition: all 200ms linear;
-    p {
-      padding-left: 0.5rem;
+    .box{
+      display: flex;
+      padding: 0.25rem 0.5rem;
+      width: 100%;
+      transition: all 200ms linear;
+      p {
+        padding-left: 0.5rem;
+      }
+      &:hover{
+        color: inherit;
+      }      
     }
-    &:hover{
-      color: inherit;
-    }      
-    // &:hover >p{
-
-    //   filter: drop-shadow(0 0 1px $green) drop-shadow(0 0 2px $green) drop-shadow(0 0 4px $green);
-    // }
-    // &:hover > .icon{
-    //   color: $text-light;
-    //   filter: drop-shadow(0 0 1px $green) drop-shadow(0 0 2px $green) drop-shadow(0 0 4px $green);
-    // }
   }
+
 }
 @media (min-width: 576px) {
   .contacts{
-    flex-direction: row;
-    flex-wrap: wrap;
-    .box{
-      width: 50%;
+    .contacts-field{
+      bottom: 1rem;
+      position: absolute;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .box{
+        width: 50%;
+      }
     }
+  
   }
 }
 @media (min-width: 992px) {
   .contacts{
-    flex-direction: row;
-    .box{
-      width: 25%;
+    .contacts-field{
+      bottom: 3rem;
+      .box{
+        width: 25%;
+      }
     }
   }
 }
