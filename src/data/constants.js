@@ -5,7 +5,7 @@ export const linkedInLink = "https://linkedin.com/in/alexander-veles";
 export const email = 'ioannn7777@gmail.com';
 export const gitHubLink = "https://github.com/webioann";
 //===== Projects ====
-export const gitHubPortfolio = "https://github.com/webioann/portfolio at darkPortfolio";
+export const gitHubPortfolio = "https://github.com/webioann/portfolio/";
 export const gitHubDashboard = "https://github.com/webioann/dashboard/";
 export const gitHubWeather = "https://github.com/webioann/sky-watcher/";
 
