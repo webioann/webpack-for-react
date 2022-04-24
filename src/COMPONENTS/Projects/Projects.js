@@ -33,7 +33,7 @@ function Projects() {
 
                     <div className='link-row'>
                         <LinkBox href={'#'} type='site'/>
-                        <LinkBox href={gitHubDashboard} type='github' margin={'1rem'}/>
+                        <LinkBox href={ gitHubDashboard } type='github' margin={'1rem'}/>
                     </div>
                 </div>
 
@@ -62,7 +62,7 @@ function Projects() {
                     </div>
 
                     <div className='link-row'>
-                        <LinkBox href={gitHubPortfolio} type='github'/>
+                        <LinkBox href={ gitHubPortfolio } type='github'/>
                     </div>
                 </div>
             </section>
