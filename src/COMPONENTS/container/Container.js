@@ -20,9 +20,9 @@ function Container(props) {
 
     return (
         <div id='top' className='container-fluid'  onMouseMove={client}>
+            {/* <span> EVENT  X: {pos.posX} == Y: {pos.posY} == TIME: {pos.time}</span>  */}
+
             <div className='container'>
-                {/* <span> EVENT  X: {pos.posX} == Y: {pos.posY} == TIME: {pos.time}</span>  */}
-                
                 {props.children}
             </div>
         </div>

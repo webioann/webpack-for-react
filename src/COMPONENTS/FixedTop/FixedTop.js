@@ -11,5 +11,4 @@ function FixedTop(props) {
         </div>
     )
 }
-
 export default FixedTop;
