@@ -18,15 +18,29 @@ function Slider() {
 
     return (
         <div className='slider'>
-            <picture className='slide-1'> 
-                <source srcSet={tabletImg} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
-                <source  srcSet={desktopImg} media="(min-width: 768px)" type='image/png'/>
-                <img src={mobileImg} alt='img'/>
+            <picture className='prev-slide'> 
+                <source  
+                    srcSet={desktopImg} 
+                    media="(min-width: 768px)" 
+                    type='image/png'/>
+                <source 
+                    srcSet={tabletImg} 
+                    media="(min-width: 500px) and (max-width: 767.999px)"  
+                    type='image/png'/>
+                <img 
+                    src={mobileImg} alt='img'/>
             </picture>
-            <picture className='slide-2'> 
-                <source srcSet={tabletImg} media="(min-width: 500px) and (max-width: 767.999px)"  type='image/png'/>
-                <source  srcSet={desktopImg} media="(min-width: 768px)" type='image/png'/>
-                <img src={mobileImg} alt='img'/>
+            <picture className='next-slide'> 
+                <source  
+                    srcSet={desktopImg} 
+                    media="(min-width: 768px)" 
+                    type='image/png'/>
+                <source 
+                    srcSet={tabletImg} 
+                    media="(min-width: 500px) and (max-width: 767.999px)"  
+                    type='image/png'/>
+                <img 
+                    src={mobileImg} alt='img'/>
             </picture>
             <div className='modal-tooltip'> 
                 <p >
