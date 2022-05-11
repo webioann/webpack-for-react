@@ -7,9 +7,10 @@ import tabletDark from '../../assets/tablet-dk-eng.png';
 import tabletLight from '../../assets/tablet-lt-rus.png';
 import mobileDark from '../../assets/mobile-dk-eng.png';
 import mobileLight from '../../assets/mobile-lt-eng.png';
+
 import './slider.scss';
 
-function Slider() {
+function Slider(props) {
 
     const [desktopImg,setDesktopImg] = useState(desktopDark)
     const [tabletImg,setTabletImg] = useState(tabletDark)
@@ -18,6 +19,7 @@ function Slider() {
 
     return (
         <div className='slider'>
+            { props.children }
             <picture className='prev-slide'> 
                 <source  
                     srcSet={desktopImg} 
