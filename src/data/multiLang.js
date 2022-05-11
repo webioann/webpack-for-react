@@ -22,13 +22,7 @@ export const projTitle = {
     ukr: 'Проекти'
 };
 //============= Summary =====================
-export const summary = {
-    title: {
-        eng: 'Short about me',
-        ukr: 'Коротко про мене'
-    },
-};
-
+// 
 export const skills = {
     subtitle: {
         eng: 'skills',
