@@ -8,11 +8,11 @@ export const reduxSlice = createSlice({
     },
     reducers: {
         langEng: state => { state.lang = 'eng' },
-        langRus: state => { state.lang = 'rus' },
+        langUkr: state => { state.lang = 'ukr' },
         themeLight: state => { state.theme = 'light' },
         themeDark: state => { state.theme = 'dark' },
     }
 })
-export const { langEng,langRus,themeLight,themeDark } = reduxSlice.actions
+export const { langEng,langUkr,themeLight,themeDark } = reduxSlice.actions
 
-export default reduxSlice.reducer
+export default reduxSlice.reducer;

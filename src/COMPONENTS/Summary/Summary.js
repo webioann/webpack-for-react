@@ -14,6 +14,7 @@ function Summary() {
                     <h3 className="subtitle">{useTranslator(about.subtitle)}</h3>
                     <ul className="about">
                         <li className='intro'>{useTranslator(about.intro)}</li>
+                        <li className='study'>{useTranslator(about.study)}</li>
                         <li className='html-css'>{useTranslator(about.html_css)}</li>
                         <li className='js'>{useTranslator(about.js)}</li>
                         <li className='react'>{useTranslator(about.react)}</li>
