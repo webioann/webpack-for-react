@@ -42,9 +42,6 @@ function App() {
       </FixedTop>
       <Summary/>
       <Projects/>
-      {/* <Slider>
-        <Arrows/>
-      </Slider> */}
       <Contacts/>
       <Footer/>
     </Container>
