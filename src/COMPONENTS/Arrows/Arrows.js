@@ -22,7 +22,7 @@ function Arrows() {
                     onClick={() => {
                         dispatch(arrowRight())
                         console.log(`ARROW INTO => right`);
-                        }}/>
+                    }}/>
             </div>
         </div>
     )

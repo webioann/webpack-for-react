@@ -121,8 +121,8 @@ export const dashboard = {
         ukr: 'Опис проекта :'
     },
     discr_text: {
-        eng: 'The app gets users from "randomuser.me" from API. Implemented filtering, on the client side, by nationality and gender of the user. Two interface languages - english and ukrainian. Switching color theme. Statistics are displayed in a custom chart. Client side pagination. Changing the size of the request to the server (three options). Full adaptability of the application.',
-        ukr: 'Додаток отримує користувачів з "randomuser.me" по API. Реалізовано фільтрацію, на стороні клієнта, по національності і статі користувача. Дві мови інтерфейса - англійська і українська. Перемикання кольорової теми. Виводиться статистика в кастомному графіку. Пагинація на стороні клієнта. Зміна величини запиту на сервер(три варіанта). Повна адаптивність додатка.',
+        eng: 'The app gets users from "randomuser.me" from API. Implemented filtering, on the client side, by nationality and gender of the user. Two interface languages - english and ukrainian. Switching color theme. Statistics are displayed in a custom graph in three implementations - random, increasing and decreasing the number of users of a certain nationality. Client side pagination. Changing the size of the request to the server (three options). Full adaptability of the application. Custom interface design.',
+        ukr: 'Додаток отримує користувачів з "randomuser.me" по API. Реалізовано фільтрацію, на стороні клієнта, по національності і статі користувача. Дві мови інтерфейса - англійська і українська. Перемикання кольорової теми. Виводиться статистика в кастомному графіку в трьох реалізаціях - випадкова, по зростанню та зменшенню показників  кількості користувачів певної національності. Пагинація на стороні клієнта. Зміна величини запиту на сервер(три варіанта). Повна адаптивність додатка. Власний дизайн інтерфейсу.',
     },
     used_tools_span: {
         eng: 'Used tools :',

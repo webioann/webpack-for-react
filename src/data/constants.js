@@ -7,7 +7,6 @@ export const gitHubLink = "https://github.com/webioann";
 //===== Projects ====
 export const gitHubPortfolio = "https://github.com/webioann/portfolio/";
 export const gitHubDashboard = "https://github.com/webioann/dashboard/";
-export const gitHubWeather = "https://github.com/webioann/sky-watcher/";
 
 
 
