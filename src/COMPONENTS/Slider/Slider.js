@@ -1,4 +1,5 @@
 import React,{ useState } from 'react';
+import { gallery } from '../../data/gallery'
 
 // ======== image imports ==============================
 import desktopDark from '../../assets/desktop-dk-eng.png';
@@ -15,40 +16,38 @@ function Slider(props) {
     const [desktopImg,setDesktopImg] = useState(desktopDark)
     const [tabletImg,setTabletImg] = useState(tabletDark)
     const [mobileImg,setMobileImg] = useState(mobileDark)
-    const [animaClass,setAnimaClass] = useState('animated')
+
+
 
     return (
         <div className='slider'>
-            { props.children }
-            <picture className='prev-slide'> 
-                <source  
-                    srcSet={desktopImg} 
-                    media="(min-width: 768px)" 
-                    type='image/png'/>
-                <source 
-                    srcSet={tabletImg} 
-                    media="(min-width: 500px) and (max-width: 767.999px)"  
-                    type='image/png'/>
-                <img 
-                    src={mobileImg} alt='img'/>
-            </picture>
-            <picture className='next-slide'> 
-                <source  
-                    srcSet={desktopImg} 
-                    media="(min-width: 768px)" 
-                    type='image/png'/>
-                <source 
-                    srcSet={tabletImg} 
-                    media="(min-width: 500px) and (max-width: 767.999px)"  
-                    type='image/png'/>
-                <img 
-                    src={mobileImg} alt='img'/>
-            </picture>
-            <div className='modal-tooltip'> 
-                <p >
-                    message 
-                </p>
+            <div className='gallery'>
+                <picture className='prev-slide'> 
+                    <source  
+                        srcSet={desktopImg} 
+                        media="(min-width: 768px)" 
+                        type='image/png'/>
+                    <source 
+                        srcSet={tabletImg} 
+                        media="(min-width: 500px) and (max-width: 767.999px)"  
+                        type='image/png'/>
+                    <img 
+                        src={mobileImg} alt='img'/>
+                </picture>
+                <picture className='next-slide'> 
+                    <source  
+                        srcSet={desktopImg} 
+                        media="(min-width: 768px)" 
+                        type='image/png'/>
+                    <source 
+                        srcSet={tabletImg} 
+                        media="(min-width: 500px) and (max-width: 767.999px)"  
+                        type='image/png'/>
+                    <img 
+                        src={mobileImg} alt='img'/>
+                </picture>
             </div>
+            { props.children }
         </div>
     );
 }

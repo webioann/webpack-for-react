@@ -3,7 +3,7 @@ import { MdArrowBackIos,MdOutlineArrowForwardIos } from 'react-icons/md'
 import { arrowLeft,arrowRight } from '../../Redux-toolkit/reduxSlice'
 import { useDispatch,useSelector } from 'react-redux'
 
-import './arrows.scss'
+import './slider.scss'
 
 function Arrows() {
 

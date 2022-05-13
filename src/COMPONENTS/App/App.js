@@ -11,9 +11,10 @@ import Projects from '../Projects/Projects.js'
 import Contacts from '../Contacts/Contacts.js'
 import Footer from '../Footer/Footer.js'
 
-import Arrows from '../Arrows/Arrows';
 
 import Slider from '../Slider/Slider.js'
+import SliderTools from '../Slider/SliderTools.js'
+
 //========= hooks import ==========
 import { useWindowWidth } from '../../hooks/useWindowWidth'
 
@@ -42,6 +43,9 @@ function App() {
       </FixedTop>
       <Summary/>
       <Projects/>
+      <Slider>
+        <SliderTools/>
+      </Slider>
       <Contacts/>
       <Footer/>
     </Container>
