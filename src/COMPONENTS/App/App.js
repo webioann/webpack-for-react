@@ -14,7 +14,7 @@ import Footer from '../Footer/Footer.js'
 
 import Slider from '../Slider/Slider.js'
 import SliderTools from '../Slider/SliderTools.js'
-import SliderArrows from '../Slider/SliderArrows.js'
+import SliderArrows from '../SliderArrows/SliderArrows.js'
 
 //========= hooks import ==========
 import { useWindowWidth } from '../../hooks/useWindowWidth'

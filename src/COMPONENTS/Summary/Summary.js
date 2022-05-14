@@ -1,8 +1,8 @@
-import React from 'react';
-import { dataSkills } from '../../data/data-skills';
-import useTranslator from '../../hooks/useTranslator';
-import { about,skills } from '../../data/multiLang';
-import './summary.scss';
+import React from 'react'
+import { skills_data } from '../../data/skills_data'
+import useTranslator from '../../hooks/useTranslator'
+import { about,skills } from '../../data/multiLang'
+import './summary.scss'
 
 function Summary() {
 
@@ -30,7 +30,7 @@ function Summary() {
                 <div className="skills-box">
                     <h3 className="subtitle">{useTranslator(skills.subtitle)}</h3>
                     <ul className='skills'>
-                        { dataSkills.map((data) => ( 
+                        { skills_data.map((data) => ( 
                             <li key={data.id}
                                 className='tool on-start'
                                 style={{ animationDelay: data.delay }}>
