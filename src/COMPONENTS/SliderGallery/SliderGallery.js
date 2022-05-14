@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-// import { slider_data } from '../../data/slider_data'
+import { slider_data } from '../../data/slider_data'
 
 // ======== image imports ==============================
 import desktopDark from '../../assets/desktop-dk-eng.png';
@@ -12,9 +12,9 @@ import './slider-gallery.scss'
 
 function SliderGallery() {
 
-    const [desktopImg,setDesktopImg] = useState(desktopDark)
-    const [tabletImg,setTabletImg] = useState(tabletDark)
-    const [mobileImg,setMobileImg] = useState(mobileDark)
+    const [desktopImg,setDesktopImg] = useState(slider_data[0].desktop_img)
+    const [tabletImg,setTabletImg] = useState(slider_data[0].tablet_img)
+    const [mobileImg,setMobileImg] = useState(slider_data[0].mobile_img)
 
     return (
         <div className='gallery'>

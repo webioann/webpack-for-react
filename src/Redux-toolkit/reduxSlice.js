@@ -6,6 +6,7 @@ export const reduxSlice = createSlice({
         lang: 'eng',
         theme: 'light',
         arrow_into: '',
+        slide_number: 1,
     },
     reducers: {
         langEng: state => { state.lang = 'eng' },
@@ -14,10 +15,11 @@ export const reduxSlice = createSlice({
         themeDark: state => { state.theme = 'dark' },
         arrowLeft: state => { state.arrow_into = 'left' },
         arrowRight: state => { state.arrow_into = 'right' },
+        changeSliderNumber: state => { state.slide_number = actions.payload }
     }
 })
 export const { 
-    langEng,langUkr,themeLight,themeDark,arrowLeft,arrowRight 
+    langEng,langUkr,themeLight,themeDark,arrowLeft,arrowRight,changeSliderNumber 
 } = reduxSlice.actions
 
 export default reduxSlice.reducer;
