@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import { gallery } from '../../data/gallery'
+import { slider_data } from '../../data/slider_data'
 
 // ======== image imports ==============================
 import desktopDark from '../../assets/desktop-dk-eng.png';

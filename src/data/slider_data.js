@@ -6,48 +6,55 @@ import mobileLight from '../assets/mobile-lt-eng.png';
 import desktopLight from '../assets/desktop-lt-rus.png';
 import tabletLight from '../assets/tablet-lt-rus.png';
 
-export const gallery = [
+export const slider_data = [
     {
         desktop_img:  desktopDark,
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 1,
+        message: 'start pege'
     },
     {
         desktop_img:  desktopDark,
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 2,
+        message: 'start pege'
     },
     {
         desktop_img:  desktopDark,
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 3,
+        message: 'start pege'
     },
     {
         desktop_img:  desktopDark,
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 4,
+        message: 'start pege'
     },
     {
         desktop_img:  desktopDark,
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 5,
+        message: 'start pege'
     },
     {
         desktop_img:  desktopDark,
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 6,
+        message: 'start pege'
     },
     {
         desktop_img:  desktopDark,
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 7,
+        message: 'start pege'
     },
 
 ]
