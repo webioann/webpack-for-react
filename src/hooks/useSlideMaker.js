@@ -1,27 +1,13 @@
-import { useState,useEffect } from "react"
+import { useState,useEffect,useRef } from "react"
 import { useSelector,useDispatch } from "react-redux"
-import {  changeSliderNumber} from '../Redux-toolkit/reduxSlice'
-import { slider_data } from '../../data/slider_data'
-
+import { slider_data } from '../data/slider_data'
 
 const useSlideMaker = () => {
 
     const dispatch = useDispatch()
     const slide_number = useSelector(state => state.redux.slide_number)
-    const arrow_into = useSelector(state => state.redux.arrow_into)
     const gallery_size = slider_data.length
-    const[active_slide,setActiveSlide] = useState(slider_data[0])
-
-    useEffect(() => {
-        while(slide_number >= 1 && slide_number <= gallery_size.length) {
-            if(arrow_into === 'right') {
-
-            }
-            if(arrow_into === 'left')
-        }
-
-    },[arrow_into])
-
+    const[active_slide,setActiveSlide] = useState(slide_number)
 
     return active_slide
 }

@@ -12,49 +12,49 @@ export const slider_data = [
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 1,
-        message: 'start pege'
+        message: 'start pege 1'
     },
     {
-        desktop_img:  desktopDark,
-        tablet_img: tabletDark,
-        mobile_img: mobileDark,
+        desktop_img:  desktopLight,
+        tablet_img: tabletLight,
+        mobile_img: mobileLight,
         number: 2,
-        message: 'start pege'
+        message: 'start pege 2'
     },
     {
         desktop_img:  desktopDark,
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 3,
-        message: 'start pege'
+        message: 'start pege 3'
     },
     {
-        desktop_img:  desktopDark,
-        tablet_img: tabletDark,
-        mobile_img: mobileDark,
+        desktop_img:  desktopLight,
+        tablet_img: tabletLight,
+        mobile_img: mobileLight,
         number: 4,
-        message: 'start pege'
+        message: 'start pege  4'
     },
     {
         desktop_img:  desktopDark,
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 5,
-        message: 'start pege'
+        message: 'start pege 5'
     },
     {
-        desktop_img:  desktopDark,
-        tablet_img: tabletDark,
-        mobile_img: mobileDark,
+        desktop_img:  desktopLight,
+        tablet_img: tabletLight,
+        mobile_img: mobileLight,
         number: 6,
-        message: 'start pege'
+        message: 'start pege 6'
     },
     {
         desktop_img:  desktopDark,
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 7,
-        message: 'start pege'
+        message: 'start pege 7'
     },
 
 ]
