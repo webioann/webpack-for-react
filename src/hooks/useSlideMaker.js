@@ -4,17 +4,20 @@ import { slider_data } from '../data/slider_data'
 
 const useSlideMaker = () => {
 
-    const dispatch = useDispatch()
     const slide_number = useSelector(state => state.redux.slide_number)
-    const gallery_size = slider_data.length
-    const[active_slide,setActiveSlide] = useState(slide_number)
+    const [desktopImg,setDesktopImg] = useState(slider_data[0].desktop_img)
+    const [tabletImg,setTabletImg] = useState(slider_data[0].tablet_img)
+    const [mobileImg,setMobileImg] = useState(slider_data[0].mobile_img)
 
-    return active_slide
+    useEffect(() => {
+        let raw = slider_data.find(data => slide_number === data.number)
+        setDesktopImg(raw.desktop_img)
+        setTabletImg(raw.tablet_img)
+        setMobileImg(raw.mobile_img)
+    },[slide_number])
+
+    return { desktopImg,tabletImg,mobileImg }
 }
 export default useSlideMaker;
-
-// if(active_slide_number >= 1 && active_slide_number <= gallery_size) {
-//     setActiveSlide(slider_data.filter(slide => slide.number === active_slide_number))
-// }
 
 
