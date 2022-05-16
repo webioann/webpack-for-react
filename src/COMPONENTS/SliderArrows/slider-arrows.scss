@@ -16,16 +16,16 @@
         min-width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 0 1rem;
         .arrow{
             font-weight: 700;
             font-size: 4rem;
-            color: #f85904;
+            color: $green;
             cursor: pointer;
-            opacity: 0.5;
-            &:hover{
-                opacity: 1;
-            }
+            border-radius: 0.5rem;
+        }
+        .left{
+            margin-left: 0.5rem;
         }
     }
     

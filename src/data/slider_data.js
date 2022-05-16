@@ -12,7 +12,7 @@ export const slider_data = [
         tablet_img: tabletDark,
         mobile_img: mobileDark,
         number: 1,
-        message: 'start pege 1'
+        message: 'start pege 1 fffffffffffffffffffffffffffffffffffffffffff'
     },
     {
         desktop_img:  desktopLight,

@@ -43,12 +43,13 @@ function App() {
         <Burger move_navbar={move_navbar} move={move}/>
       </FixedTop>
       <Summary/>
-      <Projects/>
-      <Slider>
-        <SliderGallery/>
-        <SliderArrows/>
-        <SliderTools/>
-      </Slider>
+      <Projects>
+        <Slider>
+          <SliderGallery/>
+          <SliderArrows/>
+          <SliderTools/>
+        </Slider>
+      </Projects>
       <Contacts/>
       <Footer/>
     </Container>

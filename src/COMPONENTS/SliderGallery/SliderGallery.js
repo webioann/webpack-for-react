@@ -4,11 +4,11 @@ import './slider-gallery.scss'
 
 function SliderGallery() {
 
-    const { desktopImg,tabletImg,mobileImg,animClass } = useSlideMaker()
+    const { desktopImg,tabletImg,mobileImg,slideClass } = useSlideMaker()
 
     return (
         <div className='gallery'>
-            <picture className={animClass}> 
+            <picture className={slideClass}> 
                 <source  
                     srcSet={desktopImg} 
                     media="(min-width: 768px)" 

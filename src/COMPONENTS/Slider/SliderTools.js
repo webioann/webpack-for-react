@@ -1,7 +1,7 @@
 import React from 'react'
 import { slider_data } from '../../data/slider_data'
-import { useSelector } from 'react-redux';
-import './slider.scss';
+import { useSelector } from 'react-redux'
+import './slider.scss'
 
 function SliderTools(props) {
 
@@ -11,10 +11,10 @@ function SliderTools(props) {
         <div className='slider-tools'>
             { props.children }
             {/* massege over gallery */}
-            <section className='message-wraper'> 
-                <p className='message'>
+            <section className='message-wrapper'> 
+                <a className='message'>
                     { slider_data[slide_number - 1].message } 
-                </p>
+                </a>
             </section>
             {/* progress */}
             <ul className='progress'>
@@ -25,6 +25,6 @@ function SliderTools(props) {
                 ))}
             </ul>
         </div>
-    );
+    )
 }
 export default SliderTools;
