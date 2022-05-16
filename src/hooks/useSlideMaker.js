@@ -9,7 +9,7 @@ const useSlideMaker = () => {
     const [tabletImg,setTabletImg] = useState(slider_data[0].tablet_img)
     const [mobileImg,setMobileImg] = useState(slider_data[0].mobile_img)
     const [animClass,setAnimClass] = useState('prev-slide')
-    let countRef = useRef(1) // === countRef needed for toggle from slide #2 on slide #1 with animation
+    let countRef = useRef(1) // === countRef needed only for toggle from slide #2 on slide #1 with animation
 
     useEffect(() => {
         let raw = slider_data.find(data => slide_number === data.number)
