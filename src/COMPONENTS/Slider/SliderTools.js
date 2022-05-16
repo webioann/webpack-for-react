@@ -6,16 +6,20 @@ import './slider.scss'
 function SliderTools(props) {
 
     const slide_number = useSelector(state => state.redux.slide_number)
+    const lang = useSelector(state => state.redux.lang)
 
     return (
         <div className='slider-tools'>
             { props.children }
             {/* massege over gallery */}
-            <section className='message-wrapper'> 
+            {/* <section className='message-wrapper'> 
                 <span className='message'>
-                    { slider_data[slide_number - 1].message } 
+                    { lang === 'eng' 
+                        ? slider_data[slide_number - 1].message.eng
+                        : slider_data[slide_number - 1].message.ukr
+                    }
                 </span>
-            </section>
+            </section> */}
             {/* progress */}
             <ul className='progress'>
                 { slider_data.map(item => (

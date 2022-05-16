@@ -3,13 +3,6 @@ import useTranslator from '../../hooks/useTranslator';
 import { portfolio,dashboard } from '../../data/multiLang';
 import { gitHubPortfolio,gitHubDashboard } from '../../data/constants';
 import LinkBox from '../LinkBox/LinkBox';
-// ======== image imports ==============================
-import desktopDark from '../../assets/desktop-dk-eng.png'
-// import desktopLight from '../../assets/desktop-lt-rus.png'
-import tabletDark from '../../assets/tablet-dk-eng.png'
-// import tabletLight from '../../assets/tablet-lt-rus.png'
-import mobileDark from '../../assets/mobile-dk-eng.png'
-// import mobileLight from '../../assets/mobile-lt-eng.png'
 import './projects.scss';
 
 function Projects(props) {

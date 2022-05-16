@@ -16,18 +16,16 @@ export const reduxSlice = createSlice({
             if(state.slide_number > 1 && state.slide_number <= 7) {
                 state.slide_number -= 1
             }
-            console.log(`ARROW LEFT = ${state.slide_number}`); 
         },
         arrowRight: state => {
             if(state.slide_number >= 1 && state.slide_number < 7) {
                 state.slide_number += 1
             }
-            console.log(`ARROW RIGHT = ${state.slide_number}`); 
         },
     }
 })
 export const { 
-    langEng,langUkr,themeLight,themeDark,arrowLeft,arrowRight, 
+    langEng,langUkr,themeLight,themeDark,arrowLeft,arrowRight,
 } = reduxSlice.actions
 
 export default reduxSlice.reducer;
