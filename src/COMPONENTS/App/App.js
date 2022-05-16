@@ -10,28 +10,26 @@ import Summary from '../Summary/Summary.js'
 import Projects from '../Projects/Projects.js'
 import Contacts from '../Contacts/Contacts.js'
 import Footer from '../Footer/Footer.js'
-
-
 import Slider from '../Slider/Slider.js'
 import SliderTools from '../Slider/SliderTools.js'
 import SliderArrows from '../SliderArrows/SliderArrows.js'
 import SliderGallery from '../SliderGallery/SliderGallery.js'
 import NewSliderGallery from '../SliderGallery/NewSliderGallery.js'
-
 //========= hooks import ==========
 import { useWindowWidth } from '../../hooks/useWindowWidth'
 
 function App() {
 
+  // === logic for adaptive navbar and burger menu ===
   const [move,setMove] = useState('0px')
   const windowWidth = useWindowWidth()
 
   useEffect(() => {
-    windowWidth > 575 ? setMove('0px') : setMove('-770px')
+      windowWidth > 575 ? setMove('0px') : setMove('-770px')
   },[windowWidth])
 
   const move_navbar = () => {
-    move === '-770px' ? setMove('0px') : setMove('-770px')
+      move === '-770px' ? setMove('0px') : setMove('-770px')
   }
 
   return (

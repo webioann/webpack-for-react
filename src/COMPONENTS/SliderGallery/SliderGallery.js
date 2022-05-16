@@ -1,25 +1,14 @@
-import React,{useState,useEffect} from 'react'
-import { useSelector } from 'react-redux';
-import { slider_data } from '../../data/slider_data'
+import React from 'react'
+import useSlideMaker from '../../hooks/useSlideMaker'
 import './slider-gallery.scss'
 
 function SliderGallery() {
 
-    const slide_number = useSelector(state => state.redux.slide_number)
-    const [desktopImg,setDesktopImg] = useState(slider_data[0].desktop_img)
-    const [tabletImg,setTabletImg] = useState(slider_data[0].tablet_img)
-    const [mobileImg,setMobileImg] = useState(slider_data[0].mobile_img)
-
-    useEffect(() => {
-        let raw = slider_data.find(data => slide_number === data.number)
-        setDesktopImg(raw.desktop_img)
-        setTabletImg(raw.tablet_img)
-        setMobileImg(raw.mobile_img)
-    },[slide_number])
+    const { desktopImg,tabletImg,mobileImg,animClass } = useSlideMaker()
 
     return (
         <div className='gallery'>
-            <picture className='prev-slide'> 
+            <picture className={animClass}> 
                 <source  
                     srcSet={desktopImg} 
                     media="(min-width: 768px)" 

@@ -14,23 +14,15 @@
         }
     }
     .next-slide{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        animation: slide 2s linear 2s 1 forwards;
-        img{
-            width: 100%;
-            height: auto;
-        } 
+        filter: blur(10px);
+        animation: sliding 0.5s linear 0.2s 1 forwards;
     }
 }
-@keyframes slide {
+@keyframes sliding {
     0%{
-        transform: translateX(100%);
+        filter: blur(10px);
     }
     100%{
-        transform: translateX(0%);
+        filter: blur(0px);
     }
 }
