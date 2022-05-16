@@ -24,14 +24,14 @@ const useSlideMaker = () => {
             countRef.current = 2
             setTimeout(() => {
                 setAnimClass('prev-slide') 
-            },800)
+            },750)
         }   
         if(slide_number === 1 && countRef.current === 2){
             setAnimClass('prev-slide next-slide')
             countRef.current = 1
             setTimeout(() => {
                 setAnimClass('prev-slide') 
-            },800)
+            },750)
         }   
 
     },[slide_number])

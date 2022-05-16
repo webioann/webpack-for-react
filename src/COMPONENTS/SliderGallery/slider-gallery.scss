@@ -14,13 +14,13 @@
         }
     }
     .next-slide{
-        filter: blur(10px);
+        filter: blur(15px);
         animation: sliding 0.5s linear 0.2s 1 forwards;
     }
 }
 @keyframes sliding {
     0%{
-        filter: blur(10px);
+        filter: blur(15px);
     }
     100%{
         filter: blur(0px);
