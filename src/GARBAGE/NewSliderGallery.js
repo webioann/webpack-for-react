@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import { useSelector } from 'react-redux';
-import { slider_data } from '../../data/slider_data'
+import { slider_data } from '../data/slider_data'
 import './new-slider.scss'
 
 function NewSliderGallery() {
@@ -23,7 +23,7 @@ function NewSliderGallery() {
                         type='image/png'/>
                     <source 
                         srcSet={data.tablet_img} 
-                        media="(min-width: 500px) and (max-width: 767.999px)"  
+                        media="(min-width: 576px) and (max-width: 767.999px)"  
                         type='image/png'/>
                     <img 
                         src={data.mobile_img} alt='img'/>

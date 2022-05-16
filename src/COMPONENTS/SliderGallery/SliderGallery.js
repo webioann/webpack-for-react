@@ -15,7 +15,7 @@ function SliderGallery() {
                     type='image/png'/>
                 <source 
                     srcSet={tabletImg} 
-                    media="(min-width: 500px) and (max-width: 767.999px)"  
+                    media="(min-width: 576px) and (max-width: 767.999px)"  
                     type='image/png'/>
                 <img 
                     src={mobileImg} alt='img'/>
