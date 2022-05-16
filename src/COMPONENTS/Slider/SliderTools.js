@@ -12,9 +12,9 @@ function SliderTools(props) {
             { props.children }
             {/* massege over gallery */}
             <section className='message-wrapper'> 
-                <a className='message'>
+                <span className='message'>
                     { slider_data[slide_number - 1].message } 
-                </a>
+                </span>
             </section>
             {/* progress */}
             <ul className='progress'>
