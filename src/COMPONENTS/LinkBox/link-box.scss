@@ -1,23 +1,30 @@
 @import '../App/vars.scss';
 
 .link-box{
-    max-width: 160px; //==??
+    max-width: 160px;
+    margin-top: 1rem; //==??
     display: flex;
     align-items: center;
     padding: 3px 4px;
     border-radius: 5px;
     background-color: $grey;
     transition: all 200ms ease;
+    .arrow-down{
+        transform: rotate(-90deg);
+    }
     .link-text{
         color: $green;
         font-weight: 600;
         font-size: 0.8rem;
         margin-left: 10px;
-
     }
     &:hover{
         transform: scale(1.15);
     }
+}
+.false{
+    min-width: 290px;
+    justify-content: center;
 }
 @media (min-width: 576px) {
     .link-box{
@@ -26,5 +33,8 @@
         .link-text{
             font-size: 1rem;
         }
+    }
+    .false{
+        margin-left: 1rem;
     }
 }

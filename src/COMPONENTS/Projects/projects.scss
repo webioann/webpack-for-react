@@ -11,14 +11,14 @@
   .link-row{
     display: flex;
     justify-content: space-between;
-    padding-top: 1rem;
+    flex-wrap: wrap;
+    // padding: 1rem 0;
   }
   @media (min-width: 576px) {
     .link-row{
       justify-content: flex-start;
     }
   }
-
   span{
     color: $green;
     font-weight: 700;
@@ -29,25 +29,12 @@
     img{
       width: 100%;
       height: auto;
-  
     }
   }
-
   .dashboard,
   .portfolio,
   .weather{
     display: flex;
     flex-direction: column;
   }
-  // @media (min-width: 992px) {
-  //   .dashboard,
-  //   .portfolio,
-  //   .weather{
-  //     flex-direction: row;
-  //   }
-  //   .screenshot{
-  //     margin-left: 1rem;
-  //   }
-  
-  // }
 }

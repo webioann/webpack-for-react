@@ -1,8 +1,9 @@
-import React from 'react';
-import useTranslator from '../../hooks/useTranslator';
-import { portfolio,dashboard } from '../../data/multiLang';
-import { gitHubPortfolio,gitHubDashboard } from '../../data/constants';
-import LinkBox from '../LinkBox/LinkBox';
+import React from 'react'
+import useTranslator from '../../hooks/useTranslator'
+import { portfolio,dashboard } from '../../data/multiLang'
+import { gitHubPortfolio,gitHubDashboard } from '../../data/constants'
+import LinkBox from '../LinkBox/LinkBox'
+import FalseLinkBox from '../LinkBox/FalseLinkBox'
 import './projects.scss';
 
 function Projects(props) {
@@ -24,6 +25,7 @@ function Projects(props) {
                     <div className='link-row'>
                         <LinkBox href={'#'} type='site'/>
                         <LinkBox href={ gitHubDashboard } type='github' margin={'1rem'}/>
+                        <FalseLinkBox/>
                     </div>
                 </div>
                 {props.children}
