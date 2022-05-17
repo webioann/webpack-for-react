@@ -98,7 +98,7 @@ export const portfolio = {
     },
     discr_text: {
         eng: 'Full adaptability of the application.',
-        ukr: 'Полна адаптивність додатка .',
+        ukr: 'Полна адаптивність додатка, дві мови інтерфейсу, слайдер для передогляду проектів з троьома наборами картинок для різних ширин екрана.',
     },
 
     used_tools_span: {
@@ -114,15 +114,15 @@ export const portfolio = {
 export const dashboard = {
     subtitle: {
         eng: 'User database',
-        ukr: 'User database - база даних'
+        ukr: 'User database - база даних користувачів'
     },
     discr_span: {
         eng: 'Discription :',
         ukr: 'Опис проекта :'
     },
     discr_text: {
-        eng: 'The app gets users from "randomuser.me" from API. Implemented filtering, on the client side, by nationality and gender of the user. Two interface languages - english and ukrainian. Switching color theme. Statistics are displayed in a custom graph in three implementations - random, increasing and decreasing the number of users of a certain nationality. Client side pagination. Changing the size of the request to the server (three options). Full adaptability of the application. Custom interface design.',
-        ukr: 'Додаток отримує користувачів з "randomuser.me" по API. Реалізовано фільтрацію, на стороні клієнта, по національності і статі користувача. Дві мови інтерфейса - англійська і українська. Перемикання кольорової теми. Виводиться статистика в кастомному графіку в трьох реалізаціях - випадкова, по зростанню та зменшенню показників  кількості користувачів певної національності. Пагинація на стороні клієнта. Зміна величини запиту на сервер(три варіанта). Повна адаптивність додатка. Власний дизайн інтерфейсу.',
+        eng: 'The application gets users from "randomuser.me" via API. Implemented filtering, on the clients side, by nationality and gender of the user. The two interface languages ​​are English and Ukrainian. Switch color theme. Statistics are displayed in a custom graph in three implementations - random, increasing and decreasing the number of users of a certain nationality, as well as the ratio of men and women. Pagination on the client side, with an interesting interface. Change the size of the request to the server (three options). Full adaptability of the application. Custom interface design.',
+        ukr: 'Додаток отримує користувачів з "randomuser.me" по API. Реалізовано фільтрацію, на стороні клієнта, по національності та статі користувача. Дві мови інтерфейса - англійська та українська. Перемикання кольорової теми. Виводиться статистика в кастомному графіку в трьох реалізаціях - випадкова, по зростанню та зменшенню показників  кількості користувачів певної національності,а також співвідношення чоловіків і жінок. Пагинація на стороні клієнта, з цікавим інтерфейсом. Зміна величини запиту на сервер(три варіанта). Повна адаптивність додатка. Власний дизайн інтерфейсу.',
     },
     used_tools_span: {
         eng: 'Used tools :',

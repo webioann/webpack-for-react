@@ -34,6 +34,11 @@ function Projects(props) {
             <h2 className="subtitle">#2 {useTranslator(portfolio.subtitle)}</h2>
             <section className="portfolio">
                 <div className="wrapper">
+                    <div className='discription'>
+                        <span>{useTranslator(portfolio.discr_span)}</span>
+                        <p>{useTranslator(portfolio.discr_text)}</p>
+                    </div>
+
                     <div className='used-tools'>
                         <span>{useTranslator(portfolio.used_tools_span)}</span>
                         <p>{useTranslator(portfolio.used_tools_text)}</p>

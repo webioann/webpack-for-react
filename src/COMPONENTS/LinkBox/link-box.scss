@@ -30,6 +30,18 @@
     }
     .icon{
         cursor: default;
+        animation: beep 1s linear infinite;
+    }
+}
+@keyframes beep {
+    0%{
+        color: $green;
+    }
+    50%{
+        color: $dk-contr;
+    }
+    100%{
+        color: $green;
     }
 }
 @media (min-width: 576px) {
