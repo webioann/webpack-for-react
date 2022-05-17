@@ -12,14 +12,14 @@ function SliderTools(props) {
         <div className='slider-tools'>
             { props.children }
             {/* massege over gallery */}
-            {/* <section className='message-wrapper'> 
+            <section className='message-wrapper'> 
                 <span className='message'>
                     { lang === 'eng' 
                         ? slider_data[slide_number - 1].message.eng
                         : slider_data[slide_number - 1].message.ukr
                     }
                 </span>
-            </section> */}
+            </section>
             {/* progress */}
             <ul className='progress'>
                 { slider_data.map(item => (

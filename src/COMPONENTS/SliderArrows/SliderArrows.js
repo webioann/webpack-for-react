@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { MdArrowBackIos,MdOutlineArrowForwardIos } from 'react-icons/md'
+import { MdOutlineArrowForwardIos } from 'react-icons/md'
 import { arrowLeft,arrowRight } from '../../Redux-toolkit/reduxSlice'
 import './slider-arrows.scss'
 
@@ -11,7 +11,7 @@ function SliderArrows() {
     return (
         <section className='slider-arrows'>
             <div className='arrows-wraper'>
-                <MdArrowBackIos className='arrow left'
+                <MdOutlineArrowForwardIos className='arrow left'
                     onClick={() => {dispatch(arrowLeft())}}/>
                 <MdOutlineArrowForwardIos className='arrow right'
                     onClick={() => {dispatch(arrowRight())}}/>
