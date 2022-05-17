@@ -84,33 +84,24 @@ export const about = {
         eng: 'Soft skills: not a fool, purposeful (or stubborn), I love learning (seriously!), wise (44 years old) , extremely plodding (2500+ hours of study without "financial motivation").',
         ukr: 'Soft skills: не дурень, цілеспрямований (чи впертий), обожнюю навчатися (серйозно!), мудрий (44 роки) , вкрай усидливий (2500+ годин навчання без "фінансової мотивації").'
     },
-
 }
-//=====================================
-export const portfolio = {
-    subtitle: {
-        eng: 'Portfolio',
-        ukr: 'Portfolio'
+//============== Projects/ LinkBox and FalseLinkBox / ===============
+export const linkText = {
+    site: {
+        eng: 'visit site',
+        ukr: 'відвідати сайт'
     },
-    discr_span: {
-        eng: 'Discription :',
-        ukr: 'Опис проекта :'
+    github: {
+        eng: 'see my code',
+        ukr: 'мій код тут'
     },
-    discr_text: {
-        eng: 'Full adaptability of the application.',
-        ukr: 'Полна адаптивність додатка, дві мови інтерфейсу, слайдер для передогляду проектів з троьома наборами картинок для різних ширин екрана.',
+    falseLink: {
+        eng: 'preview the app design',
+        ukr: 'попередній перегляд'
     },
+}
 
-    used_tools_span: {
-        eng: 'Used tools :',
-        ukr: 'Використав :'
-    },
-    used_tools_text: {
-        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first).',
-        ukr: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first).'
-    },
-};
-//==========================================
+//============== Projects/ random user / ============================
 export const dashboard = {
     subtitle: {
         eng: 'User database',
@@ -131,5 +122,29 @@ export const dashboard = {
     used_tools_text: {
         eng: 'React, custom-hooks, Redux-toolkit, REST API, Webpack, Git-hub, CSS, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first).',
         ukr: 'React, custom-hooks, Redux-toolkit, REST API, Webpack, Git-hub, CSS, Sass і Less, CSS-анімація, post-CSS, адаптивний дизайн(mobile-first).'
+    },
+};
+//================= Projects/ portfolio / ====================
+export const portfolio = {
+    subtitle: {
+        eng: 'Portfolio',
+        ukr: 'Portfolio'
+    },
+    discr_span: {
+        eng: 'Discription :',
+        ukr: 'Опис проекта :'
+    },
+    discr_text: {
+        eng: 'Full adaptability of the application, two interface languages, slider for previewing projects with three sets of pictures for different screen widths.',
+        ukr: 'Полна адаптивність додатка, дві мови інтерфейсу, слайдер для передогляду проектів з троьома наборами картинок для різних ширин екрана.',
+    },
+
+    used_tools_span: {
+        eng: 'Used tools :',
+        ukr: 'Використав :'
+    },
+    used_tools_text: {
+        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first).',
+        ukr: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first).'
     },
 };
