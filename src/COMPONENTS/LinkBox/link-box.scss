@@ -25,6 +25,12 @@
 .false{
     min-width: 290px;
     justify-content: center;
+    &:hover{
+        transform: scale(1);
+    }
+    .icon{
+        cursor: default;
+    }
 }
 @media (min-width: 576px) {
     .link-box{

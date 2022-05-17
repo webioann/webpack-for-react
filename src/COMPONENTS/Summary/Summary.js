@@ -11,7 +11,7 @@ function Summary() {
             <h1 className='deep-title'>Summary</h1>
             <div className="wrapper">
                 <div className="about-box">
-                    <h3 className="subtitle">{useTranslator(about.subtitle)}</h3>
+                    <h2 className="subtitle">{useTranslator(about.subtitle)}</h2>
                     <ul className="about">
                         <li className='intro'>{useTranslator(about.intro)}</li>
                         <li className='study'>{useTranslator(about.study)}</li>
@@ -28,7 +28,7 @@ function Summary() {
                     </ul>
                 </div>
                 <div className="skills-box">
-                    <h3 className="subtitle">{useTranslator(skills.subtitle)}</h3>
+                    <h2 className="subtitle">{useTranslator(skills.subtitle)}</h2>
                     <ul className='skills'>
                         { skills_data.map((data) => ( 
                             <li key={data.id}
