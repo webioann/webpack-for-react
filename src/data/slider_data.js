@@ -34,8 +34,8 @@ export const slider_data = [
         mobile_img: mobile_1,
         number: 1,
         message: {
-            eng: 'start pege 1',
-            ukr: 'стартова сторінка 1',
+            eng: 'home page',
+            ukr: 'стартова сторінка',
         }
     },
     {
@@ -44,8 +44,8 @@ export const slider_data = [
         mobile_img: mobile_2,
         number: 2,
         message: {
-            eng: 'start pege 2',
-            ukr: 'стартова сторінка 2',
+            eng: 'bright color theme',
+            ukr: 'світла кольорова тема',
         }
     },
     {
@@ -54,8 +54,8 @@ export const slider_data = [
         mobile_img: mobile_3,
         number: 3,
         message: {
-            eng: 'start pege 3',
-            ukr: 'стартова сторінка 3',
+            eng: 'interface in the Ukrainian language',
+            ukr: 'інтерфейс на українській мові',
         }
     },
     {
@@ -64,8 +64,8 @@ export const slider_data = [
         mobile_img: mobile_4,
         number: 4,
         message: {
-            eng: 'start pege 4',
-            ukr: 'стартова сторінка 4',
+            eng: 'random sorting by nationality',
+            ukr: 'випадкове сортування по національності',
         }
     },
     {
@@ -74,8 +74,8 @@ export const slider_data = [
         mobile_img: mobile_5,
         number: 5,
         message: {
-            eng: 'start pege 5',
-            ukr: 'стартова сторінка 5',
+            eng: 'sort from larger to smaller',
+            ukr: 'сортування від більшого до меншого',
         }
     },
     {
@@ -84,8 +84,8 @@ export const slider_data = [
         mobile_img: mobile_6,
         number: 6,
         message: {
-            eng: 'start pege 6',
-            ukr: 'стартова сторінка 6',
+            eng: 'sort from smallest to largest',
+            ukr: 'сортування від меншого до більшого',
         }
     },
     {
@@ -94,8 +94,8 @@ export const slider_data = [
         mobile_img: mobile_7,
         number: 7,
         message: {
-            eng: 'start pege 7',
-            ukr: 'стартова сторінка 7',
+            eng: 'detailed information about the selected user',
+            ukr: 'детальна інформація про вибраного користувача',
         }
     },
 

@@ -112,8 +112,8 @@ export const dashboard = {
         ukr: 'Опис проекта :'
     },
     discr_text: {
-        eng: 'The application gets users from "randomuser.me" via API. Implemented filtering, on the clients side, by nationality and gender of the user. The two interface languages ​​are English and Ukrainian. Switch color theme. Statistics are displayed in a custom graph in three implementations - random, increasing and decreasing the number of users of a certain nationality, as well as the ratio of men and women. Pagination on the client side, with an interesting interface. Change the size of the request to the server (three options). Full adaptability of the application. Custom interface design.',
-        ukr: 'Додаток отримує користувачів з "randomuser.me" по API. Реалізовано фільтрацію, на стороні клієнта, по національності та статі користувача. Дві мови інтерфейса - англійська та українська. Перемикання кольорової теми. Виводиться статистика в кастомному графіку в трьох реалізаціях - випадкова, по зростанню та зменшенню показників  кількості користувачів певної національності,а також співвідношення чоловіків і жінок. Пагинація на стороні клієнта, з цікавим інтерфейсом. Зміна величини запиту на сервер(три варіанта). Повна адаптивність додатка. Власний дизайн інтерфейсу.',
+        eng: 'The application gets users from the fake API "randomuser.me". Implemented filtering, on the clients side, by nationality and gender of the user. The two interface languages ​​are English and Ukrainian. Switch color theme. Statistics are displayed in a custom graph in three implementations - random, increasing and decreasing the number of users of a certain nationality, as well as the ratio of men and women. Pagination on the client side, with an interesting interface. Change the size of the request to the server (three options). Full adaptability of the application. Custom interface design.',
+        ukr: 'Додаток отримує користувачів з фейкового API "randomuser.me". Реалізовано фільтрацію, на стороні клієнта, по національності та статі користувача. Дві мови інтерфейса - англійська та українська. Перемикання кольорової теми. Виводиться статистика в кастомному графіку в трьох реалізаціях - випадкова, по зростанню та зменшенню показників  кількості користувачів певної національності,а також співвідношення чоловіків і жінок. Пагинація на стороні клієнта, з цікавим інтерфейсом. Зміна величини запиту на сервер(три варіанта). Повна адаптивність додатка. Власний дизайн інтерфейсу.',
     },
     used_tools_span: {
         eng: 'Used tools :',
@@ -135,8 +135,8 @@ export const portfolio = {
         ukr: 'Опис проекта :'
     },
     discr_text: {
-        eng: 'Full adaptability of the application, two interface languages, slider for previewing projects with three sets of pictures for different screen widths.',
-        ukr: 'Полна адаптивність додатка, дві мови інтерфейсу, слайдер для передогляду проектів з троьома наборами картинок для різних ширин екрана.',
+        eng: 'Full adaptability of the application, two interface languages, slider for previewing projects with three sets of pictures for different screen widths. Smooth animation. No third-party libraries. Custom interface design.',
+        ukr: 'Полна адаптивність додатка, дві мови інтерфейсу, слайдер для передогляду проектів з троьома наборами картинок для різних ширин екрана.Плавна анімація. Жодних сторонніх бібліотек. Власний дизайн інтерфейсу.',
     },
 
     used_tools_span: {

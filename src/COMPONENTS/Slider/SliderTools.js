@@ -13,12 +13,12 @@ function SliderTools(props) {
             { props.children }
             {/* massege over gallery */}
             <section className='message-wrapper'> 
-                <span className='message'>
+                {/* <span className='message'>
                     { lang === 'eng' 
                         ? slider_data[slide_number - 1].message.eng
                         : slider_data[slide_number - 1].message.ukr
                     }
-                </span>
+                </span> */}
             </section>
             {/* progress */}
             <ul className='progress'>
