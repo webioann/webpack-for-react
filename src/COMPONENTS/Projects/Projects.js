@@ -1,7 +1,7 @@
 import React from 'react'
 import useTranslator from '../../hooks/useTranslator'
 import { portfolio,dashboard } from '../../data/multiLang'
-import { gitHubPortfolio,gitHubDashboard } from '../../data/constants'
+import { gitHubPortfolio,gitHubRandomUsers,randomUsersLink } from '../../data/constants'
 import LinkBox from '../LinkBox/LinkBox'
 import FalseLinkBox from '../LinkBox/FalseLinkBox'
 import './projects.scss';
@@ -23,8 +23,8 @@ function Projects(props) {
                         <p>{useTranslator(dashboard.used_tools_text)}</p>
                     </div>
                     <div className='link-row'>
-                        <LinkBox href={'#'} type='site'/>
-                        <LinkBox href={ gitHubDashboard } type='github'/>
+                        <LinkBox link={ randomUsersLink } type='site'/>
+                        <LinkBox link={ gitHubRandomUsers } type='github'/>
                         <FalseLinkBox/>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ function Projects(props) {
                         <p>{useTranslator(portfolio.used_tools_text)}</p>
                     </div>
                     <div className='link-row'>
-                        <LinkBox href={ gitHubPortfolio } type='github'/>
+                        <LinkBox link={ gitHubPortfolio } type='github'/>
                     </div>
                 </div>
             </section>

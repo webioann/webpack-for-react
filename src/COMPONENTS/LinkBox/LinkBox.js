@@ -5,10 +5,10 @@ import useTranslator from '../../hooks/useTranslator'
 import { linkText } from '../../data/multiLang'
 import './link-box.scss'
 
-function LinkBox({ href,type,margin }) {
+function LinkBox({ link,type,margin }) {
 
     return (
-        <a href={ href }
+        <a href={ link }
             target="_blank"
             className='link-box'>
                 { type === 'site' ?  <CgWebsite className='icon'/> : <VscGithub className='icon'/> }
@@ -21,7 +21,7 @@ function LinkBox({ href,type,margin }) {
     )
 }
 LinkBox.defaultProps = {
-    href: 'https://github.com/webioann',
+    link: 'https://github.com/webioann',
     type: 'site',
 }
 export default LinkBox;

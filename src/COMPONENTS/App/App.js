@@ -1,6 +1,6 @@
 import React,{ useState,useEffect } from 'react'
 import Container from '../Container/Container.js'
-import Star from '../Star/Star.js'
+// import Star from '../Star/Star.js'
 import FixedTop from '../FixedTop/FixedTop.js'
 import Burger from '../Burger/Burger.js'
 import Navbar from '../Navbar/Navbar.js'
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <Container>
-      <Star/>
+      {/* <Star/> */}
       <FixedTop>
         <Navbar move={move}>
           <Menu/>
@@ -54,5 +54,6 @@ function App() {
     </Container>
   )
 }
+
 export default App;
 
