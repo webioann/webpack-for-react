@@ -10,7 +10,7 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         filename: "[name].[hash:4].js", 
-        path: path.resolve( __dirname,"dist" ),
+        path: path.resolve( __dirname,"build" ),
     },
     devServer: {
         port: 7001,
