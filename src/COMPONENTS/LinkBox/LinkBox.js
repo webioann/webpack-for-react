@@ -9,7 +9,7 @@ function LinkBox({ link,type,margin }) {
 
     return (
         <a href={ link }
-            target="_blank"
+            target="blank"
             className='link-box'>
                 { type === 'site' ?  <CgWebsite className='icon'/> : <VscGithub className='icon'/> }
             <span className='link-text'>

@@ -1,4 +1,5 @@
-export const resumeLink = "https://drive.google.com/file/d/1Lr05RkXCVdrd4yoEPv1a5fQ3rwu-sVMN/view?usp=sharing";
+// export const resumeLink = "https://drive.google.com/file/d/1Lr05RkXCVdrd4yoEPv1a5fQ3rwu-sVMN/view?usp=sharing";
+export const resumeLink = "https://docs.google.com/document/d/e/2PACX-1vSghni5es1BSIraQ4xnEbvY66oNw1NNYzH_MybKaxTN1YTq0fVm6jVvLGrbzKwDpeSMDOFjE2YMeSF6/pub";
 //===== Contacts ====
 export const phone = '+380(96)842-25-72';
 export const linkedInLink = "https://linkedin.com/in/alexander-veles";
