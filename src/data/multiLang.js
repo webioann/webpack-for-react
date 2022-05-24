@@ -39,6 +39,11 @@ export const about = {
         eng: 'I\'m Aleksander, React JS junior-strong front-end developer from Ukraine.',
         ukr: 'Я Олександр, React JS джуніор-стронг фронтенд розробник з України.'
     },
+    intro_1: {
+        eng: '',
+        ukr: 'Привіт я Олександр, React JS джуніор-стронг фронтенд розробник з України.Вивчаю розробку з 2019 року.'
+    },
+
     html_css: {
         eng: 'HTML/CSS: flexbox, grid, animations, preprocessors SASS and LESS, responsive design (mobile-first), semantics, Bootstrap and other.',
         ukr: 'HTML/CSS: flexbox, grid, анімація, препроцесори  SASS і LESS, адаптивний дизайн (mobile-first), семантика, Boootstrap и т.п.'
@@ -72,6 +77,7 @@ export const about = {
         eng: 'I always try to follow the principles of DRY,SOLID,OOP,clean-code.',
         ukr: 'Завжди намагаюсь слідувати принципам DRY,SOLID,OOP,clean-code.'
     },
+    // ===================
     studying_now: {
         eng: 'Currently studying: TypeScript,React-native,React-router,axios,CRUD.',
         ukr: 'Зараз вивчаю: TypeScript,React-native,React-router,axios,CRUD.'
