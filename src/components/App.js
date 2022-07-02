@@ -9,7 +9,8 @@ import Summary from './Summary.js'
 import Projects from './Projects.js'
 import Contacts from './Contacts.js'
 import Footer from './Footer.js'
-import CryptoCurrency from './ProjectCryptoCurrency.js'
+import CryptoCurrency from './CryptoCurrency.js'
+import RandomUsers from './RandomUsers.js'
 //========= hooks import ==========
 import { useWindowWidth } from '../hooks/useWindowWidth'
 
@@ -29,7 +30,6 @@ function App() {
 
   return (
     <Container>
-      {/* <Star/> */}
       <FixedTop>
         <Navbar move={move}>
           <Menu/>
@@ -40,6 +40,7 @@ function App() {
       <Summary/>
       <Projects>
         <CryptoCurrency/>
+        <RandomUsers/>
       </Projects>
       <Contacts/>
       <Footer/>
