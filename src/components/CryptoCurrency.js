@@ -1,8 +1,8 @@
 import React from 'react'
-import crypto_img from '../assets/crypto-2.png'
+import crypto_img from '../assets/crypto-screen.png'
 import useTranslator from '../hooks/useTranslator'
 import { portfolio,dashboard } from '../data/multiLang'
-import { gitHubPortfolio,gitHubRandomUsers,randomUsersLink } from '../data/constants'
+import { crypto_githublink,cryptocurrency_link } from '../data/constants'
 import LinkToGithub from './LinkToGithub'
 import LinkToProjectSite from './LinkToProjectSite'
 import '../CSS/pet-project.scss'
@@ -32,8 +32,8 @@ const CryptoCurrency = () => {
                 <div className='image'>
                     <img src={crypto_img} alt='pet project'/>
                     <div className='project-links'>
-                        <LinkToProjectSite link={ randomUsersLink }/>
-                        <LinkToGithub link={ gitHubRandomUsers }/>
+                        <LinkToProjectSite link={ cryptocurrency_link }/>
+                        <LinkToGithub link={ crypto_githublink }/>
                     </div>
 
                 </div>
