@@ -7,9 +7,7 @@ import '../CSS/links.scss'
 function LinkToGithub({ link }) {
 
     return (
-        <a href={ link }
-            target="blank"
-            className='link-box'>
+        <a href={ link } target="blank" className='link-box'>
             <VscGithub className='icon'/>
             <span className='link-text'>{useTranslator(linkText.github)}</span>
         </a>

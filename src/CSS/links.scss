@@ -2,7 +2,6 @@
 
 .link-box{
     max-width: 160px;
-    margin-top: 1rem;
     margin-left: 1rem; 
     display: flex;
     align-items: center;
@@ -11,6 +10,12 @@
     border: 2px solid $green;
     background-color: transparent;
     transition: all 200ms ease;
+    .icon {
+        color: $green;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    
     .link-text{
         color: $green;
         font-weight: 600;
