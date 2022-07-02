@@ -8,6 +8,18 @@
     .g-subtitle{
         position: relative;
     }
+    .discription{
+        width: 100%;
+        .header{
+            color: $green;
+        }
+    }
+    .port-github-link{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 0.5rem;
+    }
     .grids{
         display: grid;
         grid-template-columns: 1fr;
@@ -15,16 +27,17 @@
         .grid-left{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            .discription{
+            // justify-content: space-between;
+            .project-links{
                 width: 100%;
-                .header{
-                    color: $green;
-                }
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1rem 0.5rem;
             }
+
             .tools{
                 width: 100%;
-                margin-top: 1rem;
                 .header{
                     color: $green;
                 }
@@ -40,22 +53,15 @@
                 object-fit: cover;
                 z-index: 10;
             }
-            .project-links{
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-            }
         }
     
     }
     @media (min-width: 1024px) {
         .grids{
             grid-template-columns: 1fr 1fr;
+            .image{
+                margin-top: 0;
+            }
         }
     }
 }

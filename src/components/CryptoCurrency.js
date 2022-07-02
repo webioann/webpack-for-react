@@ -22,6 +22,11 @@ const CryptoCurrency = () => {
                         <p>{useTranslator(dashboard.discr_text)}</p>
                     </div>
 
+                    <div className='project-links'>
+                        <LinkToProjectSite link={ cryptocurrency_link }/>
+                        <LinkToGithub link={ crypto_githublink }/>
+                    </div>
+
                     <div className='tools'>
                         <span className='header'>{useTranslator(dashboard.used_tools_span)}</span>
                         <p>{useTranslator(dashboard.used_tools_text)}</p>
@@ -31,10 +36,6 @@ const CryptoCurrency = () => {
 
                 <div className='image'>
                     <img src={crypto_img} alt='pet project'/>
-                    <div className='project-links'>
-                        <LinkToProjectSite link={ cryptocurrency_link }/>
-                        <LinkToGithub link={ crypto_githublink }/>
-                    </div>
 
                 </div>
 
