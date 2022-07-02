@@ -12,10 +12,10 @@
         .about-box{
             flex: 2;
             z-index: 10;
-            line-height: 2;
             .about{ 
                 font-weight: 400;
                 letter-spacing: 2px;
+                line-height: 2;
                 .intro{
                     font-weight: 700;
                     color: $green;
