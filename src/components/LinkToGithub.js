@@ -1,7 +1,7 @@
 import React from 'react'
 import { VscGithub } from 'react-icons/vsc'
 import useTranslator from '../hooks/useTranslator'
-import { linkText } from '../data/multiLang'
+import { linkText } from '../data/links_url'
 import '../CSS/links.scss'
 
 function LinkToGithub({ link }) {

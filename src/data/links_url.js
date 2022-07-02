@@ -23,5 +23,15 @@ export const randomusers_link = "https://webioann.github.io/random_users/";
 
 export const cryptocurrency_link = "https://cryptocurrency-cea64.web.app/";
 
+export const linkText = {
+    site: {
+        eng: 'visit site',
+        ukr: 'відвідати сайт'
+    },
+    github: {
+        eng: 'see my code',
+        ukr: 'мій код тут'
+    },
+}
 
 

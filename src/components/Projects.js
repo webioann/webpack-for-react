@@ -1,10 +1,10 @@
 import React from 'react'
-import '../CSS/projects.scss';
+import '../CSS/pet-project.scss';
 
 function Projects({ children }) {
 
     return (
-        <section className="projects">
+        <section className="projects" id='projects'>
             <h1 className="g-deep-title">Projects</h1>
             { children }
         </section>

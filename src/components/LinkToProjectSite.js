@@ -1,7 +1,7 @@
 import React from 'react'
 import { CgWebsite } from 'react-icons/cg'
 import useTranslator from '../hooks/useTranslator'
-import { linkText } from '../data/multiLang'
+import { linkText } from '../data/links_url'
 import '../CSS/links.scss'
 
 function LinkToProjectSite({ link }) {

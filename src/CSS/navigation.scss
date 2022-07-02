@@ -32,10 +32,32 @@
                         color: $green;
                     }
                 }
+                .resume{
+                    align-items: center;
+                    .jump-arrow{
+                        display: grid;
+                        // border: 1px solid red;
+                        border-bottom: 2px solid white;
+                        .arrow{
+                            animation: jump 1000ms linear infinite;
+                        }
+                    }
+                    @keyframes jump {
+                        0%{
+                            transform: translateY(0px);
+                        }
+                        50%{
+                            transform: translateY(-4px);
+                        }
+                        100%{
+                            transform: translateY(0px);
+                        }
+                    }
+                }
             }
             @media (min-width: 576px) {
                 .menu{
-                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
                     align-items: center;
                     flex: 1 1 auto;
                     .link{

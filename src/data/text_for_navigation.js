@@ -12,7 +12,7 @@ export const navbar = {
         ukr: 'контакти'
     },
     resume: {
-        eng: 'download CV',
-        ukr: 'завантажити CV'
+        eng: 'resume',
+        ukr: 'резюме'
     },
 };

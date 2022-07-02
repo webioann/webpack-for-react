@@ -8,7 +8,7 @@ import '../CSS/contacts.scss';
 function Contacts() {
 
     return (
-        <div id='contacts' className="contacts">
+        <section id='contacts' className="contacts">
             <h1 className="g-deep-title">Contacts</h1>
             <div className='contacts-field'>
                 <div className='viber box'>
@@ -31,7 +31,7 @@ function Contacts() {
                     <p>github.com/webioann</p>
                 </a>
                 </div>
-            </div>
+            </section>
     )
 }
 export default Contacts;
