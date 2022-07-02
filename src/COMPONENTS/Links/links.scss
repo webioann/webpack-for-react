@@ -1,0 +1,23 @@
+@import '../App/vars.scss';
+
+.link-box{
+    max-width: 160px;
+    margin-top: 1rem;
+    margin-left: 1rem; 
+    display: flex;
+    align-items: center;
+    padding: 3px 4px;
+    border-radius: 5px;
+    border: 2px solid $green;
+    background-color: transparent;
+    transition: all 200ms ease;
+    .link-text{
+        color: $green;
+        font-weight: 600;
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+    &:hover{
+        transform: scale(1.15);
+    }
+}

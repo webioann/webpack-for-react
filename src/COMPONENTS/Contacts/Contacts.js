@@ -9,7 +9,7 @@ function Contacts() {
 
     return (
         <div id='contacts' className="contacts">
-            <h1 className="deep-title">Contacts</h1>
+            <h1 className="g-deep-title">Contacts</h1>
             <div className='contacts-field'>
                 <div className='viber box'>
                     <FaViber className='icon not-link'/>

@@ -15,7 +15,7 @@ import SliderTools from '../Slider/SliderTools.js'
 import SliderArrows from '../SliderArrows/SliderArrows.js'
 import SliderGallery from '../SliderGallery/SliderGallery.js'
 
-import PetProject from '../PetProject/PetProject.js'
+import CryptoCurrencyProject from '../ProjectCryptoCurrency/ProjectCryptoCurrency.js'
 //========= hooks import ==========
 import { useWindowWidth } from '../../hooks/useWindowWidth'
 
@@ -45,12 +45,7 @@ function App() {
       </FixedTop>
       <Summary/>
       <Projects>
-        <Slider>
-          <SliderGallery/>
-          <SliderArrows/>
-          <SliderTools/>
-        </Slider>
-        <PetProject/>
+        <CryptoCurrencyProject/>
       </Projects>
       <Contacts/>
       <Footer/>
@@ -60,3 +55,8 @@ function App() {
 
 export default App;
 
+{/* <Slider>
+<SliderGallery/>
+<SliderArrows/>
+<SliderTools/>
+</Slider> */}

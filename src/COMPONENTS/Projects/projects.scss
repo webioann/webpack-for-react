@@ -4,31 +4,4 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  .wrapper{
-    display: flex;
-    flex-direction: column;
-  }
-  .link-row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  span{
-    color: $green;
-    font-weight: 700;
-    padding-right: 1rem;
-  }
-  .screenshot{
-    margin-top: 1rem;
-    img{
-      width: 100%;
-      height: auto;
-    }
-  }
-  .dashboard,
-  .portfolio,
-  .weather{
-    display: flex;
-    flex-direction: column;
-  }
 }

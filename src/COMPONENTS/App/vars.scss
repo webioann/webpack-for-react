@@ -69,11 +69,8 @@ body {
     text-align: center;
 }
 
-.subtitle {
-    padding: 1rem 0;
-}
 // ======== deep-title and his animation ==============
-.deep-title{
+.g-deep-title{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +83,7 @@ body {
     animation: showTitle 3s linear 1 forwards;
 }
 @media (min-width: 1400px) {
-    .deep-title{
+    .g-deep-title{
         font-size: 200px;
     }
 }
@@ -100,29 +97,13 @@ body {
         filter: blur(3px);
     }
 }
-//===============================
-ul li {
-    list-style: none;
-}
-a {
-    color: inherit;
-    text-decoration: underline;
-}
-a:hover {
-    color: #0a58ca;
-    text-decoration: none;
-}
-a,
-a:visited {
-    text-decoration: none;
-}
-a:focus,
-a:active {
-    outline: none;
-}
 
 //================== animation growLine ====================
-.subtitle::after{
+.g-subtitle {
+    padding: 1rem 0;
+}
+
+.g-subtitle::after{
     content: '';
     display: flex;
     animation-name: growLine;
@@ -142,7 +123,6 @@ a:active {
     95%{ width: 83%; }
     100%{ width: 80%; }
 }
-//=========================================
 
 // ============  animation onStart ===================
 .on-start{
@@ -170,23 +150,26 @@ a:active {
         opacity: 1;
     }
 }
-//==================================
-// .screenshot {
-//     min-height: 300px;
-//     background-color: #ccc;
-//     border-radius: 5px;
-//     margin: 1rem 0;
-//     background-image: url("../../assets/Mobile.jpg");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     width: 100%;
-//     min-height: 600px;
-//     border-radius: 5px;
-//     margin: 1rem 0;
-//     @media (min-width: 768px) {background-image: url("../../assets/Tablet.jpg");}
-//     @media (min-width: 1200px) {background-image: url("../../assets/Desktop.jpg");}
-// }
+//===============================
+ul li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+a:hover {
+    color: #0a58ca;
+    text-decoration: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
 
 
 
