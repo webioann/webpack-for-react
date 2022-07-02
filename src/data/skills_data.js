@@ -8,7 +8,7 @@ export const skills_data = [
     {title: 'Webpack',      id: 7,  delay: "2200ms", textEng: 'text for tooltip'},
     {title: 'mobileFirst',  id: 8,  delay: "2500ms", textEng: 'text for tooltip'},
     {title: 'HTML-5',       id: 9,  delay: "2800ms", textEng: 'text for tooltip'},
-    {title: 'CSS-3',        id: 10,  delay: "3100ms", textEng: 'text for tooltip'},
+    {title: 'CSS-3',        id: 10, delay: "3100ms", textEng: 'text for tooltip'},
     {title: 'Git / Git-hub',id: 11, delay: "3400ms", textEng: 'text for tooltip'},
     {title: 'REST / CRUD',  id: 12, delay: "3700ms", textEng: 'text for tooltip'},
     {title: 'Bootstrap',    id: 13, delay: "4000ms", textEng: 'text for tooltip'},

@@ -1,5 +1,5 @@
 import React from 'react';
-import { phone,linkedInLink,email,gitHubLink } from '../data/constants';
+import { phone, linkedInLink, email, gitHubLink } from '../data/links_url';
 import { FaViber,FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { VscGithub } from 'react-icons/vsc';

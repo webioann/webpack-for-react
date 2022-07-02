@@ -1,11 +1,8 @@
 import React from 'react'
 import useTranslator from '../hooks/useTranslator';
-import { navbar } from '../data/multiLang';
-import { resumeLink } from '../data/constants';
+import { navbar } from '../data/text_for_navigation';
+import { resumeLink } from '../data/links_url';
 import Burger from './Burger.js'
-import LangSwitch from './LangSwitch.js'
-
-
 import '../CSS/navigation.scss'
 
 const Navigation = ({ move, children, move_navbar }) => {

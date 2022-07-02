@@ -1,7 +1,7 @@
 import React from 'react'
 import { skills_data } from '../data/skills_data'
 import useTranslator from '../hooks/useTranslator'
-import { about,skills } from '../data/multiLang'
+import { about, skills } from '../data/text_for_summary'
 import '../CSS/summary.scss'
 
 function Summary() {
