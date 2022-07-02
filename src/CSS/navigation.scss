@@ -54,6 +54,14 @@
                         }
                     }
                 }
+                .resume:hover{
+                    .jump-arrow{
+                        border-bottom: 2px solid $green;
+                        .arrow{
+                            color: $green;
+                        }
+                    }
+                }
             }
             @media (min-width: 576px) {
                 .menu{
