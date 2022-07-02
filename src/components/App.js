@@ -1,9 +1,6 @@
 import React,{ useState,useEffect } from 'react'
 import Container from './Container.js'
-import FixedTop from './FixedTop.js'
-import Burger from './Burger.js'
-import Navbar from './Navbar.js'
-import Menu from './Menu.js'
+import Navigation from './Navigation.js'
 import LangSwitch from './LangSwitch.js'
 import Summary from './Summary.js'
 import Projects from './Projects.js'
@@ -31,13 +28,9 @@ function App() {
 
   return (
     <Container>
-      <FixedTop>
-        <Navbar move={move}>
-          <Menu/>
-          <LangSwitch/>
-        </Navbar>
-        <Burger move_navbar={move_navbar} move={move}/>
-      </FixedTop>
+      <Navigation move={move} move_navbar={move_navbar}>
+        <LangSwitch/>
+      </Navigation>
       <Summary/>
       <Projects>
         <CryptoCurrency/>

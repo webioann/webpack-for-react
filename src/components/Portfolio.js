@@ -23,11 +23,6 @@ const Portfolio = () => {
                 <span className='header'>{useTranslator(dashboard.used_tools_span)}</span>
                 <p>{useTranslator(dashboard.used_tools_text)}</p>
             </div>
-
-            {/* <div className='grids'>
-                <div className='grid-left'>
-                </div>
-            </div> */}
         </section> 
     )
 }
