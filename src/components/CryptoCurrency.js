@@ -4,7 +4,7 @@ import useTranslator from '../hooks/useTranslator'
 import { portfolio,dashboard } from '../data/multiLang'
 import { gitHubPortfolio,gitHubRandomUsers,randomUsersLink } from '../data/constants'
 import LinkToGithub from './LinkToGithub'
-import LinkSite from './LinkSite'
+import LinkToProjectSite from './LinkToProjectSite'
 import '../CSS/pet-project.scss'
 
 const CryptoCurrency = () => {
@@ -32,7 +32,7 @@ const CryptoCurrency = () => {
                 <div className='image'>
                     <img src={crypto_img} alt='pet project'/>
                     <div className='project-links'>
-                        <LinkSite link={ randomUsersLink }/>
+                        <LinkToProjectSite link={ randomUsersLink }/>
                         <LinkToGithub link={ gitHubRandomUsers }/>
                     </div>
 

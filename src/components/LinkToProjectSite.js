@@ -4,7 +4,7 @@ import useTranslator from '../hooks/useTranslator'
 import { linkText } from '../data/multiLang'
 import '../CSS/links.scss'
 
-function LinkSite({ link }) {
+function LinkToProjectSite({ link }) {
 
     return (
         <a href={ link }
@@ -15,4 +15,4 @@ function LinkSite({ link }) {
         </a>
     )
 }
-export default LinkSite;
+export default LinkToProjectSite;

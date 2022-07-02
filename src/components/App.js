@@ -25,7 +25,7 @@ function App() {
   },[windowWidth])
 
   const move_navbar = () => {
-      move === '-770px' ? setMove('0px') : setMove('-770px')
+    move === '-770px' ? setMove('0px') : setMove('-770px')
   }
 
   return (
