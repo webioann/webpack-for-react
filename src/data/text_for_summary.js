@@ -12,8 +12,8 @@ export const about = {
         ukr: 'про мене'
     },
     intro: {
-        eng: 'I\'m Aleksander, React JS junior-strong frontend developer from Ukraine.',
-        ukr: 'Я Олександр, React JS джуніор-стронг фронтенд розробник з України.'
+        eng: 'Hi i\'m Aleksander, React JS junior-strong frontend developer from Ukraine.',
+        ukr: 'Привіт я Олександр, React JS джуніор-стронг фронтенд розробник з України.'
     },
     html_css: {
         eng: 'HTML/CSS: flexbox, grid, animations, preprocessors SASS and LESS, responsive design (mobile-first), semantics, Bootstrap and other.',
@@ -37,21 +37,21 @@ export const about = {
         ukr: 'Webpack: конфігурую сборки для React з використанням Sass, Less, post-CSS, TypeScript.'
     },
     tools: {
-        eng: 'Tools: Webpack, Sass, Less, Git, Git-hub, npm, yarn, markdown, JSdocs...',
-        ukr: 'Інструменти: Webpack, Sass, Less, Git, Git-hub, npm, yarn, markdown, JSdocs ...'
+        eng: 'Tools: TypeScrip, Webpack, Sass, Less, Git, Git-hub, npm, yarn, markdown, JSdocs...',
+        ukr: 'Інструменти: TypeScrip, Webpack, Sass, Less, Git, Git-hub, npm, yarn, markdown, JSdocs ...'
     },
     languages: {
         eng: 'English: A2 (reading technical documentation).',
         ukr: 'Англійська: А2 (читання тех.документації).'
     },
     patterns: {
-        eng: 'I always try to follow the principles of DRY,SOLID,OOP,clean-code.',
-        ukr: 'Завжди намагаюсь слідувати принципам DRY,SOLID,OOP,clean-code.'
+        eng: 'I always try to follow the principles of DRY,SOLID, and clean-code.',
+        ukr: 'Завжди намагаюсь слідувати принципам DRY,SOLID та clean-code.'
     },
     // ===================
     studying_now: {
-        eng: 'Currently studying: TypeScript, React-native, React-router, axios, CRUD.',
-        ukr: 'Зараз вивчаю: TypeScript, React-native, React-router, axios, CRUD.'
+        eng: 'Currently studying: TypeScript, React-native, React-router, Firebase, axios, CRUD.',
+        ukr: 'Зараз вивчаю: TypeScript, React-native, React-router, Firebase, axios, CRUD.'
     },
     plan: {
         eng: 'Plan: become a full-stack JavaScript developer.',

@@ -16,7 +16,7 @@ export const dashboard = {
         ukr: 'Використав :'
     },
     used_tools_text: {
-        eng: 'React, custom-hooks, Redux-toolkit, REST API, Webpack, Git-hub, CSS, Sass and Less, CSS-animation, post-CSS, responsive design(mobile-first).',
-        ukr: 'React, custom-hooks, Redux-toolkit, REST API, Webpack, Git-hub, CSS, Sass разом з Less, CSS-анімація, post-CSS, адаптивний дизайн(mobile-first).'
+        eng: 'React, Redux-toolkit, custom-hooks, REST API, Webpack, Git-hub, CSS, Sass and Less, CSS-animation, responsive design (mobile-first).',
+        ukr: 'React, Redux-toolkit, custom-hooks, REST API, Webpack, Git-hub, CSS, Sass разом з Less, CSS-анімація, адаптивний дизайн (mobile-first).'
     },
 };

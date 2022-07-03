@@ -1,0 +1,47 @@
+@import './index.scss';
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    .skill{
+        position: relative;
+        .skill-text{
+            transition: all 200ms ease;
+            border-radius: 5px;
+            text-align: center;
+            background-color: $grey;
+            color: $green;
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+    .skills{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 756px) {
+    .skills{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 992px) {
+    .skills{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.badges{
+    display: flex;
+    .tool{
+        margin-right: 10px;
+        .tool-text{
+            border-radius: 5px;
+            text-align: center;
+            background-color: $grey;
+            color: $green;
+        }
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import { skills_data } from '../data/skills_data'
 import useTranslator from '../hooks/useTranslator'
 import { about, skills } from '../data/text_for_summary'
+import BadgeMaker from './BadgeMaker'
 import '../CSS/summary.scss'
 
 function Summary() {
@@ -29,7 +30,8 @@ function Summary() {
                 </div>
                 <div className="skills-box">
                     <h2 className="g-subtitle">{useTranslator(skills.subtitle)}</h2>
-                    <ul className='skills'>
+                    <BadgeMaker data={skills_data} animation={true}/>
+                    {/* <ul className='skills'>
                         { skills_data.map((data) => ( 
                             <li key={data.id}
                                 className='tool on-start'
@@ -39,7 +41,7 @@ function Summary() {
                                 </p>
                             </li>
                         ))}
-                    </ul>
+                    </ul> */}
                 </div>
                 
             </div>

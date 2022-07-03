@@ -17,7 +17,7 @@ export const portfolio = {
         ukr: 'Використав :'
     },
     used_tools_text: {
-        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first).',
-        ukr: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-анімація, post-CSS, адаптивний дизайн (mobile-first).'
+        eng: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, responsive design (mobile-first).',
+        ukr: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-анімація, адаптивний дизайн (mobile-first).'
     },
 };
