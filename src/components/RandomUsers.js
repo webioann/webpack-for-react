@@ -2,9 +2,12 @@ import React from 'react'
 import randomusers_img from '../assets/users-screen.png'
 import useTranslator from '../hooks/useTranslator'
 import { dashboard } from '../data/text_for_randomusers'
+import { tools_users } from '../data/tools_users'
 import { users_githublink,randomusers_link } from '../data/links_url'
 import LinkToGithub from './LinkToGithub'
 import LinkToProjectSite from './LinkToProjectSite'
+import BadgeMaker from './BadgeMaker'
+
 import '../CSS/pet-project.scss'
 
 const CryptoCurrency = () => {
@@ -29,7 +32,7 @@ const CryptoCurrency = () => {
 
                     <div className='tools'>
                         <span className='header'>{useTranslator(dashboard.used_tools_span)}</span>
-                        <p>{useTranslator(dashboard.used_tools_text)}</p>
+                        <BadgeMaker data={tools_users} animation={false}/>
                     </div>
 
                 </div>

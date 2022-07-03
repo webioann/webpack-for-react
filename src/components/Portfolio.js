@@ -3,6 +3,9 @@ import useTranslator from '../hooks/useTranslator'
 import { portfolio } from '../data/text_for_portfolio'
 import { portfolio_githublink } from '../data/links_url'
 import LinkToGithub from './LinkToGithub'
+import { tools_portfolio } from '../data/tools_portfolio'
+import BadgeMaker from './BadgeMaker'
+
 import '../CSS/pet-project.scss'
 
 const Portfolio = () => {
@@ -21,7 +24,7 @@ const Portfolio = () => {
 
             <div className='tools'>
                 <span className='header'>{useTranslator(portfolio.used_tools_span)}</span>
-                <p>{useTranslator(portfolio.used_tools_text)}</p>
+                <BadgeMaker data={tools_portfolio} animation={false}/>
             </div>
         </section> 
     )

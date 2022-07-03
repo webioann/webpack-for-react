@@ -3,8 +3,10 @@ import crypto_img from '../assets/crypto-screen.png'
 import useTranslator from '../hooks/useTranslator'
 import { cryptocurrency } from '../data/text_for_cryptocurrency'
 import { crypto_githublink,cryptocurrency_link } from '../data/links_url'
+import { tools_crypto } from '../data/tools_crypto'
 import LinkToGithub from './LinkToGithub'
 import LinkToProjectSite from './LinkToProjectSite'
+import BadgeMaker from './BadgeMaker'
 import '../CSS/pet-project.scss'
 
 const CryptoCurrency = () => {
@@ -29,7 +31,8 @@ const CryptoCurrency = () => {
 
                     <div className='tools'>
                         <span className='header'>{useTranslator(cryptocurrency.used_tools_span)}</span>
-                        <p>{useTranslator(cryptocurrency.used_tools_text)}</p>
+                        <BadgeMaker data={tools_crypto} animation={false}/>
+                        {/* <p>{useTranslator(cryptocurrency.used_tools_text)}</p> */}
                     </div>
 
                 </div>
