@@ -23,10 +23,10 @@ const BadgeMaker = ({ data, animation }) => {
     else {
         return (
             <ul className='badges'>
-                <div className='path'>
+                {/* <div className='path'>
                     <span>used tools</span>
                     <MdOutlineArrowForwardIos className='double-arrow'/>
-                </div>
+                </div> */}
                 { data.map((item) => ( 
                     <li key={item.id} className='tool'>
                         <p className='tool-text'>

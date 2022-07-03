@@ -12,10 +12,10 @@ const Portfolio = () => {
     return (
         <section className="pet-project">
             <header className="g-subtitle">
-                <h2>#3 Portfolio this site</h2>
+                <h2>#3 Portfolio</h2>
             </header>
             <div className='discription'>
-                <span className='header'>{useTranslator(portfolio.discr_span)}</span>
+                {/* <span className='header'>{useTranslator(portfolio.discr_span)}</span> */}
                 <p>{useTranslator(portfolio.discr_text)}</p>
             </div>
             <div className='port-github-link'>
@@ -23,7 +23,6 @@ const Portfolio = () => {
             </div>
 
             <div className='tools'>
-                <span className='header'>{useTranslator(portfolio.used_tools_span)}</span>
                 <BadgeMaker data={tools_portfolio} animation={false}/>
             </div>
         </section> 

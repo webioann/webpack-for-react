@@ -20,7 +20,7 @@ const CryptoCurrency = () => {
             <div className='grids'>
                 <div className='grid-left'>
                     <div className='discription'>
-                        <span className='header'>{useTranslator(cryptocurrency.discr_span)}</span>
+                        {/* <span className='header'>{useTranslator(cryptocurrency.discr_span)}</span> */}
                         <p>{useTranslator(cryptocurrency.discr_text)}</p>
                     </div>
 
@@ -30,15 +30,13 @@ const CryptoCurrency = () => {
                     </div>
 
                     <div className='tools'>
-                        <span className='header'>{useTranslator(cryptocurrency.used_tools_span)}</span>
                         <BadgeMaker data={tools_crypto} animation={false}/>
-                        {/* <p>{useTranslator(cryptocurrency.used_tools_text)}</p> */}
                     </div>
 
                 </div>
 
                 <div className='image'>
-                    <img src={crypto_img} alt='pet project'/>
+                    <img src={crypto_img} alt='pet project cryptocurrency'/>
 
                 </div>
 

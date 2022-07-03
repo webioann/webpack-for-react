@@ -118,7 +118,19 @@ body {
     border-radius: 1px;
     background-color: $green;
 }
+@media (min-width: 640px) {
+    .g-subtitle::after{
+        animation-name: growLine_2;
+
+    }
+}
+
 @keyframes growLine {
+    0%{ width: 0%; }
+    95%{ width: 103%; }
+    100%{ width: 100%; }
+}
+@keyframes growLine_2 {
     0%{ width: 0%; }
     95%{ width: 83%; }
     100%{ width: 80%; }
