@@ -1,7 +1,7 @@
 import React from 'react'
 import crypto_img from '../assets/crypto-screen.png'
 import useTranslator from '../hooks/useTranslator'
-import { dashboard } from '../data/text_for_randomusers'
+import { cryptocurrency } from '../data/text_for_cryptocurrency'
 import { crypto_githublink,cryptocurrency_link } from '../data/links_url'
 import LinkToGithub from './LinkToGithub'
 import LinkToProjectSite from './LinkToProjectSite'
@@ -12,14 +12,14 @@ const CryptoCurrency = () => {
         <section className="pet-project">
 
             <header className="g-subtitle">
-                <h2>#1 Crypto Currency</h2>
+                <h2>#1 Cryptocurrency</h2>
             </header>
 
             <div className='grids'>
                 <div className='grid-left'>
                     <div className='discription'>
-                        <span className='header'>{useTranslator(dashboard.discr_span)}</span>
-                        <p>{useTranslator(dashboard.discr_text)}</p>
+                        <span className='header'>{useTranslator(cryptocurrency.discr_span)}</span>
+                        <p>{useTranslator(cryptocurrency.discr_text)}</p>
                     </div>
 
                     <div className='project-links'>
@@ -28,8 +28,8 @@ const CryptoCurrency = () => {
                     </div>
 
                     <div className='tools'>
-                        <span className='header'>{useTranslator(dashboard.used_tools_span)}</span>
-                        <p>{useTranslator(dashboard.used_tools_text)}</p>
+                        <span className='header'>{useTranslator(cryptocurrency.used_tools_span)}</span>
+                        <p>{useTranslator(cryptocurrency.used_tools_text)}</p>
                     </div>
 
                 </div>

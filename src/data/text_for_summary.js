@@ -29,8 +29,8 @@ export const about = {
         ukr: 'JavaScript в синтаксисі ES-6 і вище.'
     },
     react: {
-        eng: 'React with Redux toolkit, hooks, custom hooks, REST api, CRUD.',
-        ukr: 'React в связці з Redux toolkit, хуки, кастомні хуки, REST api, CRUD.'
+        eng: 'React JS with TypeScript, Redux toolkit, hooks, custom hooks, REST API, SDK, CRUD.',
+        ukr: 'React JS в связці з TypeScript, Redux toolkit, хуки, кастомні хуки, REST API, SDK, CRUD.'
     },
     webpack: {
         eng: 'Webpack: configuring builds for React using Sass, Less, post-CSS, TypeScript.',

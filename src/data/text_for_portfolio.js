@@ -8,8 +8,8 @@ export const portfolio = {
         ukr: 'Опис проекта :'
     },
     discr_text: {
-        eng: 'Full adaptability of the application, two interface languages, slider for previewing projects with three sets of pictures for different screen widths. Smooth animation. No third-party libraries. Custom interface design.',
-        ukr: 'Полна адаптивність додатка, дві мови інтерфейсу, слайдер для передогляду проектів з троьома наборами картинок для різних ширин екрана. Плавна анімація. Жодних сторонніх бібліотек. Власний дизайн інтерфейсу.',
+        eng: 'Full adaptability of the application for different screen widths, two interface languages. Smooth animation and scrolling. No third-party libraries. Own interface design.',
+        ukr: 'Полна адаптивність додатка для різних ширин екрана, дві мови інтерфейсу. Плавна анімація і скролл. Жодних сторонніх бібліотек. Власний дизайн інтерфейсу.',
     },
 
     used_tools_span: {
@@ -18,6 +18,6 @@ export const portfolio = {
     },
     used_tools_text: {
         eng: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first).',
-        ukr: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-animation, post-CSS, responsive design(mobile-first).'
+        ukr: 'React, custom-hooks, Redux-toolkit, Webpack, Git-hub, Sass, CSS-анімація, post-CSS, адаптивний дизайн (mobile-first).'
     },
 };
