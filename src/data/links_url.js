@@ -1,4 +1,5 @@
-export const resumeLink = "https://drive.google.com/file/d/1naRvKGVmZcwuv1zEEuTmygBdBeecJeI2/view?usp=sharing";
+// export const resumeLink = "https://drive.google.com/file/d/1naRvKGVmZcwuv1zEEuTmygBdBeecJeI2/view?usp=sharing";
+export const resumeLink = "https://drive.google.com/file/d/1oxasSoUMTMl7mU_sCdyumRdpKwqQLVMV/view?usp=sharing";
 
 //===== Contacts ====
 export const phone = '+380(96)842-25-72';
