@@ -5,7 +5,6 @@ import { portfolio_githublink } from '../data/links_url'
 import LinkToGithub from './LinkToGithub'
 import { tools_portfolio } from '../data/tools_portfolio'
 import BadgeMaker from './BadgeMaker'
-
 import '../CSS/pet-project.scss'
 
 const Portfolio = () => {
@@ -15,13 +14,11 @@ const Portfolio = () => {
                 <h2>#3 Portfolio</h2>
             </header>
             <div className='discription'>
-                {/* <span className='header'>{useTranslator(portfolio.discr_span)}</span> */}
                 <p>{useTranslator(portfolio.discr_text)}</p>
             </div>
             <div className='port-github-link'>
                 <LinkToGithub link={ portfolio_githublink }/>
             </div>
-
             <div className='tools'>
                 <BadgeMaker data={tools_portfolio} animation={false}/>
             </div>
@@ -29,4 +26,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Portfolio;

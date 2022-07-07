@@ -34,7 +34,6 @@
         .grid-left{
             display: flex;
             flex-direction: column;
-            // justify-content: space-between;
             .project-links{
                 width: 100%;
                 display: flex;
@@ -60,7 +59,6 @@
                 z-index: 10;
             }
         }
-    
     }
     @media (min-width: 1024px) {
         .grids{

@@ -23,9 +23,9 @@ function Summary() {
                     <h2 className="g-subtitle">{useTranslator(skills.subtitle)}</h2>
                     <BadgeMaker data={skills_data} animation={true}/>
                 </div>
-                
             </div>
         </section>
     )
 }
+
 export default Summary;

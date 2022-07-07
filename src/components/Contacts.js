@@ -15,17 +15,14 @@ function Contacts() {
                     <FaViber className='icon not-link'/>
                     <p>{ phone }</p>
                 </div>
-
                 <a className='linkedin box' href={ linkedInLink } target="_blank">
                     <FaLinkedin className='icon'/>
                     <p>linkedin/alexander-ve...</p>
                 </a>
-
                 <div className='email box'>
                     <HiOutlineMail className='icon not-link'/>
                     <p>{ email }</p>
                 </div>
-
                 <a className='git-hub box' href={ gitHubLink } target="_blank">
                     <VscGithub className='icon'/>
                     <p>github.com/webioann</p>
@@ -34,4 +31,5 @@ function Contacts() {
             </section>
     )
 }
+
 export default Contacts;

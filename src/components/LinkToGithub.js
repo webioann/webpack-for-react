@@ -13,4 +13,5 @@ function LinkToGithub({ link }) {
         </a>
     )
 }
+
 export default LinkToGithub;

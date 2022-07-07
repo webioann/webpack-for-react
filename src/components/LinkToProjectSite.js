@@ -15,4 +15,5 @@ function LinkToProjectSite({ link }) {
         </a>
     )
 }
+
 export default LinkToProjectSite;

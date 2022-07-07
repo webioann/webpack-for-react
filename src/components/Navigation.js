@@ -1,10 +1,6 @@
 import React from 'react'
 import useTranslator from '../hooks/useTranslator';
-import { IoMdDownload } from 'react-icons/io'
-
 import { GoArrowDown } from 'react-icons/go'
-import { AiOutlineLine } from 'react-icons/ai'
-
 import { navbar } from '../data/text_for_navigation';
 import { resumeLink } from '../data/links_url';
 import Burger from './Burger.js'
@@ -32,7 +28,6 @@ const Navigation = ({ move, children, move_navbar }) => {
                                 { useTranslator(navbar.projects) }
                             </a>
                         </li>
-
                         <li className='link resume'>
                             <a href={ resumeLink }  target="_blank">
                                 { useTranslator(navbar.resume) }
@@ -50,4 +45,4 @@ const Navigation = ({ move, children, move_navbar }) => {
     )
 }
 
-export default Navigation
+export default Navigation;

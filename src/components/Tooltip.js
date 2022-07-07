@@ -24,4 +24,5 @@ function Tooltip({ text }) {
         </div>
     )
 }
+
 export default Tooltip;

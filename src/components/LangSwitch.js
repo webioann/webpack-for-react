@@ -38,4 +38,5 @@ function LangSwitch() {
         </div>
     )
 }
+
 export default LangSwitch;
