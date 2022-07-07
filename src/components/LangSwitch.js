@@ -20,7 +20,6 @@ function LangSwitch() {
             dispatch(langEng())
         }
     }
-
     return (
         <div className="switch-box">
             <span className={lang === 'eng' ? 'switch active' : 'switch'}

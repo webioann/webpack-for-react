@@ -9,7 +9,6 @@ import Footer from './Footer.js'
 import CryptoCurrency from './CryptoCurrency.js'
 import RandomUsers from './RandomUsers.js'
 import Portfolio from './Portfolio.js'
-//========= hooks import ==========
 import { useWindowWidth } from '../hooks/useWindowWidth'
 
 function App() {
