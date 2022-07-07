@@ -1,6 +1,4 @@
 import React from 'react'
-import { MdOutlineArrowForwardIos } from 'react-icons/md'
-
 import '../CSS/badge-maker.scss'
 
 const BadgeMaker = ({ data, animation }) => {
@@ -23,10 +21,6 @@ const BadgeMaker = ({ data, animation }) => {
     else {
         return (
             <ul className='badges'>
-                {/* <div className='path'>
-                    <span>used tools</span>
-                    <MdOutlineArrowForwardIos className='double-arrow'/>
-                </div> */}
                 { data.map((item) => ( 
                     <li key={item.id} className='tool'>
                         <p className='tool-text'>

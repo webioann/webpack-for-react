@@ -11,54 +11,20 @@ export const about = {
         eng: 'about me',
         ukr: 'про мене'
     },
-    intro: {
-        eng: 'Hi i\'m Aleksander, React JS junior-strong frontend developer from Ukraine.',
-        ukr: 'Привіт я Олександр, React JS джуніор-стронг фронтенд розробник з України.'
-    },
-    html_css: {
-        eng: 'HTML/CSS: flexbox, grid, animations, preprocessors SASS and LESS, responsive design (mobile-first), semantics, Bootstrap and other.',
-        ukr: 'HTML/CSS: flexbox, grid, анімація, препроцесори  SASS і LESS, адаптивний дизайн (mobile-first), семантика, Boootstrap и т.п.'
-    },
-    study: {
-        eng: 'I have been studying the development since 2019.',
-        ukr: 'Самостійно вивчаю розробку з 2019 року.'
+    about_me: {
+        eng: 'Hi, I\'m Alexander, a junior-strong React JS front-end developer from Ukraine, who has been learning to build responsive web applications since 2019. I can create applications of any complexity using React, JavaScript, TypeScript. I have experience in creating beautiful and practical designs using all the possibilities of CSS, Sass and Less preprocessors, and other development tools. I learn new technologies, libraries and tools very quickly, and most importantly with passion and interest.',
+
+        ukr: 'Привіт, я Олександр, React JS джуніор-стронг фронтенд розробник з України, який з 2019 року навчається створювати круті і адаптивні веб-додатки. Я можу створювати додатки будь-якої складності за допомогою React, JavaScript, TypeScript. Маю досвід створення красивих і практичних дизайнів, використовуючи всі можливості  CSS, препроцесорів Sass і Less, та інших інструментів розробки. Я дуже швидко, а головне з пристрастю та інтересом, вивчаю нові технології, бібліотеки та інструменти. '
     },
 
-    js: {
-        eng: 'JavaScript in ES-6 syntax and above.',
-        ukr: 'JavaScript в синтаксисі ES-6 і вище.'
-    },
-    react: {
-        eng: 'React JS with TypeScript, Redux toolkit, hooks, custom hooks, REST API, SDK, CRUD.',
-        ukr: 'React JS в связці з TypeScript, Redux toolkit, хуки, кастомні хуки, REST API, SDK, CRUD.'
-    },
-    webpack: {
-        eng: 'Webpack: configuring builds for React using Sass, Less, post-CSS, TypeScript.',
-        ukr: 'Webpack: конфігурую сборки для React з використанням Sass, Less, post-CSS, TypeScript.'
-    },
-    tools: {
-        eng: 'Tools: TypeScrip, Webpack, Sass, Less, Git, Git-hub, npm, yarn, markdown, JSdocs...',
-        ukr: 'Інструменти: TypeScrip, Webpack, Sass, Less, Git, Git-hub, npm, yarn, markdown, JSdocs ...'
-    },
-    languages: {
-        eng: 'English: A2 (reading technical documentation).',
-        ukr: 'Англійська: А2 (читання тех.документації).'
-    },
-    patterns: {
-        eng: 'I always try to follow the principles of DRY,SOLID, and clean-code.',
-        ukr: 'Завжди намагаюсь слідувати принципам DRY,SOLID та clean-code.'
-    },
-    // ===================
-    studying_now: {
-        eng: 'Currently studying: TypeScript, React-native, React-router, Firebase, axios, CRUD.',
-        ukr: 'Зараз вивчаю: TypeScript, React-native, React-router, Firebase, axios, CRUD.'
-    },
-    plan: {
-        eng: 'Plan: become a full-stack JavaScript developer.',
-        ukr: 'План: стати full-stack JavaScript розробником.'
-    },
     soft_skills: {
-        eng: 'Soft skills: not a fool, purposeful (or stubborn), I love learning (seriously!), wise (44 years old) , extremely plodding phlegmatic (2500+ hours of study without "financial motivation").',
-        ukr: 'Soft skills: не дурень, цілеспрямований (чи впертий), обожнюю навчатися (серйозно!), мудрий (44 роки) , надзвичайно завзятий флегматик (2500+ годин навчання без "фінансової мотивації").'
+        eng: 'Intelligent, like to learn new things, honest, direct, faithful, and self-confident.',
+        ukr: 'Розумний, люблю вчитися новому, чесний, прямий, вірний, впевнений у собі.'
     },
+
+    in_work: {
+        eng: 'Extremely hardworking, tireless, purposeful and stubborn.',
+        ukr: 'Надзвичайно працелюбивий, невтомний, цілеспрямований і впертий.'
+    },
+
 }
