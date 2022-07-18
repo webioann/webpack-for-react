@@ -16,7 +16,7 @@ export const cryptocurrency = {
         ukr: 'Використав :'
     },
     used_tools_text: {
-        eng: 'React, TypeScript, Redux, React-router, axios, Firebase JWT for authentication, SDK, REST API, Webpack, Git-hub, Sass, CSS-animation, responsive design (mobile-first).',
-        ukr: 'React, TypeScript, Redux, React-router, axios, Firebase JWT для аунтефікації, SDK, REST API, Webpack, Git-hub, Sass, CSS-анімація, адаптивний дизайн (mobile-first).'
+        eng: 'React, TypeScript, Redux, React-router, RTK Query, Firebase JWT for authentication, SDK, REST API, Webpack, Git-hub, Sass, CSS-animation, responsive design (mobile-first).',
+        ukr: 'React, TypeScript, Redux, React-router, RTK Query, Firebase JWT для аунтефікації, SDK, REST API, Webpack, Git-hub, Sass, CSS-анімація, адаптивний дизайн (mobile-first).'
     },
 };
