@@ -19,7 +19,7 @@ export const portfolio_githublink = "https://github.com/webioann/portfolio/";
 //===== SITE =====
 export const randomusers_link = "https://webioann.github.io/random_users/";
 
-export const cryptocurrency_link = "https://cryptocurrency-cea64.web.app/";
+export const cryptocurrency_link = "https://https://cryptocurrency-cea64.firebaseapp.com//";
 
 export const linkText = {
     site: {
