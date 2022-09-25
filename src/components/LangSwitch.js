@@ -7,7 +7,7 @@ function LangSwitch() {
 
     const dispatch = useDispatch()
     const lang = useSelector(state => state.redux.lang)
-    const [margin,setMargin] = useState(0)
+    const [margin,setMargin] = useState(60)
 
     const switching = (event) => {
         let id = event.target.id
@@ -32,8 +32,7 @@ function LangSwitch() {
                 onClick={switching}>
                 ukr
             </span>
-            <div style={{marginLeft: margin}}
-                className='bottom-border'></div>
+            <div style={{marginLeft: margin}} className='bottom-border'></div>
         </div>
     )
 }
