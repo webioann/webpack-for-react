@@ -10,6 +10,7 @@ import BadgeMaker from './BadgeMaker'
 import '../CSS/pet-project.scss'
 
 const CryptoCurrency = () => {
+
     return (
         <section className="pet-project">
             <header className="g-subtitle">
@@ -37,5 +38,5 @@ const CryptoCurrency = () => {
     )
 }
 
-export default CryptoCurrency
+export default CryptoCurrency;
 

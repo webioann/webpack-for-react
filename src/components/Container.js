@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React from "react";
 import "../CSS/container.scss";
 
 function Container(props) {
@@ -9,6 +9,6 @@ function Container(props) {
                 {props.children}
             </div>
         </div>
-    );
+    )
 }
 export default Container;

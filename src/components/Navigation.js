@@ -1,12 +1,12 @@
 import React from 'react'
 import useTranslator from '../hooks/useTranslator';
-import { GoArrowDown } from 'react-icons/go'
 import { navbar } from '../data/text_for_navigation';
-import { resumeLink } from '../data/links_url';
 import Burger from './Burger.js'
+import ResumeDropDown from './ResumeDropDown';
 import '../CSS/navigation.scss'
 
 const Navigation = ({ move, children, move_navbar }) => {
+    
     return (
         <nav id='fixed-top'>
             <div className='fixed-wrapper'>
@@ -28,14 +28,7 @@ const Navigation = ({ move, children, move_navbar }) => {
                                 { useTranslator(navbar.projects) }
                             </a>
                         </li>
-                        <li className='link resume'>
-                            <a href={ resumeLink }  target="_blank">
-                                { useTranslator(navbar.resume) }
-                            </a>
-                            <i className='jump-arrow'>
-                                <GoArrowDown className='arrow'/>
-                            </i>
-                        </li>
+                        <ResumeDropDown/>
                     </ul>
                     { children }
                 </div>

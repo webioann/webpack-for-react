@@ -8,6 +8,7 @@ import BadgeMaker from './BadgeMaker'
 import '../CSS/pet-project.scss'
 
 const Portfolio = () => {
+    
     return (
         <section className="pet-project">
             <header className="g-subtitle">

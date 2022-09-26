@@ -1,4 +1,9 @@
-export const resumeLink = "https://drive.google.com/file/d/1p2an-t76oQ_7foU0-jd--yf392Q4QUKY/view?usp=sharing";
+
+export const resumeUkr = "https://drive.google.com/file/d/11fG21fDNB0OUszBqt84H9Rd2Hp9tv5s_/view?usp=sharing";
+
+export const resumeRus = "https://drive.google.com/file/d/11qae_y__S1bZz9QaokPRj0uOiuN7oyqq/view?usp=sharing";
+
+export const resumeEng = "https://drive.google.com/file/d/1kFMjXM92tGwwCO-vjpGiXQRYfl2io4QH/view?usp=sharing";
 
 //===== Contacts ====
 export const phone = '+380(96)842-25-72';
@@ -19,7 +24,7 @@ export const portfolio_githublink = "https://github.com/webioann/portfolio/";
 //===== SITE =====
 export const randomusers_link = "https://webioann.github.io/random_users/";
 
-export const cryptocurrency_link = "https://cryptocurrency-cea64.firebaseapp.com/";
+export const cryptocurrency_link = "https://cryptocurrency-cea64.web.app/";
 
 export const linkText = {
     site: {

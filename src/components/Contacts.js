@@ -27,8 +27,8 @@ function Contacts() {
                     <VscGithub className='icon'/>
                     <p>github.com/webioann</p>
                 </a>
-                </div>
-            </section>
+            </div>
+        </section>
     )
 }
 

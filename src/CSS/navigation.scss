@@ -9,7 +9,6 @@
     .fixed-wrapper{
         max-width: 1200px;
         margin: 0 auto;
-        overflow: hidden;
         .navbar{
             width: 100%;
             background-color: #262626;
@@ -30,36 +29,6 @@
                     }
                     a:hover{
                         color: $green;
-                    }
-                }
-                .resume{
-                    align-items: center;
-                    .jump-arrow{
-                        display: grid;
-                        // border: 1px solid red;
-                        border-bottom: 2px solid white;
-                        .arrow{
-                            animation: jump 1000ms linear infinite;
-                        }
-                    }
-                    @keyframes jump {
-                        0%{
-                            transform: translateY(0px);
-                        }
-                        50%{
-                            transform: translateY(-4px);
-                        }
-                        100%{
-                            transform: translateY(0px);
-                        }
-                    }
-                }
-                .resume:hover{
-                    .jump-arrow{
-                        border-bottom: 2px solid $green;
-                        .arrow{
-                            color: $green;
-                        }
                     }
                 }
             }
