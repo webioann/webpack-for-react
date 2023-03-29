@@ -3,7 +3,7 @@ import randomusers_img from '../assets/users-screen.png';
 import useTranslator from '../hooks/useTranslator';
 import { dashboard } from '../data/text_for_randomusers';
 import { tools_users } from '../data/tools_users';
-import { users_githublink, randomusers_link } from '../data/links_url';
+import { users_githublink, randomusers_link } from './links_url';
 import LinkToGithub from '../components/LinkToGithub';
 import LinkToProjectSite from '../components/LinkToProjectSite';
 import BadgeMaker from '../components/BadgeMaker';

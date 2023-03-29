@@ -2,7 +2,7 @@ import React from 'react';
 import crypto_img from '../assets/crypto-screen.png';
 import useTranslator from '../hooks/useTranslator';
 import { cryptocurrency } from '../data/text_for_cryptocurrency';
-import { crypto_githublink, cryptocurrency_link } from '../data/links_url';
+import { crypto_githublink, cryptocurrency_link } from './links_url';
 import { tools_crypto } from '../data/tools_crypto';
 import LinkToGithub from '../components/LinkToGithub';
 import LinkToProjectSite from '../components/LinkToProjectSite';
