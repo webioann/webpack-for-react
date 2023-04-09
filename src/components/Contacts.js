@@ -6,7 +6,6 @@ import '../CSS/contacts.scss';
 
 function Contacts() {
     const phone = '+380(96)842-25-72';
-    const linkedInLink = 'https://linkedin.com/in/alexander-veles';
     const email = 'ioannn7777@gmail.com';
     const gitHubLink = 'https://github.com/webioann';
 
@@ -18,10 +17,6 @@ function Contacts() {
                     <FaViber className="icon not-link" />
                     <p>{phone}</p>
                 </div>
-                <a className="linkedin box" href={linkedInLink} target="_blank">
-                    <FaLinkedin className="icon" />
-                    <p>linkedin/alexander-ve...</p>
-                </a>
                 <div className="email box">
                     <HiOutlineMail className="icon not-link" />
                     <p>{email}</p>
