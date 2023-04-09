@@ -7,7 +7,7 @@ import '../CSS/resume-drop-down.scss';
 const ResumeDropDown = () => {
     const [showClass, setShowClass] = useState('');
     const resumeUkr =
-        'https://drive.google.com/file/d/1iWjL0YpRX6VzhVvKHHoO9rTtJhqCpHxn/view?usp=share_link';
+        'https://drive.google.com/file/d/1iWjL0YpRX6VzhVvKHHoO9rTtJhqCpHxn/view?usp=sharing';
     const resumeRus =
         'https://drive.google.com/file/d/17Oded9aHMz_IlqLr_GY54b-MXn9kImfN/view?usp=share_link';
     const resumeEng =
