@@ -7,11 +7,11 @@ import '../CSS/resume-drop-down.scss';
 const ResumeDropDown = () => {
     const [showClass, setShowClass] = useState('');
     const resumeUkr =
-        'https://drive.google.com/file/d/1lIctZUQFPNrR6zXFb3bkN1KeYl49eLMb/view?usp=sharing';
+        'https://drive.google.com/file/d/1d90ftga1Ve6kf1ut-IWtBdC3Ywt7ptkC/view?usp=share_link';
     const resumeRus =
-        'https://drive.google.com/file/d/1-vYFzP7qe7KcnWvx8KgMncAK4CZ8m9IP/view?usp=sharing';
+        'https://drive.google.com/file/d/1Vpfuos2i2quXK3J7OJo-LMs0z5wACFlc/view?usp=share_link';
     const resumeEng =
-        'https://drive.google.com/file/d/1zLr6kiEIl1GC7waMx9X2PaVuwgSgX6_D/view?usp=sharing';
+        'https://drive.google.com/file/d/1WCgKNGfCfmFFLKfu1Ll_NaBX_jJHSynQ/view?usp=share_link';
 
     const showMe = () => {
         if (showClass === 'show') {
