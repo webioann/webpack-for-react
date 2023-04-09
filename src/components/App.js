@@ -43,7 +43,7 @@ function App() {
                     img={crypto_img}
                 />
                 <PetProject
-                    header="#2 Netflix clone"
+                    header="#2 Netflix clone - in progress"
                     data={netflix}
                     img={netflix_img}
                 />
