@@ -11,3 +11,4 @@
 -   #### custom hooks
 -   #### MVC architecture
 -   #### multylang and two color theme
+-   #### custom CSS animation
