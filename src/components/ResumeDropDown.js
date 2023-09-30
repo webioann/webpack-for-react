@@ -7,9 +7,7 @@ import '../CSS/resume-drop-down.scss';
 const ResumeDropDown = () => {
     const [showClass, setShowClass] = useState('');
     const resumeUkr =
-        'https://drive.google.com/file/d/1iWjL0YpRX6VzhVvKHHoO9rTtJhqCpHxn/view?usp=sharing';
-    const resumeRus =
-        'https://drive.google.com/file/d/17Oded9aHMz_IlqLr_GY54b-MXn9kImfN/view?usp=share_link';
+        'https://drive.google.com/file/d/15HixJLpXzjgl1TRtd2dEROAoQPJmr4iT/view?usp=drive_link';
     const resumeEng =
         'https://drive.google.com/file/d/125p7Jlomgp5hAqqxyOx_Ljo7FvaB0Uu9/view?usp=share_link';
 
@@ -41,10 +39,6 @@ const ResumeDropDown = () => {
                 <a href={resumeEng} target="_blank" onClick={hiddeMe}>
                     {/* { useTranslator(navbar.resume) } */}
                     eng CV
-                </a>
-                <a href={resumeRus} target="_blank" onClick={hiddeMe}>
-                    {/* { useTranslator(navbar.resume) } */}
-                    rus CV
                 </a>
             </ul>
         </div>
