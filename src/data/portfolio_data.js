@@ -1,4 +1,4 @@
-export const portfolio = {
+export const portfolio_data = {
     discription: {
         eng: 'Full adaptability of the application for different screen widths, two interface languages. Smooth animation and scrolling. No third-party libraries. Own interface design.',
         ukr: 'Полна адаптивність додатка для різних ширин екрана, дві мови інтерфейсу. Плавна анімація і скролл. Жодних сторонніх бібліотек. Власний дизайн інтерфейсу.',
