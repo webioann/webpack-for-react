@@ -5,6 +5,7 @@ import LangSwitch from './LangSwitch.js';
 import Summary from './Summary.js';
 import Projects from './Projects.js';
 import PetProject from './PetProject.js';
+import ReactNativePetProject from './ReactNativePetProject.js';
 import Contacts from './Contacts.js';
 import Footer from './Footer.js';
 import Portfolio from './Portfolio.js';
@@ -48,8 +49,12 @@ function App() {
                     data={crypto_data}
                     img={crypto_img}
                 />
+                <ReactNativePetProject
+                    header="#3 Mobile Messenger"
+                    data={messenger_data}
+                />
                 <PetProject
-                    header="#3 Random Users Dashboard"
+                    header="#4 Random Users Dashboard"
                     data={dashboard_data}
                     img={dashboard_img}
                 />
