@@ -103,12 +103,14 @@
             }
         }
     }
-
     @media (min-width: 1024px) {
         .grids{
             grid-template-columns: 1fr 1fr;
             .image{
                 margin-top: 0;
+            }
+            .collage{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
         }
     }
