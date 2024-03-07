@@ -4,7 +4,7 @@ export const netflix_data = {
         ukr: 'Netflix clone, хоча поки-що в розробці але, вже дає уявлення про якість коду, знання архітектури і здатність мною використовувати патерни і принципи ООП. В цьому проекті я намагаюсь "показати" як володію React, Typescript, Redux та  багатьма іншими інструментами та технологіями, що здатен  самостійно розробляти проекти будь-якої складності та розміру. Проект має аунтефікацію через Google та email, має базу даних Firestore для My List - пробую full-stack розробку через SDK Firebase.',
     },
     site_link: 'https://petnetflix-faa67.web.app/',
-    github_link: 'https://github.com/webioann/Petnetflix.git',
+    github_link: 'https://github.com/webioann/petnetflix.git',
     tools: [
         { title: 'React JS', id: 1, delay: '0ms', textEng: 'text for tooltip' },
         {
