@@ -40,25 +40,28 @@ function App() {
             <Summary />
             <Projects>
                 <PetProject
-                    header="#1 Netflix clone"
-                    data={netflix_data}
-                    img={netflix_img}
-                />
-                <PetProject
-                    header="#2 Cryptocurrency"
+                    header="#1 Cryptocurrencies tracker"
                     data={crypto_data}
                     img={crypto_img}
                 />
+                <PetProject
+                    header="#2 Netflix clone"
+                    data={netflix_data}
+                    img={netflix_img}
+                />
                 <ReactNativePetProject
-                    header="#3 Mobile Messenger"
+                    header="#3 Mobile messenger app"
                     data={messenger_data}
                 />
                 <PetProject
-                    header="#4 Random Users Dashboard"
+                    header="#4 Random users dashboard"
                     data={dashboard_data}
                     img={dashboard_img}
                 />
-                <Portfolio header="#4 My Portfolio Site" data={portfolio_data} />
+                <Portfolio 
+                    header="#5 My webdeveloper portfolio website" 
+                    data={portfolio_data} 
+                />
             </Projects>
             <Contacts />
             <Footer />
