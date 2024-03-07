@@ -4,7 +4,7 @@ export const messenger_data = {
         ukr: 'Messenger - це фулстек  мобільний меседжер написаний на React Native. Дозволяє обмінюватися користувачам текстовими повідомленнями, картинками і фото, створювати нові групи, редагувати відомості власного профілю. Має повноцінну автентифікацію через електронну пошту і акаунт Google. Використовує Firebase NoSQL бази даних для збереження повідомлень  і даних користувача на сервері.',
     },
     site_link: '',
-    github_link: 'https://github.com/webioann/Messenger',
+    github_link: 'https://github.com/webioann/Messenger.git',
     tools: [
         { title: 'React Native', id: 1, delay: '0ms', textEng: 'text for tooltip' },
         {
