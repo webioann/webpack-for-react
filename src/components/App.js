@@ -40,7 +40,7 @@ function App() {
             <Summary />
             <Projects>
                 <PetProject
-                    header="#1 Next JS full-stack Netflix clone"
+                    header="#1 Next JS full stack Netflix clone"
                     data={netflix_data}
                     img={netflix_img}
                 />
