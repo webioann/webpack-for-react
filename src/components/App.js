@@ -40,14 +40,14 @@ function App() {
             <Summary />
             <Projects>
                 <PetProject
-                    header="#1 Cryptocurrencies tracker"
-                    data={crypto_data}
-                    img={crypto_img}
-                />
-                <PetProject
-                    header="#2 Netflix clone"
+                    header="#1 Next JS full-stack Netflix clone"
                     data={netflix_data}
                     img={netflix_img}
+                />
+                <PetProject
+                    header="#2 Cryptocurrencies tracker"
+                    data={crypto_data}
+                    img={crypto_img}
                 />
                 <ReactNativePetProject
                     header="#3 Mobile messenger app"

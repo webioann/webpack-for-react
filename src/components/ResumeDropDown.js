@@ -7,9 +7,9 @@ import '../CSS/resume-drop-down.scss';
 const ResumeDropDown = () => {
     const [showClass, setShowClass] = useState('');
     const resumeUkr =
-        'https://drive.google.com/file/d/1bf7tYwKUEKVmZQRztlwLe1SbrPbGj5oX/view?usp=drive_link';
+        'https://drive.google.com/file/d/1FEAUZtR_nz1cLEePMaPasKWL5udmKPxS/view?usp=sharing';
     const resumeEng =
-        'https://drive.google.com/file/d/1NGTc-hoWB3P9akg_LMg15BDMGDOSPB8F/view?usp=drive_link';
+        'https://drive.google.com/file/d/1OCRH9sYpaZfu4j0USTojKn6nXUU4uceb/view?usp=sharing';
 
     const showMe = () => {
         if (showClass === 'show') {
