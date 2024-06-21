@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
-import { useDispatch,useSelector } from 'react-redux'
-import { langEng,langUkr } from '../Redux-toolkit/reduxSlice'
-import '../CSS/lang-switch.scss'
+import { useDispatch,useSelector } from 'react-redux';
+import { langEng,langUkr } from '../Redux-toolkit/reduxSlice';
+import '../CSS/lang-switch.scss';
 
 function LangSwitch() {
 
@@ -20,6 +20,7 @@ function LangSwitch() {
             dispatch(langEng())
         }
     }
+
     return (
         <div className="switch-box">
             <span className={lang === 'eng' ? 'switch active' : 'switch'}

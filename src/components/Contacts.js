@@ -6,7 +6,7 @@ import '../CSS/contacts.scss';
 
 function Contacts() {
     const phone = '+380(96)842-25-72';
-    const email = 'ioannn7777@gmail.com';
+    const email = 'webioann@gmail.com';
     const gitHubLink = 'https://github.com/webioann';
 
     return (
@@ -27,7 +27,7 @@ function Contacts() {
                 </a>
             </div>
         </section>
-    );
+    )
 }
 
 export default Contacts;

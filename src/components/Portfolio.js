@@ -5,6 +5,7 @@ import BadgeMaker from './BadgeMaker';
 import '../CSS/pet-project.scss';
 
 const Portfolio = ({ header, data }) => {
+
     return (
         <section className="pet-project">
             <header className="g-subtitle">
@@ -20,7 +21,7 @@ const Portfolio = ({ header, data }) => {
                 <BadgeMaker data={data.tools} animation={false} />
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default Portfolio;

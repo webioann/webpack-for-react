@@ -42,7 +42,7 @@ const ResumeDropDown = () => {
                 </a>
             </ul>
         </div>
-    );
-};
+    )
+}
 
 export default ResumeDropDown;

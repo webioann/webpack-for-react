@@ -1,5 +1,5 @@
-import React from 'react'
-import '../CSS/badge-maker.scss'
+import React from 'react';
+import '../CSS/badge-maker.scss';
 
 const BadgeMaker = ({ data, animation }) => {
 

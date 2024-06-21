@@ -24,4 +24,5 @@ function Burger({ move_navbar, move }) {
         );
     }
 }
+
 export default Burger;

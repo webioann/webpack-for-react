@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import useTranslator from '../hooks/useTranslator';
 import { navbar } from '../data/text_for_navigation';
-import Burger from './Burger.js'
+import Burger from './Burger.js';
 import ResumeDropDown from './ResumeDropDown';
-import '../CSS/navigation.scss'
+import '../CSS/navigation.scss';
 
 const Navigation = ({ move, children, move_navbar }) => {
     

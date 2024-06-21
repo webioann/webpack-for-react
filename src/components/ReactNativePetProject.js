@@ -1,7 +1,6 @@
 import React from 'react';
 import useTranslator from '../hooks/useTranslator';
 import LinkToGithub from './LinkToGithub';
-import LinkToProjectSite from './LinkToProjectSite';
 import BadgeMaker from './BadgeMaker';
 import wellcome from '../assets/messenger_wellcome.png';
 import chat from '../assets/messenger_chat.png';
@@ -13,6 +12,7 @@ import settings from '../assets/messenger_settings.png';
 import '../CSS/pet-project.scss';
 
 const ReactNativePetProject = ({ header, data }) => {
+
     return (
         <section className="pet-project">
             <header className="g-subtitle">
@@ -42,7 +42,7 @@ const ReactNativePetProject = ({ header, data }) => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default ReactNativePetProject;

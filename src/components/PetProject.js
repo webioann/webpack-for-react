@@ -6,6 +6,7 @@ import BadgeMaker from './BadgeMaker';
 import '../CSS/pet-project.scss';
 
 const PetProject = ({ header, data, img }) => {
+    
     return (
         <section className="pet-project">
             <header className="g-subtitle">
@@ -29,7 +30,7 @@ const PetProject = ({ header, data, img }) => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default PetProject;

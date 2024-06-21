@@ -66,7 +66,7 @@ function App() {
             <Contacts />
             <Footer />
         </Container>
-    );
+    )
 }
 
 export default App;

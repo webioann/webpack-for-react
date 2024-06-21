@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import '../CSS/pet-project.scss';
 
 function Projects({ children }) {
