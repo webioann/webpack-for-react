@@ -5,6 +5,7 @@ import { navbar } from '../data/text_for_navigation';
 import '../CSS/resume-drop-down.scss';
 
 const ResumeDropDown = () => {
+    // CV dropdown menu
     const [showClass, setShowClass] = useState('');
     const resumeUkr =
         'https://drive.google.com/file/d/1FEAUZtR_nz1cLEePMaPasKWL5udmKPxS/view?usp=sharing';
